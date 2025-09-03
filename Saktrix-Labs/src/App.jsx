@@ -1,16 +1,34 @@
 import './App.css'
-import ThemeToggle from './assets/Components/ToggleDarkMode'
+import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom";
+import Home from "./Pages/Home";
+import {ComponentsPage} from "./Pages/ComponentsPage";
+import {About} from "./Pages/About";
+import {Contact} from "./Pages/Contact";
+import { RootLayout } from './Layout/RootLayout';
 
 function App() {
+ const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<RootLayout />}>
+      <Route index element={<Home />} />
+      <Route path="components" element={<ComponentsPage />} />
+      <Route path="about" element={<About />} />
+      <Route path="contact" element={<Contact />} />
+      {/* External GitHub redirect */}
+      <Route
+        path="github"
+        element={() => {
+          window.location.href = "https://github.com/your-username/saktrix-showcase";
+          return null;
+        }}
+      />
+    </Route>
+  )
+);
 
   return (
     <>
-      <section className=' p-3'>
-        <h2 className=' bg-blue-400 text-white text-xl dark:bg-black dark:text-red-500'>Saktrix Showcase</h2>
-        
-          <ThemeToggle/>
-        
-      </section>
+      <RouterProvider router={router}> </RouterProvider>
     </>
   )
 }

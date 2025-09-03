@@ -1,0 +1,94 @@
+/* ---------- CUSTOM SCROLLBAR (WebKit) ---------- */
+:root{
+  --ai-scroll-track: rgba(0,0,0,0.04);
+  --ai-scroll-thumb-start: rgba(129, 90, 240, 0.95); /* purple */
+  --ai-scroll-thumb-end: rgba(236, 72, 153, 0.95);   /* pink */
+  --ai-scroll-shadow: 0 6px 24px rgba(124,58,237,0.18);
+}
+
+/* Light mode */
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, rgba(255,255,255,0.8), rgba(250,250,250,0.8));
+  border-radius: 999px;
+  margin: 6px 0;
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.02);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--ai-scroll-thumb-start), var(--ai-scroll-thumb-end));
+  border-radius: 999px;
+  box-shadow: var(--ai-scroll-shadow);
+  border: 3px solid rgba(255,255,255,0.15);
+  min-height: 40px;
+}
+
+/* Hover effect on thumb (smooth glow) */
+::-webkit-scrollbar-thumb:hover {
+  filter: brightness(1.06) saturate(1.1);
+  transform: translateZ(0);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--ai-scroll-thumb-start) transparent;
+}
+
+/* ---------- DARK MODE VARIANTS ---------- */
+.dark {
+  --ai-scroll-track: rgba(255,255,255,0.02);
+  --ai-scroll-thumb-start: rgba(88, 28, 135, 0.95);
+  --ai-scroll-thumb-end: rgba(14, 165, 233, 0.95);
+  --ai-scroll-shadow: 0 8px 30px rgba(59,130,246,0.12);
+}
+.dark ::-webkit-scrollbar-track {
+  background: linear-gradient(180deg, rgba(12,12,12,0.6), rgba(18,18,18,0.6));
+  border-radius: 999px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  border: 3px solid rgba(0,0,0,0.3);
+}
+
+/* ---------- SMALL UTILS for the ScrollArea ---------- */
+.ai-scroll-rail {
+  position: absolute;
+  right: 8px;
+  top: 12px;
+  bottom: 12px;
+  width: 6px;
+  border-radius: 999px;
+  pointer-events: none; /* decorative only */
+  display: none; /* shown only on larger screens */
+}
+@media (min-width: 640px) {
+  .ai-scroll-rail { display: block; }
+}
+.ai-scroll-rail .ai-progress {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border-radius: 999px;
+  background: linear-gradient(180deg, rgba(129,90,240,0.9), rgba(236,72,153,0.9));
+  box-shadow: 0 8px 22px rgba(129,90,240,0.18);
+  transform-origin: top;
+}
+.ai-scroll-orb {
+  position: absolute;
+  right: 20px;
+  width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  pointer-events: none;
+  z-index: 40;
+  box-shadow: 0 6px 20px rgba(129,90,240,0.25), inset 0 0 12px rgba(255,255,255,0.06);
+  display: none;
+}
+@media (min-width: 640px) {
+  .ai-scroll-orb { display: block; }
+}
+
+/* subtle entrance animation for orb / rail */
+.ai-scroll-rail, .ai-scroll-orb {
+  transition: opacity 300ms ease, transform 250ms ease;
+  opacity: 0.92;
+}
