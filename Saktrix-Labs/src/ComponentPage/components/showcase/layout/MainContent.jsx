@@ -1,29 +1,22 @@
 import ShowcaseSection from "../files/ShowcaseSection";
-import GradientButtonShowcase from "../showcase-items/GradientButtonShowcase";
-import AnimatedCardShowcase from "../showcase-items/AnimatedCardShowcase";
-import ModalShowcase from "../showcase-items/ModalShowcase";
+import { showcaseConfig } from "../../../data/showcaseConfig";
 
 export default function MainContent() {
   return (
     <main className="flex-1 max-w-3xl mx-auto p-6 space-y-16">
-      <ShowcaseSection
-        id="gradient-button"
-        title="🌈 Gradient Button"
-        description="Flashy CTA with gradient styling."
-        Component={GradientButtonShowcase}
-      />
-      <ShowcaseSection
-        id="animated-card"
-        title="✨ Animated Card"
-        description="Card with hover animations."
-        Component={AnimatedCardShowcase}
-      />
-      <ShowcaseSection
-        id="modal"
-        title="📦 Modal"
-        description="Popup modal with overlay."
-        Component={ModalShowcase}
-      />
+      {showcaseConfig.map((cat) =>
+        cat.items.map((item) => (
+          <ShowcaseSection
+            key={item.id}
+            id={item.id}
+            title={item.name}
+            description={item.description}
+            Component={item.component}
+            tags={item.tags}
+            code={item.code}   
+          />
+        ))
+      )}
     </main>
   );
 }
