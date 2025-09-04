@@ -3,6 +3,8 @@ import { FaReact, FaMagic, FaCode } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import WhySaktrix from "./WhySaktrix";
 import ScrollDemo from "../Components/ScrollDemo";
+import CommunitySection from "./Community";
+import ProgressSection from "./SaktrixPrograss";
 
 export default function Home() {
   return (
@@ -91,8 +93,12 @@ export default function Home() {
      </section>
 
      <section>
+
       <WhySaktrix/>
       <ScrollDemo/>
+      <CommunitySection/>
+      <ProgressSection/>
+
      </section>
     </>
   );

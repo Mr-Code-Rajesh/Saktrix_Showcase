@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
 import { Outlet } from 'react-router-dom'
-import { Footer } from '../Pages/Footer'
+import  Footer  from '../Pages/Footer'
 
 export const RootLayout = () => {
   return (

@@ -1,4 +1,62 @@
 3️⃣ Component Grid (Main Content) Responsive grid layout. Each card → Component name, preview thumbnail, “View Demo” button. Example: Button Variants Card Layout Navbar Sidebar Modal 👉 Clicking “View Demo” opens that component in an isolated preview (like CodeSandbox). 
 4️⃣ Why Saktrix? (Value Section) 3 columns with icons: ⚡ Fast: Built with React + Tailwind. 🎨 Modern: Smooth animations with Framer Motion. 🛠️ Open Source: Free & community-driven.
 5️⃣ Community Section Call to action: “Join the Saktrix journey. Contribute, suggest, or just explore – we’re building this together.” Buttons: 💬 Join Discord/Telegram 🔗 Follow on GitHub 
-6️⃣ Footer Links: GitHub | LinkedIn | Instagram | YouTube | Twitter (X). Small text: © 2025 Saktrix UI – Showcase Edition. Main release coming soon. ⚡ Bonus: Add a progress bar or banner → “Saktrix UI: 70% Completed | Full Launch in 2 Months 🚀” This shows transparency + builds hype.
+6️⃣ Footer Links: GitHub | LinkedIn | Instagram | YouTube | Twitter (X). Small text: © 2025 Saktrix UI – Showcase Edition. Main release coming soon. 
+⚡ Bonus: Add a progress bar or banner → “Saktrix UI: 70% Completed | Full Launch in 2 Months 🚀” This shows transparency + builds hype.
+
+
+
+src/
+├── pages/
+│   └── ShowcasePage.tsx        # Main entry page (brings everything together)
+│
+├── components/showcase/         # All showcase-related components live here
+│   ├── layout/                  # Layout containers
+│   │   ├── Sidebar.tsx          # Left sidebar (categories, search, expand)
+│   │   ├── RightSidebar.tsx     # Right sidebar (outline, featured, CTA)
+│   │   ├── MainContent.tsx      # Main content wrapper (maps sections)
+│   │   └── ProgressBanner.tsx   # "70% complete" banner
+│   │
+│   ├── navigation/              # Navigation helpers
+│   │   ├── CategoryMenu.tsx     # Expandable category + sublinks
+│   │   └── OnThisPage.tsx       # Outline for right sidebar
+│   │
+│   ├── ui/                      # Reusable UI atoms
+│   │   ├── ToggleTheme.tsx      # Dark/Light mode toggle
+│   │   ├── Tabs.tsx             # Tab switcher (Preview / Code)
+│   │   ├── CodeBlock.tsx        # Collapsible code block + copy button
+│   │   ├── SearchBar.tsx        # Sidebar search filter
+│   │   └── TagBadge.tsx         # Small category badges
+│   │
+│   ├── showcase-items/          # Individual demo components
+│   │   ├── GradientButtonShowcase.tsx
+│   │   ├── AnimatedCardShowcase.tsx
+│   │   └── ModalShowcase.tsx
+│   │
+│   └── ShowcaseSection.tsx      # Wrapper for each section (title, desc, preview, code)
+│
+├── data/
+│   └── showcaseConfig.ts        # JSON/array for categories + components (drives sidebar + main)
+│
+└── styles/
+    └── showcase.css             # Any custom styling (if needed, beyond Tailwind)
+
+
+
+
+
+1. Install the package
+
+In your project root run:
+
+npm install react-syntax-highlighter
+
+
+
+1. Install next-themes (works in Vite too)
+npm install next-themes
+
+
+
+
+

@@ -64,12 +64,13 @@ export default function ScrollArea({ children, className = "" }) {
   }, [progress]);
 
   // smooth spring subscription to update orb style reactively
-  useEffect(() => {
-    const unsub = smooth.onChange((v) => {
-      setOrbY((railHeight - orbSize) * v);
-    });
-    return unsub;
-  }, [smooth, railHeight]);
+useEffect(() => {
+  const unsubscribe = smooth.on("change", (v) => {
+    setOrbY((railHeight - orbSize) * v);
+  });
+  return unsubscribe;
+}, [smooth, railHeight, orbSize]);
+
 
   return (
     <div className={`relative ${className}`}>

@@ -1,17 +1,18 @@
 import './App.css'
 import { RouterProvider, createBrowserRouter, createRoutesFromElements, Route } from "react-router-dom";
 import Home from "./Pages/Home";
-import {ComponentsPage} from "./Pages/ComponentsPage";
+// import {ComponentsPage} from "./Pages/ComponentsPage";
 import {About} from "./Pages/About";
 import {Contact} from "./Pages/Contact";
 import { RootLayout } from './Layout/RootLayout';
+import ShowcasePage from './ComponentPage/pages/ShowcasePage';
 
 function App() {
  const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<RootLayout />}>
       <Route index element={<Home />} />
-      <Route path="components" element={<ComponentsPage />} />
+      <Route path="components" element={<ShowcasePage />} />
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
       {/* External GitHub redirect */}
