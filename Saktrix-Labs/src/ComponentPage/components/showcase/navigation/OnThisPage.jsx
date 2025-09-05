@@ -1,6 +1,26 @@
+import { useState, useEffect } from "react";
 import { showcaseConfig } from "../../../data/showcaseConfig";
 
 export default function OnThisPage() {
+  const [activeId, setActiveId] = useState(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section[id]");
+      let current = null;
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 100 && rect.bottom >= 100) {
+          current = section.id;
+        }
+      });
+      setActiveId(current);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div>
       <h4 className="font-semibold mb-3">On this page</h4>
@@ -15,7 +35,11 @@ export default function OnThisPage() {
                 <li key={item.id}>
                   <a
                     href={`#${item.id}`}
-                    className="text-gray-600 dark:text-gray-300 hover:text-indigo-500"
+                    className={`transition-colors ${
+                      activeId === item.id
+                        ? "text-indigo-600 dark:text-indigo-400 font-semibold"
+                        : "text-gray-600 dark:text-gray-300 hover:text-indigo-500"
+                    }`}
                   >
                     {item.name}
                   </a>

@@ -1,10 +1,16 @@
 import { FiCopy, FiCheck } from "react-icons/fi";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
-import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import {useTheme} from '../../../../Context/useTheme'
 
 export default function CodeBlock({ code }) {
+  const {theme} = useTheme();
+  const codeTheme = theme === 'dark' ? dracula : prism;
+
+  // Copy to clipboard state and function
   const [copied, setCopied] = useState(false);
 
   const copy = async () => {
@@ -13,11 +19,13 @@ export default function CodeBlock({ code }) {
     setTimeout(() => setCopied(false), 2000); // reset after 2s
   };
 
+  // Render the code block with copy button
+
   return (
     <div className="relative">
       <SyntaxHighlighter
         language="jsx"
-        style={oneDark}
+        style={codeTheme}
         wrapLines={true}
         wrapLongLines={true}
         className="rounded-lg text-sm"

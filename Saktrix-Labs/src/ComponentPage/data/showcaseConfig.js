@@ -1,6 +1,8 @@
 import GradientButtonShowcase from "../components/showcase/showcase-items/GradientButtonShowcase";
 import AnimatedCardShowcase from "../components/showcase/showcase-items/AnimatedCardShowcase";
 import ModalShowcase from "../components/showcase/showcase-items/ModalShowcase";
+import InputFieldShowcase from "../components/showcase/showcase-items/InputFieldShowcase";
+import ToggleSwitchShowcase from "../components/showcase/showcase-items/ToggleSwitchShowcase";
 
 export const showcaseConfig = [
   {
@@ -30,10 +32,7 @@ export const showcaseConfig = [
         component: AnimatedCardShowcase,
         tags: ["Card", "Animation"],
         code: `
-<motion.div
-  whileHover={{ scale: 1.05 }}
-  className="w-64 h-40 bg-white dark:bg-gray-800 rounded-xl shadow-lg flex items-center justify-center text-lg font-semibold cursor-pointer"
->
+<motion.div whileHover={{ scale: 1.05 }} className="w-64 h-40 bg-white dark:bg-gray-800 rounded-xl shadow-lg flex items-center justify-center text-lg font-semibold cursor-pointer">
   ✨ Hover Me!
 </motion.div>
         `,
@@ -51,34 +50,49 @@ export const showcaseConfig = [
         tags: ["Modal", "Overlay"],
         code: `
 const [open, setOpen] = useState(false);
+// ... Modal JSX here ...
+        `,
+      },
+    ],
+  },
+  {
+    category: "Forms",
+    items: [
+      {
+        id: "input-field",
+        name: "Input Field",
+        description: "Basic styled input with label.",
+        component: InputFieldShowcase,
+        tags: ["Form", "Input"],
+        code: `
+<label htmlFor="username" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+  Username
+</label>
+<input
+  id="username"
+  type="text"
+  placeholder="Enter your username"
+  className="w-full px-3 py-2 border rounded-lg dark:bg-gray-800 dark:text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"
+/>
+        `,
+      },
+      {
+        id: "toggle-switch",
+        name: "Toggle Switch",
+        description: "Interactive on/off switch.",
+        component: ToggleSwitchShowcase,
+        tags: ["Form", "Toggle"],
+        code: `
+const [enabled, setEnabled] = useState(false);
 
-return (
-  <div>
-    <button
-      onClick={() => setOpen(true)}
-      className="px-4 py-2 rounded-lg bg-indigo-600 text-white hover:bg-indigo-700 transition"
-    >
-      Open Modal
-    </button>
-
-    {open && (
-      <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-        <div className="bg-white dark:bg-gray-800 rounded-lg p-6 w-80 shadow-xl">
-          <h3 className="text-lg font-semibold mb-2">📦 Example Modal</h3>
-          <p className="text-gray-600 dark:text-gray-300 mb-4">
-            This is a modal example. You can add forms, alerts, or any content here.
-          </p>
-          <button
-            onClick={() => setOpen(false)}
-            className="px-3 py-1 bg-red-500 text-white rounded hover:bg-red-600 transition"
-          >
-            Close
-          </button>
-        </div>
-      </div>
-    )}
-  </div>
-);
+<button
+  onClick={() => setEnabled(!enabled)}
+  className={\`w-12 h-6 flex items-center rounded-full p-1 transition \${enabled ? "bg-indigo-600" : "bg-gray-400"}\`}
+>
+  <div
+    className={\`w-4 h-4 bg-white rounded-full shadow transform transition \${enabled ? "translate-x-6" : "translate-x-0"}\`}
+  />
+</button>
         `,
       },
     ],
