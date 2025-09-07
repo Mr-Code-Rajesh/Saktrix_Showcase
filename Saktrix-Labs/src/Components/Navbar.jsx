@@ -1,13 +1,22 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaGithub } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import ThemeToggle from "./ToggleDarkMode";
-import SaktriLogo from '../assets/saktrix_logo.png';
+import SaktriLogo from "../assets/saktrix_logo.png";
+import {useUI} from '../Context/useUI'
 
 export default function Navbar() {
+  // Navbar state
   const [menuOpen, setMenuOpen] = useState(false);
+  const [hidden, setHidden] = useState(false);
+  const [lastScroll, setLastScroll] = useState(0);
+  const [progress, setProgress] = useState(0);
 
+  // Command Palette
+   const { setPaletteOpen } = useUI();
+
+  // Navigation links
   const links = [
     { name: "Components", to: "/components" },
     { name: "About", to: "/about" },
@@ -15,11 +24,34 @@ export default function Navbar() {
     { name: "Contact", to: "/contact" },
   ];
 
+  // Hide navbar on scroll down, show on scroll up
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScroll = window.scrollY;
+
+      // navbar hide/show
+      if (currentScroll > lastScroll && currentScroll > 80) {
+        setHidden(true);
+      } else {
+        setHidden(false);
+      }
+      setLastScroll(currentScroll);
+
+      // progress bar
+      const docHeight = document.body.scrollHeight - window.innerHeight;
+      const scrollPercent = (currentScroll / docHeight) * 100;
+      setProgress(scrollPercent);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScroll]);
+
   return (
     <motion.header
-      initial={{ y: -80, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
+      initial={false}
+      animate={{ y: hidden ? "-100%" : "0%" }}
+      transition={{ duration: 0.3, ease: "easeInOut" }}
       className="fixed top-0 left-0 w-full z-50"
     >
       {/* 🌌 Neon Glow Aura (Dark Mode Only) */}
@@ -27,7 +59,8 @@ export default function Navbar() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.6 }}
         transition={{ duration: 1, repeat: Infinity, repeatType: "mirror" }}
-        className="absolute inset-0 -z-10 hidden dark:block">
+        className="absolute inset-0 -z-10 hidden dark:block"
+      >
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-[90%] h-[140%] 
                         bg-gradient-to-r from-purple-600 via-pink-500 to-blue-500 
                         opacity-40 blur-3xl rounded-full animate-pulse" />
@@ -37,7 +70,7 @@ export default function Navbar() {
       <div
         className="backdrop-blur-md border-b border-white/20 dark:border-gray-800
                    bg-white/40 dark:bg-gradient-to-r dark:from-black dark:via-gray-900 dark:to-black
-                   shadow-lg"
+                   shadow-lg relative"
       >
         <nav className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
           {/* Logo */}
@@ -48,7 +81,8 @@ export default function Navbar() {
                        text-transparent bg-clip-text cursor-pointer"
           >
             <NavLink to="/" className="flex items-center gap-2">
-              <img src={SaktriLogo} alt="Saktrix Logo" className="h-8" /> <span>Saktrix Showcase</span>
+              <img src={SaktriLogo} alt="Saktrix Logo" className="h-8" />{" "}
+              <span>Saktrix Showcase</span>
             </NavLink>
           </motion.div>
 
@@ -105,6 +139,18 @@ export default function Navbar() {
             {/* Theme Toggle */}
             <ThemeToggle />
 
+            {/* 🔍 Command Palette Button */}
+            <motion.button
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      onClick={() => setPaletteOpen(true)}
+      className="hidden sm:flex items-center gap-2 px-3 py-2 rounded-md text-sm font-medium 
+                 bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-md"
+    >
+      <span>Search</span>
+      <span className="text-xs font-semibold opacity-80">⌘K</span>
+    </motion.button>
+
             {/* Mobile Menu Toggle */}
             <button
               className="md:hidden flex flex-col gap-[6px] group"
@@ -125,6 +171,12 @@ export default function Navbar() {
             </button>
           </div>
         </nav>
+
+        {/* 🌈 Scroll Progress Bar */}
+        <motion.div
+          className="absolute bottom-0 left-0 h-[3px] bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500"
+          style={{ width: `${progress}%` }}
+        />
       </div>
 
       {/* Mobile Menu */}
@@ -152,6 +204,18 @@ export default function Navbar() {
               </NavLink>
             </li>
           ))}
+
+          {/* 🔍 Search button in mobile menu */}
+          <li>
+            <button
+              onClick={() =>
+                window.dispatchEvent(new CustomEvent("open-command"))
+              }
+              className="w-full px-3 py-2 rounded-md bg-gradient-to-r from-purple-500 to-pink-500 text-white shadow-md"
+            >
+              Search (⌘K)
+            </button>
+          </li>
         </motion.ul>
       )}
     </motion.header>

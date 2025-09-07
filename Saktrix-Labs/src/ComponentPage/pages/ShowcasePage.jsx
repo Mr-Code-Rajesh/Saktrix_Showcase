@@ -2,47 +2,56 @@ import { useState, useEffect } from "react";
 import Sidebar from "../components/showcase/layout/Sidebar";
 import MainContent from "../components/showcase/layout/MainContent";
 import RightSidebar from "../components/showcase/layout/RightSidebar";
-import ProgressBanner from "../components/showcase/layout/ProgressBanner";
-import CommandPalette from "../components/showcase/ui/CommandPalette";
 import CommandHintBanner from "../components/showcase/ui/CommandHintBanner";
-
+import { showcaseConfig } from "../data/showcaseConfig";
+import { useUI } from "../../Context/useUI"; // ✅ connect with global CommandPalette
 
 export default function ShowcasePage() {
-  const [mobileOpen, setMobileOpen] = useState(false);
-  const [paletteOpen, setPaletteOpen] = useState(false);
+  // ✅ First category fallback
+  const firstCategory = showcaseConfig?.[0]?.category || null;
 
-  // Ctrl+K / Cmd+K opens command palette
+  // ✅ Get activeCategory from global UIContext (so CommandPalette works)
+  const { activeCategory, setActiveCategory } = useUI();
+
+  // If context is empty, fallback to firstCategory
   useEffect(() => {
-    const handler = (e) => {
-      if ((e.ctrlKey || e.metaKey) && e.key === "k") {
-        e.preventDefault();
-        setPaletteOpen(true);
-      }
-    };
-    window.addEventListener("keydown", handler);
-    return () => window.removeEventListener("keydown", handler);
-  }, []);
+    if (!activeCategory && firstCategory) {
+      setActiveCategory(firstCategory);
+    }
+  }, [activeCategory, firstCategory, setActiveCategory]);
+
+  // 🔥 Auto-scroll to top when activeCategory changes
+  useEffect(() => {
+    if (activeCategory) {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }
+  }, [activeCategory]);
 
   return (
     <div className="flex min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-     
-
-      {/* Command Palette */}
-      <CommandPalette isOpen={paletteOpen} setIsOpen={setPaletteOpen} />
 
       {/* Left Sidebar */}
-      <Sidebar mobileOpen={mobileOpen} setMobileOpen={setMobileOpen} />
+      <Sidebar
+        activeCategory={activeCategory}
+        setActiveCategory={setActiveCategory}
+      />
 
       {/* Main Content */}
       <div className="flex-1 flex flex-col">
-         {/* Top Hint Banner */}
-      <CommandHintBanner />
-        {/* <ProgressBanner /> */}
-        <MainContent />
+        <CommandHintBanner />
+        <MainContent activeCategory={activeCategory} />
       </div>
 
       {/* Right Sidebar */}
-      <RightSidebar />
+      <RightSidebar
+        activeCategory={activeCategory}
+        setActiveCategory={setActiveCategory}
+      />
+
+      
     </div>
   );
 }

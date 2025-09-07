@@ -4,36 +4,48 @@ import { prism } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/prism";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import {useTheme} from '../../../../Context/useTheme'
+import { useTheme } from "../../../../Context/useTheme";
 
 export default function CodeBlock({ code }) {
-  const {theme} = useTheme();
-  const codeTheme = theme === 'dark' ? dracula : prism;
+  const { theme } = useTheme();
+  const codeTheme = theme === "dark" ? dracula : prism;
 
-  // Copy to clipboard state and function
   const [copied, setCopied] = useState(false);
 
   const copy = async () => {
     await navigator.clipboard.writeText(code);
     setCopied(true);
-    setTimeout(() => setCopied(false), 2000); // reset after 2s
+    setTimeout(() => setCopied(false), 2000);
   };
 
-  // Render the code block with copy button
-
   return (
-    <div className="relative">
+    <div
+      className="
+        relative git
+        w-[90vw] md:w-[600px] lg:w-[650px] 2xl:w-[900px]
+        max-h-[300px]  
+        overflow-x-auto overflow-y-auto  /* scroll both directions */
+        rounded-lg 
+        bg-[#0d1117] dark:bg-[#0d1117] 
+        border border-gray-700
+      "
+    >
       <SyntaxHighlighter
         language="jsx"
         style={codeTheme}
         wrapLines={true}
-        wrapLongLines={true}
-        className="rounded-lg text-sm"
+        customStyle={{
+          background: "transparent",
+          padding: "1rem",
+          fontSize: "0.9rem",
+          lineHeight: "1.4",
+          margin: 0,
+        }}
       >
         {code.trim()}
       </SyntaxHighlighter>
 
-      {/* Copy button with animation */}
+      {/* Copy button */}
       <button
         onClick={copy}
         className="absolute top-2 right-2 bg-gray-800 hover:bg-gray-700 p-1 rounded flex items-center justify-center w-8 h-8"
@@ -47,7 +59,7 @@ export default function CodeBlock({ code }) {
               exit={{ scale: 0, opacity: 0, rotate: 45 }}
               transition={{ duration: 0.2 }}
             >
-              <FiCheck size={16} color="#22c55e" /> {/* green-500 */}
+              <FiCheck size={16} className="text-green-500" />
             </motion.div>
           ) : (
             <motion.div
@@ -57,7 +69,7 @@ export default function CodeBlock({ code }) {
               exit={{ scale: 0, opacity: 0, rotate: -45 }}
               transition={{ duration: 0.2 }}
             >
-              <FiCopy size={16} color="#ffffff" />
+              <FiCopy size={16} className="text-white" />
             </motion.div>
           )}
         </AnimatePresence>
@@ -65,4 +77,3 @@ export default function CodeBlock({ code }) {
     </div>
   );
 }
-

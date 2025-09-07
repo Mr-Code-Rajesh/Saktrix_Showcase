@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { showcaseConfig } from "../../../data/showcaseConfig";
 
-export default function CategoryMenu() {
+export default function CategoryMenu({ selectedId, setSelectedId }) {
   const [openCategory, setOpenCategory] = useState(null);
 
   return (
@@ -21,12 +21,16 @@ export default function CategoryMenu() {
             <ul className="ml-4 mt-1 space-y-1">
               {cat.items.map((item) => (
                 <li key={item.id}>
-                  <a
-                    href={`#${item.id}`}
-                    className="text-sm text-gray-600 dark:text-gray-300 hover:text-indigo-500"
+                  <button
+                    onClick={() => setSelectedId(item.id)}
+                    className={`block text-left w-full transition-colors ${
+                      selectedId === item.id
+                        ? "text-indigo-600 dark:text-indigo-400 font-semibold"
+                        : "text-gray-600 dark:text-gray-300 hover:text-indigo-500"
+                    }`}
                   >
                     {item.name}
-                  </a>
+                  </button>
                 </li>
               ))}
             </ul>

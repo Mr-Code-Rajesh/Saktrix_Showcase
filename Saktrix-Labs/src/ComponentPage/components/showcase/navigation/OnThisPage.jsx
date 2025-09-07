@@ -1,16 +1,17 @@
 import { useState, useEffect } from "react";
 import { showcaseConfig } from "../../../data/showcaseConfig";
 
-export default function OnThisPage() {
+export default function OnThisPage({ activeCategory }) {
   const [activeId, setActiveId] = useState(null);
 
+  // Scrollspy logic
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section[id]");
       let current = null;
       sections.forEach((section) => {
         const rect = section.getBoundingClientRect();
-        if (rect.top <= 100 && rect.bottom >= 100) {
+        if (rect.top <= 120 && rect.bottom >= 120) {
           current = section.id;
         }
       });
@@ -19,33 +20,38 @@ export default function OnThisPage() {
 
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [activeCategory]);
+
+  const activeCat = showcaseConfig.find((cat) => cat.category === activeCategory);
+  if (!activeCat) return null;
+
+  // Smooth scroll handler
+  const handleScrollTo = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
 
   return (
     <div>
-      <h4 className="font-semibold mb-3">On this page</h4>
+      <h4 className="font-semibold mb-3">{activeCategory}</h4>
       <ul className="space-y-2 text-sm">
-        {showcaseConfig.map((cat) => (
-          <li key={cat.category}>
-            <p className="font-medium text-gray-800 dark:text-gray-200 mb-1">
-              {cat.category}
-            </p>
-            <ul className="ml-3 space-y-1">
-              {cat.items.map((item) => (
-                <li key={item.id}>
-                  <a
-                    href={`#${item.id}`}
-                    className={`transition-colors ${
-                      activeId === item.id
-                        ? "text-indigo-600 dark:text-indigo-400 font-semibold"
-                        : "text-gray-600 dark:text-gray-300 hover:text-indigo-500"
-                    }`}
-                  >
-                    {item.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
+        {activeCat.items.map((item) => (
+          <li key={item.id}>
+            <button
+              onClick={() => handleScrollTo(item.id)}
+              className={`block text-left w-full transition-colors ${
+                activeId === item.id
+                  ? "text-indigo-600 dark:text-indigo-400 font-semibold"
+                  : "text-gray-600 dark:text-gray-300 hover:text-indigo-500"
+              }`}
+            >
+              {item.name}
+            </button>
           </li>
         ))}
       </ul>
