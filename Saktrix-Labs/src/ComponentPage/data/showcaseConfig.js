@@ -114,6 +114,11 @@ import NeuralSlider from "../components/showcase/forms/NeuralSlider";
 import SynapseSwitch from "../components/showcase/forms/SynapseSwitch";
 import AuroraDropdown from "../components/showcase/forms/AuroraDropdown";
 import GlitchPasswordInput from "../components/showcase/forms/GlitchPasswordInput";
+  import HologramNavbar from "../components/showcase/navbars/HologramNavbar";
+  import NeonPulseNavbar from "../components/showcase/navbars/NeonPulseNavbar";
+  import GlitchNavbar from "../components/showcase/navbars/GlitchNavbar";
+  import AuroraNavbar from "../components/showcase/navbars/AuroraNavbar";
+  import CyberCircuitNavbar from "../components/showcase/navbars/CyberCircuitNavbar";
 import RoboStepper from "../components/showcase/forms/RoboStepper";
 
 import AdaptiveRange from "../components/showcase/forms/AdaptiveRange";
@@ -135,6 +140,18 @@ import FloatingOrbitSelect from "../components/showcase/forms/FloatingOrbitSelec
 import CyberneticInput from "../components/showcase/forms/CyberneticInput";
 import AuroraSwitch from "../components/showcase/forms/AuroraSwitch";
 import PredictiveTextarea from "../components/showcase/forms/PredictiveTextarea";
+
+
+import HologramSidebar from "../components/showcase/sidebars/HologramSidebar";
+import NeonPulseDrawer from "../components/showcase/sidebars/NeonPulseDrawer";
+import MatrixSidebar from "../components/showcase/sidebars/MatrixSidebar";
+import AuroraDrawer from "../components/showcase/sidebars/AuroraDrawer";
+import CyberCircuitSidebar from "../components/showcase/sidebars/CyberCircuitSidebar";
+import GlitchDrawer from "../components/showcase/sidebars/GlitchDrawer";
+import OrbitingIconSidebar from "../components/showcase/sidebars/OrbitingIconSidebar";
+import CrystalGlassDrawer from "../components/showcase/sidebars/CrystalGlassDrawer";
+import DNAHelixSidebar from "../components/showcase/sidebars/DNAHelixSidebar";
+import StarlightDrawer from "../components/showcase/sidebars/StarlightDrawer";
 
 
 export const showcaseConfig = [
@@ -1189,6 +1206,136 @@ const [enabled, setEnabled] = useState(false);
                       tags: ["Form", "Textarea", "Predictive", "AI"],
                       code: `<PredictiveTextarea />`,
                     },
+    ],
+  },
+  {
+    category: "Navbar",
+    items: [
+      {
+        id: "hologram-navbar",
+        name: "Hologram Navbar",
+        description: "Glassmorphism navbar with gradient glow border and animated links.",
+        component: HologramNavbar,
+        tags: ["Navbar", "Glassmorphism", "Gradient", "Glow", "AI"],
+        code: `<HologramNavbar />`,
+      },
+      {
+        id: "neon-pulse-navbar",
+        name: "Neon Pulse Navbar",
+        description: "Navbar with pulsing neon glow under active link.",
+        component: NeonPulseNavbar,
+        tags: ["Navbar", "Neon", "Pulse", "Glow", "AI"],
+        code: `<NeonPulseNavbar />`,
+      },
+      {
+        id: "glitch-navbar",
+        name: "Glitch Navbar",
+        description: "Navbar with glitch/flicker effect on links.",
+        component: GlitchNavbar,
+        tags: ["Navbar", "Glitch", "Animated", "AI"],
+        code: `<GlitchNavbar />`,
+      },
+      {
+        id: "aurora-navbar",
+        name: "Aurora Navbar",
+        description: "Navbar with flowing gradient aurora background.",
+        component: AuroraNavbar,
+        tags: ["Navbar", "Aurora", "Gradient", "AI"],
+        code: `<AuroraNavbar />`,
+      },
+      {
+        id: "cyber-circuit-navbar",
+        name: "Cyber Circuit Navbar",
+        description: "Navbar with circuit-like glowing lines and animated links.",
+        component: CyberCircuitNavbar,
+        tags: ["Navbar", "Cyber", "Circuit", "Glow", "AI"],
+        code: `<CyberCircuitNavbar />`,
+      },
+    ],
+  },
+  {
+    category: "Sidebar",
+    items: [
+      {
+        id: "hologram-sidebar",
+        name: "Hologram Sidebar",
+        description: "Glassmorphism blur, glowing border, collapsible sidebar.",
+        component: HologramSidebar,
+        tags: ["Sidebar", "Glassmorphism", "Glow", "AI"],
+        code: `<HologramSidebar />`,
+      },
+      {
+        id: "neon-pulse-drawer",
+        name: "Neon Pulse Drawer",
+        description: "Neon glow, pulsing active item, collapsible drawer.",
+        component: NeonPulseDrawer,
+        tags: ["Drawer", "Neon", "Pulse", "Glow", "AI"],
+        code: `<NeonPulseDrawer />`,
+      },
+      {
+        id: "matrix-sidebar",
+        name: "Matrix Sidebar",
+        description: "Falling code animation background, collapsible sidebar.",
+        component: MatrixSidebar,
+        tags: ["Sidebar", "Matrix", "Code", "AI"],
+        code: `<MatrixSidebar />`,
+      },
+      {
+        id: "aurora-drawer",
+        name: "Aurora Drawer",
+        description: "Gradient aurora waves animation, collapsible drawer.",
+        component: AuroraDrawer,
+        tags: ["Drawer", "Aurora", "Gradient", "AI"],
+        code: `<AuroraDrawer />`,
+      },
+      {
+        id: "cyber-circuit-sidebar",
+        name: "Cyber Circuit Sidebar",
+        description: "Animated glowing circuit lines, collapsible sidebar.",
+        component: CyberCircuitSidebar,
+        tags: ["Sidebar", "Cyber", "Circuit", "Glow", "AI"],
+        code: `<CyberCircuitSidebar />`,
+      },
+      {
+        id: "glitch-drawer",
+        name: "Glitch Drawer",
+        description: "Links glitch/flicker on hover, collapsible drawer.",
+        component: GlitchDrawer,
+        tags: ["Drawer", "Glitch", "Animated", "AI"],
+        code: `<GlitchDrawer />`,
+      },
+      {
+        id: "orbiting-icon-sidebar",
+        name: "Orbiting Icon Sidebar",
+        description: "Glowing orbs orbit icons, collapsible sidebar.",
+        component: OrbitingIconSidebar,
+        tags: ["Sidebar", "Orbit", "Icon", "AI"],
+        code: `<OrbitingIconSidebar />`,
+      },
+      {
+        id: "crystal-glass-drawer",
+        name: "Crystal Glass Drawer",
+        description: "Frosted glass effect, shine animation, collapsible drawer.",
+        component: CrystalGlassDrawer,
+        tags: ["Drawer", "Crystal", "Glass", "AI"],
+        code: `<CrystalGlassDrawer />`,
+      },
+      {
+        id: "dna-helix-sidebar",
+        name: "DNA Helix Sidebar",
+        description: "Vertical animated helix background, collapsible sidebar.",
+        component: DNAHelixSidebar,
+        tags: ["Sidebar", "DNA", "Helix", "AI"],
+        code: `<DNAHelixSidebar />`,
+      },
+      {
+        id: "starlight-drawer",
+        name: "Starlight Drawer",
+        description: "Floating sparkles background, twinkling links, collapsible drawer.",
+        component: StarlightDrawer,
+        tags: ["Drawer", "Starlight", "Sparkle", "AI"],
+        code: `<StarlightDrawer />`,
+      },
     ],
   },
 ];

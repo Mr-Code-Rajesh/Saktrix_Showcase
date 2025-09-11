@@ -19,31 +19,33 @@ export default function CodeBlock({ code }) {
   };
 
   return (
-    <div
-      className="
-        relative git
-        w-[90vw] md:w-[600px] lg:w-[650px] 2xl:w-[900px]
-        max-h-[300px]  
-        overflow-x-auto overflow-y-auto  /* scroll both directions */
-        rounded-lg 
-        bg-[#0d1117] dark:bg-[#0d1117] 
-        border border-gray-700
-      "
-    >
-      <SyntaxHighlighter
-        language="jsx"
-        style={codeTheme}
-        wrapLines={true}
-        customStyle={{
-          background: "transparent",
-          padding: "1rem",
-          fontSize: "0.9rem",
-          lineHeight: "1.4",
-          margin: 0,
-        }}
+    <div className="relative w-full">
+      <div
+        className="
+          relative 
+          w-full 
+          max-h-[400px] 
+          overflow-x-auto 
+          overflow-y-auto 
+          rounded-lg 
+          bg-[#0d1117] dark:bg-[#0d1117] 
+          border border-gray-700
+        "
       >
-        {code.trim()}
-      </SyntaxHighlighter>
+        <SyntaxHighlighter
+          language="jsx"
+          style={codeTheme}
+          wrapLines={true}
+          wrapLongLines={true}
+          customStyle={{
+            background: "transparent",
+            fontSize: "0.875rem",
+            lineHeight: "1.4rem",
+          }}
+        >
+          {code.trim()}
+        </SyntaxHighlighter>
+      </div>
 
       {/* Copy button */}
       <button
@@ -59,7 +61,7 @@ export default function CodeBlock({ code }) {
               exit={{ scale: 0, opacity: 0, rotate: 45 }}
               transition={{ duration: 0.2 }}
             >
-              <FiCheck size={16} className="text-green-500" />
+              <FiCheck size={16} color="#22c55e" />
             </motion.div>
           ) : (
             <motion.div
@@ -69,7 +71,7 @@ export default function CodeBlock({ code }) {
               exit={{ scale: 0, opacity: 0, rotate: -45 }}
               transition={{ duration: 0.2 }}
             >
-              <FiCopy size={16} className="text-white" />
+              <FiCopy size={16} color="#ffffff" />
             </motion.div>
           )}
         </AnimatePresence>
