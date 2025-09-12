@@ -152,6 +152,36 @@ import OrbitingIconSidebar from "../components/showcase/sidebars/OrbitingIconSid
 import CrystalGlassDrawer from "../components/showcase/sidebars/CrystalGlassDrawer";
 import DNAHelixSidebar from "../components/showcase/sidebars/DNAHelixSidebar";
 import StarlightDrawer from "../components/showcase/sidebars/StarlightDrawer";
+import NeuralGlowHero from '../components/showcase/hero/NeuralGlowHero';
+import CyberGridHero from '../components/showcase/hero/CyberGridHero';
+import AuroraGradientHero from '../components/showcase/hero/AuroraGradientHero';
+import QuantumSplitHero from '../components/showcase/hero/QuantumSplitHero';
+import HolographicVideoHero from '../components/showcase/hero/HolographicVideoHero';
+import CosmicParticleHero from '../components/showcase/hero/CosmicParticleHero';
+import DNAHelixHero from '../components/showcase/hero/DNAHelixHero';
+import AIChatHero from '../components/showcase/hero/AIChatHero';
+import CircuitWaveHero from '../components/showcase/hero/CircuitWaveHero';
+import StarlightMatrixHero from '../components/showcase/hero/StarlightMatrixHero';
+import NeonGlowFooter from '../components/showcase/footer/NeonGlowFooter';
+import GlassmorphismFooter from '../components/showcase/footer/GlassmorphismFooter';
+import AuroraGradientFooter from '../components/showcase/footer/AuroraGradientFooter';
+import CyberGridFooter from '../components/showcase/footer/CyberGridFooter';
+import HolographicSocialFooter from '../components/showcase/footer/HolographicSocialFooter';
+import QuantumMultiColumnFooter from '../components/showcase/footer/QuantumMultiColumnFooter';
+import AIMinimalFooter from '../components/showcase/footer/AIMinimalFooter';
+import CosmicParticleFooter from '../components/showcase/footer/CosmicParticleFooter';
+import DNAHelixFooter from '../components/showcase/footer/DNAHelixFooter';
+import StarlightMatrixFooter from '../components/showcase/footer/StarlightMatrixFooter';
+import NeonTooltipButton from '../components/showcase/tooltip/NeonTooltipButton';
+import GlassTooltipButton from '../components/showcase/tooltip/GlassTooltipButton';
+import AuroraTooltipButton from '../components/showcase/tooltip/AuroraTooltipButton';
+import GlitchTooltipButton from '../components/showcase/tooltip/GlitchTooltipButton';
+import MinimalTooltipButton from '../components/showcase/tooltip/MinimalTooltipButton';
+import OrbitTooltipButton from '../components/showcase/tooltip/OrbitTooltipButton';
+import MatrixTooltipButton from '../components/showcase/tooltip/MatrixTooltipButton';
+import CircuitTooltipButton from '../components/showcase/tooltip/CircuitTooltipButton';
+import DNATooltipButton from '../components/showcase/tooltip/DNATooltipButton';
+import StarlightTooltipButton from '../components/showcase/tooltip/StarlightTooltipButton';
 
 
 export const showcaseConfig = [
@@ -179,86 +209,86 @@ export const showcaseConfig = [
         code: `
 <button className="px-4 py-2 rounded-lg border border-indigo-600 text-indigo-600 hover:bg-indigo-50 transition">
   Outline Button
-</button>
-        `,
-      },
-      {
-        id: "icon-button",
-        name: "Icon Button",
-        description: "Button with icon for actions/navigation.",
-        component: IconButtonShowcase,
-        tags: ["Button", "Icon"],
-        code: `
-<button className="flex items-center gap-2 px-4 py-2 rounded-lg bg-indigo-600 text-white hover:bg-indigo-700 transition">
-  Next <FiArrowRight />
-</button>
-        `,
-      },
-      {
-        id: "loading-button",
-        name: "Loading Button",
-        description: "Button with loading spinner on click.",
-        component: LoadingButtonShowcase,
-        tags: ["Button", "Loading"],
-        code: `
-const [loading, setLoading] = useState(false);
-
-<button
-  onClick={() => {
-    setLoading(true);
-    setTimeout(() => setLoading(false), 2000);
-  }}
-  disabled={loading}
-  className="px-4 py-2 rounded-lg bg-indigo-600 text-white flex items-center justify-center gap-2 disabled:opacity-50"
->
-  {loading ? (
-    <span className="animate-spin h-4 w-4 border-2 border-white border-t-transparent rounded-full" />
-  ) : (
-    "Click Me"
-  )}
-</button>
-        `,
-      },
-        // Animated Button Showcase Items
-        {
-          id: "animated-gradient-button",
-          name: "Animated Gradient Button",
-          description: "Gradient button with scale and color animation.",
-          component: AnimatedGradientButton,
-          tags: ["Button", "Gradient", "Animated"],
-          code: `<AnimatedGradientButton />`,
-        },
-        {
-          id: "bouncy-icon-button",
-          name: "Bouncy Icon Button",
-          description: "Icon button with bounce animation.",
-          component: BouncyIconButton,
-          tags: ["Button", "Icon", "Animated"],
-          code: `<BouncyIconButton />`,
-        },
-        {
-          id: "success-check-button",
-          name: "Success Check Button",
-          description: "Button with animated check icon.",
-          component: SuccessCheckButton,
-          tags: ["Button", "Success", "Animated"],
-          code: `<SuccessCheckButton />`,
-        },
-        {
-          id: "pulse-add-button",
-          name: "Pulse Add Button",
-          description: "Button with pulsing box-shadow animation.",
-          component: PulseAddButton,
-          tags: ["Button", "Add", "Animated"],
-          code: `<PulseAddButton />`,
-        },
-        {
-          id: "heartbeat-button",
-          name: "Heartbeat Button",
-          description: "Button with heartbeat scale animation.",
-          component: HeartbeatButton,
-          tags: ["Button", "Heart", "Animated"],
-          code: `<HeartbeatButton />`,
+              {
+                id: "neon-tooltip-button",
+                name: "Neon Tooltip Button",
+                description: "Neon glowing tooltip with pulse animation.",
+                component: NeonTooltipButton,
+                tags: ["Tooltip", "Neon", "Glow"],
+          code: "<NeonTooltipButton />"
+              },
+              {
+                id: "glass-tooltip-button",
+                name: "Glass Tooltip Button",
+                description: "Frosted glass tooltip with blur.",
+                component: GlassTooltipButton,
+                tags: ["Tooltip", "Glassmorphism", "Blur"],
+          code: "<GlassTooltipButton />"
+              },
+              {
+                id: "aurora-tooltip-button",
+                name: "Aurora Tooltip Button",
+                description: "Aurora gradient animated tooltip.",
+                component: AuroraTooltipButton,
+                tags: ["Tooltip", "Aurora", "Gradient"],
+          code: "<AuroraTooltipButton />"
+              },
+              {
+                id: "glitch-tooltip-button",
+                name: "Glitch Tooltip Button",
+                description: "Glitch/flicker effect tooltip.",
+                component: GlitchTooltipButton,
+                tags: ["Tooltip", "Glitch", "Flicker"],
+          code: "<GlitchTooltipButton />"
+              },
+              {
+                id: "minimal-tooltip-button",
+                name: "Minimal Tooltip Button",
+                description: "Clean fade/scale tooltip.",
+                component: MinimalTooltipButton,
+                tags: ["Tooltip", "Minimal", "Fade"],
+          code: "<MinimalTooltipButton />"
+              },
+              {
+                id: "orbit-tooltip-button",
+                name: "Orbit Tooltip Button",
+                description: "Orbiting glowing orbs tooltip.",
+                component: OrbitTooltipButton,
+                tags: ["Tooltip", "Orbit", "Glow"],
+          code: "<OrbitTooltipButton />"
+              },
+              {
+                id: "matrix-tooltip-button",
+                name: "Matrix Tooltip Button",
+                description: "Matrix code rain background tooltip.",
+                component: MatrixTooltipButton,
+                tags: ["Tooltip", "Matrix", "Code"],
+          code: "<MatrixTooltipButton />"
+              },
+              {
+                id: "circuit-tooltip-button",
+                name: "Circuit Tooltip Button",
+                description: "Glowing circuit pattern tooltip.",
+                component: CircuitTooltipButton,
+                tags: ["Tooltip", "Circuit", "Glow"],
+          code: "<CircuitTooltipButton />"
+              },
+              {
+                id: "dna-tooltip-button",
+                name: "DNA Tooltip Button",
+                description: "Tooltip border animates like DNA helix.",
+                component: DNATooltipButton,
+                tags: ["Tooltip", "DNA", "Helix"],
+          code: "<DNATooltipButton />"
+              },
+              {
+                id: "starlight-tooltip-button",
+                name: "Starlight Tooltip Button",
+                description: "Tooltip with twinkling stars.",
+                component: StarlightTooltipButton,
+                tags: ["Tooltip", "Starlight", "Stars"],
+          code: "<StarlightTooltipButton />"
+              },
         },
         {
           id: "star-button",
@@ -266,7 +296,7 @@ const [loading, setLoading] = useState(false);
           description: "Button with star icon and rotation animation.",
           component: StarButton,
           tags: ["Button", "Star", "Animated"],
-          code: `<StarButton />`,
+          code: "<StarButton />",
         },
         {
           id: "send-button",
@@ -274,7 +304,7 @@ const [loading, setLoading] = useState(false);
           description: "Button with send icon and slide animation.",
           component: SendButton,
           tags: ["Button", "Send", "Animated"],
-          code: `<SendButton />`,
+          code: "<SendButton />",
         },
         {
           id: "search-button",
@@ -282,7 +312,7 @@ const [loading, setLoading] = useState(false);
           description: "Button with search icon and scale animation.",
           component: SearchButton,
           tags: ["Button", "Search", "Animated"],
-          code: `<SearchButton />`,
+          code: "<SearchButton />",
         },
         {
           id: "download-button",
@@ -290,7 +320,7 @@ const [loading, setLoading] = useState(false);
           description: "Button with download icon and downward animation.",
           component: DownloadButton,
           tags: ["Button", "Download", "Animated"],
-          code: `<DownloadButton />`,
+          code: "<DownloadButton />",
         },
         {
           id: "upload-button",
@@ -298,7 +328,7 @@ const [loading, setLoading] = useState(false);
           description: "Button with upload icon and upward animation.",
           component: UploadButton,
           tags: ["Button", "Upload", "Animated"],
-          code: `<UploadButton />`,
+          code: "<UploadButton />",
         },
         {
           id: "danger-delete-button",
@@ -306,7 +336,7 @@ const [loading, setLoading] = useState(false);
           description: "Button with delete icon and color animation.",
           component: DangerDeleteButton,
           tags: ["Button", "Delete", "Animated"],
-          code: `<DangerDeleteButton />`,
+          code: "<DangerDeleteButton />",
         },
         {
           id: "edit-button",
@@ -314,7 +344,7 @@ const [loading, setLoading] = useState(false);
           description: "Button with edit icon and scale animation.",
           component: EditButton,
           tags: ["Button", "Edit", "Animated"],
-          code: `<EditButton />`,
+          code: "<EditButton />",
         },
         {
           id: "share-button",
@@ -322,7 +352,7 @@ const [loading, setLoading] = useState(false);
           description: "Button with share icon and scale animation.",
           component: ShareButton,
           tags: ["Button", "Share", "Animated"],
-          code: `<ShareButton />`,
+          code: "<ShareButton />",
         },
         {
           id: "bell-notification-button",
@@ -330,7 +360,7 @@ const [loading, setLoading] = useState(false);
           description: "Button with bell icon and rotation animation.",
           component: BellNotificationButton,
           tags: ["Button", "Bell", "Animated"],
-          code: `<BellNotificationButton />`,
+          code: "<BellNotificationButton />",
         },
         {
           id: "user-profile-button",
@@ -338,7 +368,7 @@ const [loading, setLoading] = useState(false);
           description: "Button with user icon and scale animation.",
           component: UserProfileButton,
           tags: ["Button", "User", "Animated"],
-          code: `<UserProfileButton />`,
+          code: "<UserProfileButton />",
         },
         {
           id: "settings-button",
@@ -346,7 +376,7 @@ const [loading, setLoading] = useState(false);
           description: "Button with settings icon and rotation animation.",
           component: SettingsButton,
           tags: ["Button", "Settings", "Animated"],
-          code: `<SettingsButton />`,
+          code: "<SettingsButton />",
         },
         {
           id: "lock-button",
@@ -354,7 +384,7 @@ const [loading, setLoading] = useState(false);
           description: "Button with lock icon and scale animation.",
           component: LockButton,
           tags: ["Button", "Lock", "Animated"],
-          code: `<LockButton />`,
+          code: "<LockButton />",
         },
         {
           id: "camera-button",
@@ -362,7 +392,7 @@ const [loading, setLoading] = useState(false);
           description: "Button with camera icon and scale animation.",
           component: CameraButton,
           tags: ["Button", "Camera", "Animated"],
-          code: `<CameraButton />`,
+          code: "<CameraButton />",
         },
         {
           id: "gift-button",
@@ -370,7 +400,7 @@ const [loading, setLoading] = useState(false);
           description: "Button with gift icon and scale animation.",
           component: GiftButton,
           tags: ["Button", "Gift", "Animated"],
-          code: `<GiftButton />`,
+          code: "<GiftButton />",
         },
         {
           id: "cloud-button",
@@ -378,7 +408,7 @@ const [loading, setLoading] = useState(false);
           description: "Button with cloud icon and scale animation.",
           component: CloudButton,
           tags: ["Button", "Cloud", "Animated"],
-          code: `<CloudButton />`,
+          code: "<CloudButton />",
         },
         {
           id: "globe-button",
@@ -386,7 +416,7 @@ const [loading, setLoading] = useState(false);
           description: "Button with globe icon and scale animation.",
           component: GlobeButton,
           tags: ["Button", "Globe", "Animated"],
-          code: `<GlobeButton />`,
+          code: "<GlobeButton />",
         },
           // Futuristic AI-Inspired Buttons
           {
@@ -395,7 +425,7 @@ const [loading, setLoading] = useState(false);
             description: "Glowing border with pulsing effect.",
             component: NeonPulseButton,
             tags: ["Button", "Neon", "Pulse", "Futuristic"],
-            code: `<NeonPulseButton />`,
+            code: "<NeonPulseButton />",
           },
           {
             id: "hologram-button",
@@ -403,7 +433,7 @@ const [loading, setLoading] = useState(false);
             description: "Glass effect with reflection hover.",
             component: HologramButton,
             tags: ["Button", "Hologram", "Futuristic"],
-            code: `<HologramButton />`,
+            code: "<HologramButton />",
           },
           {
             id: "orbiting-glow-button",
@@ -411,7 +441,7 @@ const [loading, setLoading] = useState(false);
             description: "Small orbs circling around.",
             component: OrbitingGlowButton,
             tags: ["Button", "Glow", "Orbit", "Futuristic"],
-            code: `<OrbitingGlowButton />`,
+            code: "<OrbitingGlowButton />",
           },
           {
             id: "liquid-morph-button",
@@ -419,7 +449,7 @@ const [loading, setLoading] = useState(false);
             description: "Blob-like morph animation.",
             component: LiquidMorphButton,
             tags: ["Button", "Liquid", "Morph", "Futuristic"],
-            code: `<LiquidMorphButton />`,
+            code: "<LiquidMorphButton />",
           },
           {
             id: "cyber-ripple-button",
@@ -427,7 +457,7 @@ const [loading, setLoading] = useState(false);
             description: "Expanding digital ripple.",
             component: CyberRippleButton,
             tags: ["Button", "Cyber", "Ripple", "Futuristic"],
-            code: `<CyberRippleButton />`,
+            code: "<CyberRippleButton />",
           },
           {
             id: "prism-shift-button",
@@ -435,7 +465,7 @@ const [loading, setLoading] = useState(false);
             description: "Gradient shifts like a prism.",
             component: PrismShiftButton,
             tags: ["Button", "Prism", "Gradient", "Futuristic"],
-            code: `<PrismShiftButton />`,
+            code: "<PrismShiftButton />",
           },
           {
             id: "matrix-code-button",
@@ -443,7 +473,7 @@ const [loading, setLoading] = useState(false);
             description: "Falling code rain on hover.",
             component: MatrixCodeButton,
             tags: ["Button", "Matrix", "Code", "Futuristic"],
-            code: `<MatrixCodeButton />`,
+            code: "<MatrixCodeButton />",
           },
           {
             id: "galactic-beam-button",
@@ -451,7 +481,7 @@ const [loading, setLoading] = useState(false);
             description: "Animated light beam sweep.",
             component: GalacticBeamButton,
             tags: ["Button", "Galactic", "Beam", "Futuristic"],
-            code: `<GalacticBeamButton />`,
+            code: "<GalacticBeamButton />",
           },
           {
             id: "quantum-flip-button",
@@ -459,7 +489,7 @@ const [loading, setLoading] = useState(false);
             description: "3D flip transition on hover.",
             component: QuantumFlipButton,
             tags: ["Button", "Quantum", "Flip", "Futuristic"],
-            code: `<QuantumFlipButton />`,
+            code: "<QuantumFlipButton />",
           },
           {
             id: "aurora-flow-button",
@@ -467,7 +497,7 @@ const [loading, setLoading] = useState(false);
             description: "Aurora-borealis gradient waves.",
             component: AuroraFlowButton,
             tags: ["Button", "Aurora", "Flow", "Futuristic"],
-            code: `<AuroraFlowButton />`,
+            code: "<AuroraFlowButton />",
           },
           {
             id: "starlight-button",
@@ -475,7 +505,7 @@ const [loading, setLoading] = useState(false);
             description: "Sparkles that animate randomly.",
             component: StarlightButton,
             tags: ["Button", "Starlight", "Futuristic"],
-            code: `<StarlightButton />`,
+            code: "<StarlightButton />",
           },
           {
             id: "magnet-hover-button",
@@ -483,7 +513,7 @@ const [loading, setLoading] = useState(false);
             description: "Button pulls toward cursor.",
             component: MagnetHoverButton,
             tags: ["Button", "Magnet", "Hover", "Futuristic"],
-            code: `<MagnetHoverButton />`,
+            code: "<MagnetHoverButton />",
           },
           {
             id: "dna-helix-button",
@@ -491,7 +521,7 @@ const [loading, setLoading] = useState(false);
             description: "Rotating helix lines on hover.",
             component: DNAHelixButton,
             tags: ["Button", "DNA", "Helix", "Futuristic"],
-            code: `<DNAHelixButton />`,
+            code: "<DNAHelixButton />",
           },
           {
             id: "ai-scan-button",
@@ -499,7 +529,7 @@ const [loading, setLoading] = useState(false);
             description: "Scanning bar passes through.",
             component: AIScanButton,
             tags: ["Button", "AI", "Scan", "Futuristic"],
-            code: `<AIScanButton />`,
+            code: "<AIScanButton />",
           },
           {
             id: "solar-flare-button",
@@ -507,7 +537,7 @@ const [loading, setLoading] = useState(false);
             description: "Fiery glowing flare effect.",
             component: SolarFlareButton,
             tags: ["Button", "Solar", "Flare", "Futuristic"],
-            code: `<SolarFlareButton />`,
+            code: "<SolarFlareButton />",
           },
           {
             id: "plasma-burst-button",
@@ -515,7 +545,7 @@ const [loading, setLoading] = useState(false);
             description: "Electric burst when clicked.",
             component: PlasmaBurstButton,
             tags: ["Button", "Plasma", "Burst", "Futuristic"],
-            code: `<PlasmaBurstButton />`,
+            code: "<PlasmaBurstButton />",
           },
           {
             id: "neural-pulse-button",
@@ -523,7 +553,7 @@ const [loading, setLoading] = useState(false);
             description: "Wave animation like neurons firing.",
             component: NeuralPulseButton,
             tags: ["Button", "Neural", "Pulse", "Futuristic"],
-            code: `<NeuralPulseButton />`,
+            code: "<NeuralPulseButton />",
           },
           {
             id: "infinity-loop-button",
@@ -531,7 +561,7 @@ const [loading, setLoading] = useState(false);
             description: "Infinite gradient loop border.",
             component: InfinityLoopButton,
             tags: ["Button", "Infinity", "Loop", "Futuristic"],
-            code: `<InfinityLoopButton />`,
+            code: "<InfinityLoopButton />",
           },
           {
             id: "time-warp-button",
@@ -539,7 +569,7 @@ const [loading, setLoading] = useState(false);
             description: "Distortion/ripple hover effect.",
             component: TimeWarpButton,
             tags: ["Button", "Time", "Warp", "Futuristic"],
-            code: `<TimeWarpButton />`,
+            code: "<TimeWarpButton />",
           },
           {
             id: "crystal-shine-button",
@@ -547,7 +577,7 @@ const [loading, setLoading] = useState(false);
             description: "Shining diagonal streak animation.",
             component: CrystalShineButton,
             tags: ["Button", "Crystal", "Shine", "Futuristic"],
-            code: `<CrystalShineButton />`,
+            code: "<CrystalShineButton />",
           },
           {
             id: "zero-gravity-button",
@@ -555,7 +585,7 @@ const [loading, setLoading] = useState(false);
             description: "Floating levitation effect.",
             component: ZeroGravityButton,
             tags: ["Button", "Zero Gravity", "Futuristic"],
-            code: `<ZeroGravityButton />`,
+            code: "<ZeroGravityButton />",
           },
           {
             id: "cyber-circuit-button",
@@ -563,7 +593,7 @@ const [loading, setLoading] = useState(false);
             description: "Animated circuit lines.",
             component: CyberCircuitButton,
             tags: ["Button", "Cyber", "Circuit", "Futuristic"],
-            code: `<CyberCircuitButton />`,
+            code: "<CyberCircuitButton />",
           },
           {
             id: "energy-orb-button",
@@ -571,7 +601,7 @@ const [loading, setLoading] = useState(false);
             description: "Glowing orb inside button.",
             component: EnergyOrbButton,
             tags: ["Button", "Energy", "Orb", "Futuristic"],
-            code: `<EnergyOrbButton />`,
+            code: "<EnergyOrbButton />",
           },
           {
             id: "pixel-glitch-button",
@@ -579,7 +609,7 @@ const [loading, setLoading] = useState(false);
             description: "Glitch/distorted hover effect.",
             component: PixelGlitchButton,
             tags: ["Button", "Pixel", "Glitch", "Futuristic"],
-            code: `<PixelGlitchButton />`,
+            code: "<PixelGlitchButton />",
           },
     ],
   },
@@ -592,12 +622,10 @@ const [loading, setLoading] = useState(false);
         description: "Card with hover animations.",
         component: AnimatedCardShowcase,
         tags: ["Card", "Animation"],
-        code: `
 <motion.div whileHover={{ scale: 1.05 }} className="w-64 h-40 bg-white dark:bg-gray-800 rounded-xl shadow-lg flex items-center justify-center text-lg font-semibold cursor-pointer">
   ✨ Hover Me!
 </motion.div>
-        `,
-      },
+        `},
         // AI-Inspired Cards
         {
           id: "neural-glow-card",
@@ -1338,4 +1366,229 @@ const [enabled, setEnabled] = useState(false);
       },
     ],
   },
+  {
+    category: "Hero",
+    items: [
+      {
+        id: "neural-glow-hero",
+        name: "Neural Glow Hero",
+        description: "AI neural network glow, animated gradient, CTA.",
+        component: NeuralGlowHero,
+        tags: ["Hero", "Glow", "AI", "Gradient"],
+        code: `<NeuralGlowHero />`,
+      },
+      {
+        id: "cyber-grid-hero",
+        name: "Cyber Grid Hero",
+        description: "Cyberpunk grid lines, animated background, CTA.",
+        component: CyberGridHero,
+        tags: ["Hero", "Cyber", "Grid", "AI"],
+        code: `<CyberGridHero />`,
+      },
+      {
+        id: "aurora-gradient-hero",
+        name: "Aurora Gradient Hero",
+        description: "Aurora gradient waves, animated, CTA.",
+        component: AuroraGradientHero,
+        tags: ["Hero", "Aurora", "Gradient", "AI"],
+        code: `<AuroraGradientHero />`,
+      },
+      {
+        id: "quantum-split-hero",
+        name: "Quantum Split Hero",
+        description: "Split layout, quantum animation, CTA.",
+        component: QuantumSplitHero,
+        tags: ["Hero", "Quantum", "Split", "AI"],
+        code: `<QuantumSplitHero />`,
+      },
+      {
+        id: "holographic-video-hero",
+        name: "Holographic Video Hero",
+        description: "Holographic glow, video background, CTA.",
+        component: HolographicVideoHero,
+        tags: ["Hero", "Holographic", "Video", "AI"],
+        code: `<HolographicVideoHero />`,
+      },
+      {
+        id: "cosmic-particle-hero",
+        name: "Cosmic Particle Hero",
+        description: "Particle animation, cosmic theme, CTA.",
+        component: CosmicParticleHero,
+        tags: ["Hero", "Cosmic", "Particle", "AI"],
+        code: `<CosmicParticleHero />`,
+      },
+      {
+        id: "dna-helix-hero",
+        name: "DNA Helix Hero",
+        description: "DNA helix pattern, animated, CTA.",
+        component: DNAHelixHero,
+        tags: ["Hero", "DNA", "Helix", "AI"],
+        code: `<DNAHelixHero />`,
+      },
+      {
+        id: "ai-chat-hero",
+        name: "AI Chat Hero",
+        description: "Chat UI, AI accents, animated, CTA.",
+        component: AIChatHero,
+        tags: ["Hero", "Chat", "AI", "Animated"],
+        code: `<AIChatHero />`,
+      },
+      {
+        id: "circuit-wave-hero",
+        name: "Circuit Wave Hero",
+        description: "Circuit pattern, animated waves, CTA.",
+        component: CircuitWaveHero,
+        tags: ["Hero", "Circuit", "Wave", "AI"],
+        code: `<CircuitWaveHero />`,
+      },
+      {
+        id: "starlight-matrix-hero",
+        name: "Starlight Matrix Hero",
+        description: "Matrix rain, starlight glow, CTA.",
+        component: StarlightMatrixHero,
+        tags: ["Hero", "Matrix", "Starlight", "AI"],
+        code: `<StarlightMatrixHero />`,
+      },
+    ],
+  },
+  {
+    category: "Footer",
+    items: [
+      {
+        id: "neon-glow-footer",
+        name: "Neon Glow Footer",
+        component: NeonGlowFooter,
+      },
+      {
+        id: "glassmorphism-footer",
+        name: "Glassmorphism Footer",
+        component: GlassmorphismFooter,
+      },
+      {
+        id: "aurora-gradient-footer",
+        name: "Aurora Gradient Footer",
+        component: AuroraGradientFooter,
+      },
+      {
+        id: "cyber-grid-footer",
+        name: "Cyber Grid Footer",
+        component: CyberGridFooter,
+      },
+      {
+        id: "holographic-social-footer",
+        name: "Holographic Social Footer",
+        component: HolographicSocialFooter,
+      },
+      {
+        id: "quantum-multi-column-footer",
+        name: "Quantum Multi-Column Footer",
+        component: QuantumMultiColumnFooter,
+      },
+      {
+        id: "ai-minimal-footer",
+        name: "AI Minimal Footer",
+        component: AIMinimalFooter,
+      },
+      {
+        id: "cosmic-particle-footer",
+        name: "Cosmic Particle Footer",
+        component: CosmicParticleFooter,
+      },
+      {
+        id: "dna-helix-footer",
+        name: "DNA Helix Footer",
+        component: DNAHelixFooter,
+      },
+      {
+        id: "starlight-matrix-footer",
+        name: "Starlight Matrix Footer",
+        component: StarlightMatrixFooter,
+      },
+    ],
+  },
+  {
+    category: "Tooltip",
+    items: [
+      {
+        id: "neon-tooltip-button",
+        name: "Neon Tooltip Button",
+        description: "Neon glowing tooltip with pulse animation.",
+        component: NeonTooltipButton,
+        tags: ["Tooltip", "Neon", "Glow"],
+        code: "<NeonTooltipButton />"
+      },
+      {
+        id: "glass-tooltip-button",
+        name: "Glass Tooltip Button",
+        description: "Frosted glass tooltip with blur.",
+        component: GlassTooltipButton,
+        tags: ["Tooltip", "Glassmorphism", "Blur"],
+        code: "<GlassTooltipButton />"
+      },
+      {
+        id: "aurora-tooltip-button",
+        name: "Aurora Tooltip Button",
+        description: "Aurora gradient animated tooltip.",
+        component: AuroraTooltipButton,
+        tags: ["Tooltip", "Aurora", "Gradient"],
+        code: "<AuroraTooltipButton />"
+      },
+      {
+        id: "glitch-tooltip-button",
+        name: "Glitch Tooltip Button",
+        description: "Glitch/flicker effect tooltip.",
+        component: GlitchTooltipButton,
+        tags: ["Tooltip", "Glitch", "Flicker"],
+        code: "<GlitchTooltipButton />"
+      },
+      {
+        id: "minimal-tooltip-button",
+        name: "Minimal Tooltip Button",
+        description: "Clean fade/scale tooltip.",
+        component: MinimalTooltipButton,
+        tags: ["Tooltip", "Minimal", "Fade"],
+        code: "<MinimalTooltipButton />"
+      },
+      {
+        id: "orbit-tooltip-button",
+        name: "Orbit Tooltip Button",
+        description: "Orbiting glowing orbs tooltip.",
+        component: OrbitTooltipButton,
+        tags: ["Tooltip", "Orbit", "Glow"],
+        code: "<OrbitTooltipButton />"
+      },
+      {
+        id: "matrix-tooltip-button",
+        name: "Matrix Tooltip Button",
+        description: "Matrix code rain background tooltip.",
+        component: MatrixTooltipButton,
+        tags: ["Tooltip", "Matrix", "Code"],
+        code: "<MatrixTooltipButton />"
+      },
+      {
+        id: "circuit-tooltip-button",
+        name: "Circuit Tooltip Button",
+        description: "Glowing circuit pattern tooltip.",
+        component: CircuitTooltipButton,
+        tags: ["Tooltip", "Circuit", "Glow"],
+        code: "<CircuitTooltipButton />"
+      },
+      {
+        id: "dna-tooltip-button",
+        name: "DNA Tooltip Button",
+        description: "Tooltip border animates like DNA helix.",
+        component: DNATooltipButton,
+        tags: ["Tooltip", "DNA", "Helix"],
+        code: "<DNATooltipButton />"
+      },
+      {
+        id: "starlight-tooltip-button",
+        name: "Starlight Tooltip Button",
+        description: "Tooltip with twinkling stars.",
+        component: StarlightTooltipButton,
+        tags: ["Tooltip", "Starlight", "Stars"],
+        code: "<StarlightTooltipButton />"
+      },
+    ]
+  }
 ];
