@@ -191,7 +191,101 @@ import AccordionAI8 from "../components/showcase/FAQ/AccordionAI8";
 import AccordionAI9 from "../components/showcase/FAQ/AccordionAI9";
 import AccordionAI10 from "../components/showcase/FAQ/AccordionAI10";
 
+// =====================
+// Alerts
+// =====================
+import AIWhisper from "../components/showcase/alert/AIWhisper";
+import CircuitFlash from "../components/showcase/alert/CircuitFlash";
+import DataStream from "../components/showcase/alert/DataStream";
+import EchoWave from "../components/showcase/alert/EchoWave";
+import FractalBloom from "../components/showcase/alert/FractalBloom";
+import GlitchSignal from "../components/showcase/alert/GlitchSignal";
+import HologramRise from "../components/showcase/alert/HologramRise";
+import LightSweep from "../components/showcase/alert/LightSweep";
+import MatrixDrop from "../components/showcase/alert/MatrixDrop";
+import NeonTrace from "../components/showcase/alert/NeonTrace";
+import NeuralGrid from "../components/showcase/alert/NeuralGrid";
+import NeuralPulse from "../components/showcase/alert/NeuralPulse";
+import QuantumBlink from "../components/showcase/alert/QuantumBlink";
+import SynapseSpark from "../components/showcase/alert/SynapseSpark";
+import TimeWarp from "../components/showcase/alert/TimeWarp";
 
+
+// =====================
+// Avatars
+// =====================
+import AvatarAchievement from "../components/showcase/avatar/AvatarAchievement";
+import AvatarAway from "../components/showcase/avatar/AvatarAway";
+import AvatarBusy from "../components/showcase/avatar/AvatarBusy";
+import AvatarCrown from "../components/showcase/avatar/AvatarCrown";
+import AvatarDiscount from "../components/showcase/avatar/AvatarDiscount";
+import AvatarError from "../components/showcase/avatar/AvatarError";
+import AvatarInfo from "../components/showcase/avatar/AvatarInfo";
+import AvatarMessage from "../components/showcase/avatar/AvatarMessage";
+import AvatarNew from "../components/showcase/avatar/AvatarNew";
+import AvatarNotification from "../components/showcase/avatar/AvatarNotification";
+import AvatarOffline from "../components/showcase/avatar/AvatarOffline";
+import AvatarOnline from "../components/showcase/avatar/AvatarOnline";
+import AvatarStar from "../components/showcase/avatar/AvatarStar";
+import AvatarVerified from "../components/showcase/avatar/AvatarVerified";
+import AvatarWarning from "../components/showcase/avatar/AvatarWarning";
+
+// =====================
+// Loaders
+// =====================
+import AIWaveLoader from "../components/showcase/loader/AIWaveLoader";
+import CircuitFlowLoader from "../components/showcase/loader/CircuitFlowLoader";
+import CyberInfinityLoader from "../components/showcase/loader/CyberInfinityLoader";
+import FractalSpinLoader from "../components/showcase/loader/FractalSpinLoader";
+import HologramGridLoader from "../components/showcase/loader/HologramGridLoader";
+import LightBeamLoader from "../components/showcase/loader/LightBeamLoader";
+import MatrixStreamLoader from "../components/showcase/loader/MatrixStreamLoader";
+import NeonHexLoader from "../components/showcase/loader/NeonHexLoader";
+import NeuralPulseLoader from "../components/showcase/loader/NeuralPulseLoader";
+import QuantumOrbitLoader from "../components/showcase/loader/QuantumOrbitLoader";
+
+// =====================
+// Pagination
+// =====================
+import AIPulsePagination from "../components/showcase/pagination/AIPulsePagination";
+import GradientPagination from "../components/showcase/pagination/GradientPagination";
+import IconPagination from "../components/showcase/pagination/IconPagination";
+import InfiniteScrollPagination from "../components/showcase/pagination/InfiniteScrollPagination";
+import LoadMorePagination from "../components/showcase/pagination/LoadMorePagination";
+import MinimalPagination from "../components/showcase/pagination/MinimalPagination";
+import NeonPagination from "../components/showcase/pagination/NeonPagination";
+import NumberJumpPagination from "../components/showcase/pagination/NumberJumpPagination";
+import RoundedPagination from "../components/showcase/pagination/RoundedPagination";
+import SimplePagination from "../components/showcase/pagination/SimplePagination";
+
+// =====================
+// Breadcrumbs
+// =====================
+import AIPulseBreadcrumb from "../components/showcase/breadcrumbs/AIPulseBreadcrumb";
+import BoxBreadcrumb from "../components/showcase/breadcrumbs/BoxBreadcrumb";
+import ChevronBreadcrumb from "../components/showcase/breadcrumbs/ChevronBreadcrumb";
+import DotBreadcrumb from "../components/showcase/breadcrumbs/DotBreadcrumb";
+import GradientBreadcrumb from "../components/showcase/breadcrumbs/GradientBreadcrumb";
+import IconBreadcrumb from "../components/showcase/breadcrumbs/IconBreadcrumb";
+import NeonBreadcrumb from "../components/showcase/breadcrumbs/NeonBreadcrumb";
+import SimpleBreadcrumb from "../components/showcase/breadcrumbs/SimpleBreadcrumb";
+import SlashBreadcrumb from "../components/showcase/breadcrumbs/SlashBreadcrumb";
+import UnderlineBreadcrumb from "../components/showcase/breadcrumbs/UnderlineBreadcrumb";
+
+// =====================
+// Tables
+// =====================
+import AIDashboardTable from "../components/showcase/tables/AIDashboardTable";
+import CyberGridTable from "../components/showcase/tables/CyberGridTable";
+import GlassmorphismTable from "../components/showcase/tables/GlassmorphismTable";
+import HackerTerminalTable from "../components/showcase/tables/HackerTerminalTable";
+import HolographicGradientTable from "../components/showcase/tables/HolographicGradientTable";
+import NeonStripedTable from "../components/showcase/tables/NeonStripedTable";
+import NeuralPulseTable from "../components/showcase/tables/NeuralPulseTable";
+import NormalTable from "../components/showcase/tables/NormalTable";
+import OrbitInteractiveTable from "../components/showcase/tables/OrbitInteractiveTable";
+import QuantumExpandableTable from "../components/showcase/tables/QuantumExpandableTable";
+import SoftUICardTable from "../components/showcase/tables/SoftUICardTable";
 
 
 
@@ -1916,11 +2010,620 @@ const [enabled, setEnabled] = useState(false);
       code: `<AccordionAI10 />`,
     },
   ],
-}
+},
 
-// next showcase
+// Alerts showcase
+{
+  category: "Alerts",
+  items: [
+    {
+      id: "ai-whisper-alert",
+      name: "AI Whisper",
+      description: "Subtle AI whisper animation for alert messages.",
+      component: AIWhisper,
+      tags: ["Alert", "AI", "Whisper"],
+      code: `<AIWhisper />`,
+    },
+    {
+      id: "circuit-flash-alert",
+      name: "Circuit Flash",
+      description: "Alert with quick electric circuit-style flash.",
+      component: CircuitFlash,
+      tags: ["Alert", "Circuit", "Flash"],
+      code: `<CircuitFlash />`,
+    },
+    {
+      id: "data-stream-alert",
+      name: "Data Stream",
+      description: "Streaming lines animation for futuristic alerts.",
+      component: DataStream,
+      tags: ["Alert", "Data", "Stream"],
+      code: `<DataStream />`,
+    },
+    {
+      id: "echo-wave-alert",
+      name: "Echo Wave",
+      description: "Pulsating echo wave alert effect.",
+      component: EchoWave,
+      tags: ["Alert", "Wave", "Echo"],
+      code: `<EchoWave />`,
+    },
+    {
+      id: "fractal-bloom-alert",
+      name: "Fractal Bloom",
+      description: "Fractal bloom glowing animation for alert messages.",
+      component: FractalBloom,
+      tags: ["Alert", "Fractal", "Bloom"],
+      code: `<FractalBloom />`,
+    },
+    {
+      id: "glitch-signal-alert",
+      name: "Glitch Signal",
+      description: "Alert with glitch and distortion effects.",
+      component: GlitchSignal,
+      tags: ["Alert", "Glitch", "Signal"],
+      code: `<GlitchSignal />`,
+    },
+    {
+      id: "hologram-rise-alert",
+      name: "Hologram Rise",
+      description: "Alert with holographic rising animation.",
+      component: HologramRise,
+      tags: ["Alert", "Hologram", "Rise"],
+      code: `<HologramRise />`,
+    },
+    {
+      id: "light-sweep-alert",
+      name: "Light Sweep",
+      description: "Sweeping light bar effect for alert emphasis.",
+      component: LightSweep,
+      tags: ["Alert", "Light", "Sweep"],
+      code: `<LightSweep />`,
+    },
+    {
+      id: "matrix-drop-alert",
+      name: "Matrix Drop",
+      description: "Falling code rain Matrix-style alert effect.",
+      component: MatrixDrop,
+      tags: ["Alert", "Matrix", "Drop"],
+      code: `<MatrixDrop />`,
+    },
+    {
+      id: "neon-trace-alert",
+      name: "Neon Trace",
+      description: "Alert outlined with neon trace glow animation.",
+      component: NeonTrace,
+      tags: ["Alert", "Neon", "Trace"],
+      code: `<NeonTrace />`,
+    },
+    {
+      id: "neural-grid-alert",
+      name: "Neural Grid",
+      description: "AI neural grid background animation for alerts.",
+      component: NeuralGrid,
+      tags: ["Alert", "Neural", "Grid"],
+      code: `<NeuralGrid />`,
+    },
+    {
+      id: "neural-pulse-alert",
+      name: "Neural Pulse",
+      description: "Pulsating neural-inspired glowing alert.",
+      component: NeuralPulse,
+      tags: ["Alert", "Neural", "Pulse"],
+      code: `<NeuralPulse />`,
+    },
+    {
+      id: "quantum-blink-alert",
+      name: "Quantum Blink",
+      description: "Quantum particle blink animation inside alerts.",
+      component: QuantumBlink,
+      tags: ["Alert", "Quantum", "Blink"],
+      code: `<QuantumBlink />`,
+    },
+    {
+      id: "synapse-spark-alert",
+      name: "Synapse Spark",
+      description: "Electric sparks across synapses for alert emphasis.",
+      component: SynapseSpark,
+      tags: ["Alert", "Synapse", "Spark"],
+      code: `<SynapseSpark />`,
+    },
+    {
+      id: "time-warp-alert",
+      name: "Time Warp",
+      description: "Alert animation with warped timeline distortion.",
+      component: TimeWarp,
+      tags: ["Alert", "Time", "Warp"],
+      code: `<TimeWarp />`,
+    },
+  ],
+},
 
 
+// avatar showcase
+{
+  category: "Avatars",
+  items: [
+    {
+      id: "avatar-achievement",
+      name: "Achievement Avatar",
+      description: "Avatar with achievement badge or trophy indicator.",
+      component: AvatarAchievement,
+      tags: ["Avatar", "Badge", "Achievement"],
+      code: `<AvatarAchievement />`,
+    },
+    {
+      id: "avatar-away",
+      name: "Away Avatar",
+      description: "Avatar showing away or idle status.",
+      component: AvatarAway,
+      tags: ["Avatar", "Status", "Away"],
+      code: `<AvatarAway />`,
+    },
+    {
+      id: "avatar-busy",
+      name: "Busy Avatar",
+      description: "Avatar with busy status indicator.",
+      component: AvatarBusy,
+      tags: ["Avatar", "Status", "Busy"],
+      code: `<AvatarBusy />`,
+    },
+    {
+      id: "avatar-crown",
+      name: "Crown Avatar",
+      description: "Avatar with crown icon for premium users.",
+      component: AvatarCrown,
+      tags: ["Avatar", "Premium", "Crown"],
+      code: `<AvatarCrown />`,
+    },
+    {
+      id: "avatar-discount",
+      name: "Discount Avatar",
+      description: "Avatar with discount or promo indicator.",
+      component: AvatarDiscount,
+      tags: ["Avatar", "Discount", "Promo"],
+      code: `<AvatarDiscount />`,
+    },
+    {
+      id: "avatar-error",
+      name: "Error Avatar",
+      description: "Avatar with error or warning symbol.",
+      component: AvatarError,
+      tags: ["Avatar", "Error", "Warning"],
+      code: `<AvatarError />`,
+    },
+    {
+      id: "avatar-info",
+      name: "Info Avatar",
+      description: "Avatar with information indicator.",
+      component: AvatarInfo,
+      tags: ["Avatar", "Info", "Help"],
+      code: `<AvatarInfo />`,
+    },
+    {
+      id: "avatar-message",
+      name: "Message Avatar",
+      description: "Avatar with message bubble notification.",
+      component: AvatarMessage,
+      tags: ["Avatar", "Message", "Chat"],
+      code: `<AvatarMessage />`,
+    },
+    {
+      id: "avatar-new",
+      name: "New Avatar",
+      description: "Avatar marked as new.",
+      component: AvatarNew,
+      tags: ["Avatar", "New", "Badge"],
+      code: `<AvatarNew />`,
+    },
+    {
+      id: "avatar-notification",
+      name: "Notification Avatar",
+      description: "Avatar with real-time notification indicator.",
+      component: AvatarNotification,
+      tags: ["Avatar", "Notification", "Alert"],
+      code: `<AvatarNotification />`,
+    },
+    {
+      id: "avatar-offline",
+      name: "Offline Avatar",
+      description: "Avatar with offline status.",
+      component: AvatarOffline,
+      tags: ["Avatar", "Status", "Offline"],
+      code: `<AvatarOffline />`,
+    },
+    {
+      id: "avatar-online",
+      name: "Online Avatar",
+      description: "Avatar with online status indicator.",
+      component: AvatarOnline,
+      tags: ["Avatar", "Status", "Online"],
+      code: `<AvatarOnline />`,
+    },
+    {
+      id: "avatar-star",
+      name: "Star Avatar",
+      description: "Avatar with star for highlighted or favorite users.",
+      component: AvatarStar,
+      tags: ["Avatar", "Star", "Highlight"],
+      code: `<AvatarStar />`,
+    },
+    {
+      id: "avatar-verified",
+      name: "Verified Avatar",
+      description: "Avatar with verification checkmark.",
+      component: AvatarVerified,
+      tags: ["Avatar", "Verified", "Check"],
+      code: `<AvatarVerified />`,
+    },
+    {
+      id: "avatar-warning",
+      name: "Warning Avatar",
+      description: "Avatar with warning indicator.",
+      component: AvatarWarning,
+      tags: ["Avatar", "Warning", "Alert"],
+      code: `<AvatarWarning />`,
+    },
+  ],
+},
+
+// next showcase category
+{
+  category: "Loaders",
+  items: [
+    {
+      id: "ai-wave-loader",
+      name: "AI Wave Loader",
+      description: "Animated wave loader with AI-inspired motion.",
+      component: AIWaveLoader,
+      tags: ["Loader", "AI", "Wave"],
+      code: `<AIWaveLoader />`,
+    },
+    {
+      id: "circuit-flow-loader",
+      name: "Circuit Flow Loader",
+      description: "Loader with glowing circuit-like flowing animation.",
+      component: CircuitFlowLoader,
+      tags: ["Loader", "Circuit", "Flow"],
+      code: `<CircuitFlowLoader />`,
+    },
+    {
+      id: "cyber-infinity-loader",
+      name: "Cyber Infinity Loader",
+      description: "Futuristic infinity loop loader with neon glow.",
+      component: CyberInfinityLoader,
+      tags: ["Loader", "Infinity", "Cyber"],
+      code: `<CyberInfinityLoader />`,
+    },
+    {
+      id: "fractal-spin-loader",
+      name: "Fractal Spin Loader",
+      description: "Fractal-inspired spinning animation loader.",
+      component: FractalSpinLoader,
+      tags: ["Loader", "Fractal", "Spin"],
+      code: `<FractalSpinLoader />`,
+    },
+    {
+      id: "hologram-grid-loader",
+      name: "Hologram Grid Loader",
+      description: "Grid-style holographic loader animation.",
+      component: HologramGridLoader,
+      tags: ["Loader", "Grid", "Hologram"],
+      code: `<HologramGridLoader />`,
+    },
+    {
+      id: "light-beam-loader",
+      name: "Light Beam Loader",
+      description: "Radiating light beam loader animation.",
+      component: LightBeamLoader,
+      tags: ["Loader", "Light", "Beam"],
+      code: `<LightBeamLoader />`,
+    },
+    {
+      id: "matrix-stream-loader",
+      name: "Matrix Stream Loader",
+      description: "Matrix-inspired digital rain loader effect.",
+      component: MatrixStreamLoader,
+      tags: ["Loader", "Matrix", "Stream"],
+      code: `<MatrixStreamLoader />`,
+    },
+    {
+      id: "neon-hex-loader",
+      name: "Neon Hex Loader",
+      description: "Hexagon-shaped loader with neon pulse effect.",
+      component: NeonHexLoader,
+      tags: ["Loader", "Hexagon", "Neon"],
+      code: `<NeonHexLoader />`,
+    },
+    {
+      id: "neural-pulse-loader",
+      name: "Neural Pulse Loader",
+      description: "Pulsating loader inspired by neural activity.",
+      component: NeuralPulseLoader,
+      tags: ["Loader", "Neural", "Pulse"],
+      code: `<NeuralPulseLoader />`,
+    },
+    {
+      id: "quantum-orbit-loader",
+      name: "Quantum Orbit Loader",
+      description: "Quantum-inspired orbiting particles loader.",
+      component: QuantumOrbitLoader,
+      tags: ["Loader", "Quantum", "Orbit"],
+      code: `<QuantumOrbitLoader />`,
+    },
+  ],
+},
+
+// pagination showcase category
+{
+  category: "Pagination",
+  items: [
+    {
+      id: "ai-pulse-pagination",
+      name: "AI Pulse Pagination",
+      description: "Pagination with AI-inspired pulsing animations.",
+      component: AIPulsePagination,
+      tags: ["Pagination", "AI", "Pulse"],
+      code: `<AIPulsePagination />`,
+    },
+    {
+      id: "gradient-pagination",
+      name: "Gradient Pagination",
+      description: "Pagination buttons with gradient styling.",
+      component: GradientPagination,
+      tags: ["Pagination", "Gradient", "Colorful"],
+      code: `<GradientPagination />`,
+    },
+    {
+      id: "icon-pagination",
+      name: "Icon Pagination",
+      description: "Pagination navigation using icons instead of numbers.",
+      component: IconPagination,
+      tags: ["Pagination", "Icons", "Navigation"],
+      code: `<IconPagination />`,
+    },
+    {
+      id: "infinite-scroll-pagination",
+      name: "Infinite Scroll Pagination",
+      description: "Auto-loading pagination with infinite scroll.",
+      component: InfiniteScrollPagination,
+      tags: ["Pagination", "Infinite Scroll"],
+      code: `<InfiniteScrollPagination />`,
+    },
+    {
+      id: "load-more-pagination",
+      name: "Load More Pagination",
+      description: "Load more button style pagination.",
+      component: LoadMorePagination,
+      tags: ["Pagination", "Load More"],
+      code: `<LoadMorePagination />`,
+    },
+    {
+      id: "minimal-pagination",
+      name: "Minimal Pagination",
+      description: "Clean and minimal pagination UI.",
+      component: MinimalPagination,
+      tags: ["Pagination", "Minimal", "Clean"],
+      code: `<MinimalPagination />`,
+    },
+    {
+      id: "neon-pagination",
+      name: "Neon Pagination",
+      description: "Pagination with glowing neon effects.",
+      component: NeonPagination,
+      tags: ["Pagination", "Neon", "Glow"],
+      code: `<NeonPagination />`,
+    },
+    {
+      id: "number-jump-pagination",
+      name: "Number Jump Pagination",
+      description: "Quick jump to numbered pages pagination.",
+      component: NumberJumpPagination,
+      tags: ["Pagination", "Numbers", "Jump"],
+      code: `<NumberJumpPagination />`,
+    },{
+      id: "simple-pagination",
+      name: "Simple Pagination",
+      description: "Basic and straightforward pagination.",
+      component: SimplePagination,
+      tags: ["Pagination", "Simple", "Basic"],
+      code: `<SimplePagination />`,
+    },
+    {
+      id: "rounded-pagination",
+      name: "Rounded Pagination",
+      description: "Pagination with rounded button styles.",
+      component: RoundedPagination,
+      tags: ["Pagination", "Rounded", "Buttons"],
+      code: `<RoundedPagination />`,
+    },
+  ],
+},
+
+//  breadcrumb category
+{
+  category: "Breadcrumbs",
+  items: [
+    {
+      id: "ai-pulse-breadcrumb",
+      name: "AI Pulse Breadcrumb",
+      description: "Breadcrumb with AI pulse hover animations.",
+      component: AIPulseBreadcrumb,
+      tags: ["Breadcrumb", "AI", "Pulse"],
+      code: `<AIPulseBreadcrumb />`,
+    },
+    {
+      id: "box-breadcrumb",
+      name: "Box Breadcrumb",
+      description: "Breadcrumb items styled inside boxes.",
+      component: BoxBreadcrumb,
+      tags: ["Breadcrumb", "Box", "Navigation"],
+      code: `<BoxBreadcrumb />`,
+    },
+    {
+      id: "chevron-breadcrumb",
+      name: "Chevron Breadcrumb",
+      description: "Classic chevron-styled breadcrumb.",
+      component: ChevronBreadcrumb,
+      tags: ["Breadcrumb", "Chevron", "Classic"],
+      code: `<ChevronBreadcrumb />`,
+    },
+    {
+      id: "dot-breadcrumb",
+      name: "Dot Breadcrumb",
+      description: "Breadcrumb items separated with dots.",
+      component: DotBreadcrumb,
+      tags: ["Breadcrumb", "Dots", "Minimal"],
+      code: `<DotBreadcrumb />`,
+    },
+    {
+      id: "gradient-breadcrumb",
+      name: "Gradient Breadcrumb",
+      description: "Breadcrumb with gradient text effects.",
+      component: GradientBreadcrumb,
+      tags: ["Breadcrumb", "Gradient", "Colorful"],
+      code: `<GradientBreadcrumb />`,
+    },
+    {
+      id: "icon-breadcrumb",
+      name: "Icon Breadcrumb",
+      description: "Breadcrumb using icons instead of text.",
+      component: IconBreadcrumb,
+      tags: ["Breadcrumb", "Icons", "Navigation"],
+      code: `<IconBreadcrumb />`,
+    },
+    {
+      id: "neon-breadcrumb",
+      name: "Neon Breadcrumb",
+      description: "Glowing neon breadcrumb style.",
+      component: NeonBreadcrumb,
+      tags: ["Breadcrumb", "Neon", "Glow"],
+      code: `<NeonBreadcrumb />`,
+    },
+    {
+      id: "simple-breadcrumb",
+      name: "Simple Breadcrumb",
+      description: "Minimal and clean breadcrumb navigation.",
+      component: SimpleBreadcrumb,
+      tags: ["Breadcrumb", "Simple", "Minimal"],
+      code: `<SimpleBreadcrumb />`,
+    },
+    {
+      id: "slash-breadcrumb",
+      name: "Slash Breadcrumb",
+      description: "Breadcrumb separated with slashes (/).",
+      component: SlashBreadcrumb,
+      tags: ["Breadcrumb", "Slash", "Navigation"],
+      code: `<SlashBreadcrumb />`,
+    },
+    {
+      id: "underline-breadcrumb",
+      name: "Underline Breadcrumb",
+      description: "Breadcrumb links with underline style.",
+      component: UnderlineBreadcrumb,
+      tags: ["Breadcrumb", "Underline", "Links"],
+      code: `<UnderlineBreadcrumb />`,
+    },
+  ],
+},
+
+// Tables showcase category
+{
+  category: "Tables",
+  items: [
+    {
+      id: "ai-dashboard-table",
+      name: "AI Dashboard Table",
+      description: "Analytics-style AI-powered dashboard table.",
+      component: AIDashboardTable,
+      tags: ["Table", "AI", "Dashboard"],
+      code: `<AIDashboardTable />`,
+    },
+    {
+      id: "cyber-grid-table",
+      name: "Cyber Grid Table",
+      description: "Glowing cyberpunk-inspired grid table.",
+      component: CyberGridTable,
+      tags: ["Table", "Cyber", "Grid"],
+      code: `<CyberGridTable />`,
+    },
+    {
+      id: "glassmorphism-table",
+      name: "Glassmorphism Table",
+      description: "Glassmorphism-styled transparent table.",
+      component: GlassmorphismTable,
+      tags: ["Table", "Glassmorphism", "UI"],
+      code: `<GlassmorphismTable />`,
+    },
+    {
+      id: "hacker-terminal-table",
+      name: "Hacker Terminal Table",
+      description: "Retro green-on-black hacker terminal style table.",
+      component: HackerTerminalTable,
+      tags: ["Table", "Hacker", "Retro"],
+      code: `<HackerTerminalTable />`,
+    },
+    {
+      id: "holographic-gradient-table",
+      name: "Holographic Gradient Table",
+      description: "Holographic gradient color animated table.",
+      component: HolographicGradientTable,
+      tags: ["Table", "Holographic", "Gradient"],
+      code: `<HolographicGradientTable />`,
+    },
+    {
+      id: "neon-striped-table",
+      name: "Neon Striped Table",
+      description: "Striped neon-highlighted interactive table.",
+      component: NeonStripedTable,
+      tags: ["Table", "Neon", "Striped"],
+      code: `<NeonStripedTable />`,
+    },
+    {
+      id: "neural-pulse-table",
+      name: "Neural Pulse Table",
+      description: "AI neural-inspired pulsing animation table.",
+      component: NeuralPulseTable,
+      tags: ["Table", "Neural", "Pulse"],
+      code: `<NeuralPulseTable />`,
+    },
+    {
+      id: "normal-table",
+      name: "Normal Table",
+      description: "Standard clean styled table.",
+      component: NormalTable,
+      tags: ["Table", "Default", "Clean"],
+      code: `<NormalTable />`,
+    },
+    {
+      id: "orbit-interactive-table",
+      name: "Orbit Interactive Table",
+      description: "Interactive orbiting cell animations.",
+      component: OrbitInteractiveTable,
+      tags: ["Table", "Orbit", "Interactive"],
+      code: `<OrbitInteractiveTable />`,
+    },
+    {
+      id: "quantum-expandable-table",
+      name: "Quantum Expandable Table",
+      description: "Expandable rows with quantum animation.",
+      component: QuantumExpandableTable,
+      tags: ["Table", "Expandable", "Quantum"],
+      code: `<QuantumExpandableTable />`,
+    },
+    {
+      id: "softui-card-table",
+      name: "Soft UI Card Table",
+      description: "Soft UI styled card-based table.",
+      component: SoftUICardTable,
+      tags: ["Table", "Soft UI", "Card"],
+      code: `<SoftUICardTable />`,
+    },
+  ],
+},
+
+
+// Tables showcase category
 
 
 

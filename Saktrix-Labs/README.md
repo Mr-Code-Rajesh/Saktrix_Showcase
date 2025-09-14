@@ -29,7 +29,7 @@ Alerts / Notifications (Toast, Snackbar, Inline Alert)
 
 Avatars & Badges (Avatar with Status, Icon Badge, Number Badge)
 
-Loaders / Spinners (Pulse Loader, Dots Loader, Skeleton Loader)
+Loaders / Spinners (Pulse Loader, Dots Loader, Skeleton Loader)r
 
 Pagination (Simple Pagination, Infinite Scroll)
 
@@ -37,9 +37,9 @@ Breadcrumbs (Navigation Indicator)
 
 Tables / Data Grid (Sortable Table, Striped Table, Interactive Table)
 
-Charts (Bar, Line, Pie, Area using Recharts/Chart.js)
+Charts (Bar, Line, Pie, Area using Recharts/Chart.js)r
 
-Carousels / Sliders (Image Slider, Testimonial Slider)
+Carousels / Sliders (Image Slider, Testimonial Slider)r
 
 Timeline (Vertical Timeline, Horizontal Timeline)
 

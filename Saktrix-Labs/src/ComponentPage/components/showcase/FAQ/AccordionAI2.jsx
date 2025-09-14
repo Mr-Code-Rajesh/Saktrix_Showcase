@@ -24,6 +24,7 @@ const AccordionAI2 = ({ title, content }) => {
     };
 
    return (
+    
     <>
       {faqData.map((item,index)=>{
     const isOpen = OpenIndex === index;

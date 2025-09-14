@@ -3,8 +3,9 @@ import AIScanModal from '../ComponentPage/components/showcase/modals/AIScanModal
 
 export const About = () => {
   return (
-    <div>About
+    <div className=' p-10'>About
       <AIScanModal />
+      
     </div>
   )
 }
