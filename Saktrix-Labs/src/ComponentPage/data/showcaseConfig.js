@@ -1,91 +1,38 @@
+// Showcase configuration for UI components with code snippets
+// Each item includes id, name, description, component, tags, and code snippet
+
+// Button Showcase
 import {
-  AnimatedGradientButton,
-  BouncyIconButton,
-  SuccessCheckButton,
-  PulseAddButton,
-  HeartbeatButton,
-  StarButton,
-  SendButton,
-  SearchButton,
-  DownloadButton,
-  UploadButton,
-  DangerDeleteButton,
-  EditButton,
-  ShareButton,
-  BellNotificationButton,
-  UserProfileButton,
-  SettingsButton,
-  LockButton,
-  CameraButton,
-  GiftButton,
-  CloudButton,
-  GlobeButton
+  AnimatedGradientButton,BouncyIconButton,SuccessCheckButton,PulseAddButton,HeartbeatButton,StarButton, SendButton, SearchButton,
+  DownloadButton,UploadButton,DangerDeleteButton,EditButton,ShareButton,BellNotificationButton,UserProfileButton,
+  SettingsButton,LockButton,CameraButton,GiftButton,CloudButton,GlobeButton
 } from "../components/showcase/showcase-items/AnimatedButtonsShowcase";
 
+	// import {footer} from '../components/showcase/footer/AIMinimalFooter'
+// Futuristic AI-Inspired Buttons
 import {
-  NeonPulseButton,
-  HologramButton,
-  OrbitingGlowButton,
-  LiquidMorphButton,
-  CyberRippleButton,
-  PrismShiftButton,
-  MatrixCodeButton,
-  GalacticBeamButton,
-  QuantumFlipButton,
-  AuroraFlowButton,
-  StarlightButton,
-  MagnetHoverButton,
-  DNAHelixButton,
-  AIScanButton,
-  SolarFlareButton,
-  PlasmaBurstButton,
-  NeuralPulseButton,
-  InfinityLoopButton,
-  TimeWarpButton,
-  CrystalShineButton,
-  ZeroGravityButton,
-  CyberCircuitButton,
-  EnergyOrbButton,
-  PixelGlitchButton
+  NeonPulseButton,HologramButton,OrbitingGlowButton,LiquidMorphButton,CyberRippleButton,PrismShiftButton,
+  MatrixCodeButton,GalacticBeamButton,QuantumFlipButton,AuroraFlowButton,StarlightButton,MagnetHoverButton,DNAHelixButton,AIScanButton,
+  SolarFlareButton,PlasmaBurstButton,NeuralPulseButton,InfinityLoopButton,TimeWarpButton,CrystalShineButton,
+  ZeroGravityButton,CyberCircuitButton,EnergyOrbButton,PixelGlitchButton
 } from "../components/showcase/showcase-items/FuturisticButtonsShowcase";
 
+// Other Showcases Button
 import GradientButtonShowcase from "../components/showcase/showcase-items/GradientButtonShowcase";
 import OutlineButtonShowcase from "../components/showcase/showcase-items/OutlineButtonShowcase";
 import IconButtonShowcase from "../components/showcase/showcase-items/IconButtonShowcase";
 import LoadingButtonShowcase from "../components/showcase/showcase-items/LoadingButtonShowcase";
 import AnimatedCardShowcase from "../components/showcase/showcase-items/AnimatedCardShowcase";
+
+// AI-Inspired Cards
 import {
-  NeuralGlowCard,
-  QuantumFlipCard,
-  DataStreamCard,
-  HologramCard,
-  SynapsePulseCard,
-  CyberPrismCard,
-  MatrixRainCard,
-  AIAvatarCard,
-  PredictiveInsightCard,
-  NeonGridCard,
-  AdaptiveShadowCard,
-  FloatingOrbitCard,
-  FractalGlowCard,
-  FutureVisionCard,
-  SmartExpandCard,
-  BioPulseCard,
-  CyberneticFrameCard,
-  ParallaxDepthCard,
-  AuroraFlowCard,
-  GlitchEffectCard,
-  AIChatCard,
-  RoboAssistantCard,
-  SentimentAnalysisCard,
-  AITimelineCard,
-  VoiceRecognitionCard,
-  AIPredictionCard,
-  DataEncryptionCard,
-  AICollaborationCard,
-  AIArtCard,
-  AILoaderCard
+  NeuralGlowCard,QuantumFlipCard,DataStreamCard,HologramCard,SynapsePulseCard,CyberPrismCard,MatrixRainCard,
+  AIAvatarCard,PredictiveInsightCard,NeonGridCard,AdaptiveShadowCard,FloatingOrbitCard,FractalGlowCard,FutureVisionCard,SmartExpandCard,BioPulseCard,
+  CyberneticFrameCard,ParallaxDepthCard,AuroraFlowCard,GlitchEffectCard,AIChatCard,RoboAssistantCard,SentimentAnalysisCard,AITimelineCard,
+  VoiceRecognitionCard,AIPredictionCard,DataEncryptionCard,AICollaborationCard,AIArtCard,AILoaderCard
 } from "../components/showcase/showcase-items/AICardsShowcase";
+
+// Other Showcases Cards
 import HologramModal from "../components/showcase/modals/HologramModal";
 import NeuralSyncModal from "../components/showcase/modals/NeuralSyncModal";
 import QuantumFadeModal from "../components/showcase/modals/QuantumFadeModal";
@@ -101,87 +48,151 @@ import TeleportModal from "../components/showcase/modals/TeleportModal";
 import InputFieldShowcase from "../components/showcase/showcase-items/InputFieldShowcase";
 import ToggleSwitchShowcase from "../components/showcase/showcase-items/ToggleSwitchShowcase";
 
+// AI-Inspired Forms
 import MatrixInput from "../components/showcase/forms/MatrixInput";
 import VoiceCommandInput from "../components/showcase/forms/VoiceCommandInput";
 import CyberCheckbox from "../components/showcase/forms/CyberCheckbox";
 import QuantumRadio from "../components/showcase/forms/QuantumRadio";
-
 import FuturisticSelect from "../components/showcase/forms/FuturisticSelect";
 import BiometricToggle from "../components/showcase/forms/BiometricToggle";
 import HologramTextarea from "../components/showcase/forms/HologramTextarea";
 import NeuralSlider from "../components/showcase/forms/NeuralSlider";
-
 import SynapseSwitch from "../components/showcase/forms/SynapseSwitch";
 import AuroraDropdown from "../components/showcase/forms/AuroraDropdown";
 import GlitchPasswordInput from "../components/showcase/forms/GlitchPasswordInput";
-  import HologramNavbar from "../components/showcase/navbars/HologramNavbar";
-  import NeonPulseNavbar from "../components/showcase/navbars/NeonPulseNavbar";
-  import GlitchNavbar from "../components/showcase/navbars/GlitchNavbar";
-  import AuroraNavbar from "../components/showcase/navbars/AuroraNavbar";
-  import CyberCircuitNavbar from "../components/showcase/navbars/CyberCircuitNavbar";
 import RoboStepper from "../components/showcase/forms/RoboStepper";
-
 import AdaptiveRange from "../components/showcase/forms/AdaptiveRange";
 import PulseRadioGroup from "../components/showcase/forms/PulseRadioGroup";
 import SmartFileUpload from "../components/showcase/forms/SmartFileUpload";
 import DataStreamTextarea from "../components/showcase/forms/DataStreamTextarea";
-
 import QuantumDropdown from "../components/showcase/forms/QuantumDropdown";
 import PrismCheckbox from "../components/showcase/forms/PrismCheckbox";
 import AIAvatarInput from "../components/showcase/forms/AIAvatarInput";
 import FractalTextarea from "../components/showcase/forms/FractalTextarea";
-
 import ParallaxInput from "../components/showcase/forms/ParallaxInput";
 import BioPulseSwitch from "../components/showcase/forms/BioPulseSwitch";
 import SentimentSelect from "../components/showcase/forms/SentimentSelect";
 import SmartExpandTextarea from "../components/showcase/forms/SmartExpandTextarea";
-
 import FloatingOrbitSelect from "../components/showcase/forms/FloatingOrbitSelect";
 import CyberneticInput from "../components/showcase/forms/CyberneticInput";
 import AuroraSwitch from "../components/showcase/forms/AuroraSwitch";
 import PredictiveTextarea from "../components/showcase/forms/PredictiveTextarea";
 
 
-import HologramSidebar from "../components/showcase/sidebars/HologramSidebar";
-import NeonPulseDrawer from "../components/showcase/sidebars/NeonPulseDrawer";
-import MatrixSidebar from "../components/showcase/sidebars/MatrixSidebar";
+
+// =====================
+// Footer Components
+// =====================
+import AIMinimalFooter from "../components/showcase/footer/AIMinimalFooter";
+import AuroraGradientFooter from "../components/showcase/footer/AuroraGradientFooter";
+import CosmicParticleFooter from "../components/showcase/footer/CosmicParticleFooter";
+import CyberGridFooter from "../components/showcase/footer/CyberGridFooter";
+import DNAHelixFooter from "../components/showcase/footer/DNAHelixFooter";
+import GlassmorphismFooter from "../components/showcase/footer/GlassmorphismFooter";
+import HolographicSocialFooter from "../components/showcase/footer/HolographicSocialFooter";
+import NeonGlowFooter from "../components/showcase/footer/NeonGlowFooter";
+import QuantumMultiColumnFooter from "../components/showcase/footer/QuantumMultiColumnFooter";
+import StarlightMatrixFooter from "../components/showcase/footer/StarlightMatrixFooter";
+
+// =====================
+// Hero Components
+// =====================
+import AIChatHero from "../components/showcase/hero/AIChatHero";
+import AuroraGradientHero from "../components/showcase/hero/AuroraGradientHero";
+import CircuitWaveHero from "../components/showcase/hero/CircuitWaveHero";
+import CosmicParticleHero from "../components/showcase/hero/CosmicParticleHero";
+import CyberGridHero from "../components/showcase/hero/CyberGridHero";
+import DNAHelixHero from "../components/showcase/hero/DNAHelixHero";
+import HolographicVideoHero from "../components/showcase/hero/HolographicVideoHero";
+import NeuralGlowHero from "../components/showcase/hero/NeuralGlowHero";
+import QuantumSplitHero from "../components/showcase/hero/QuantumSplitHero";
+import StarlightMatrixHero from "../components/showcase/hero/StarlightMatrixHero";
+
+
+// =====================
+// Navbar Components
+// =====================
+import AuroraNavbar from "../components/showcase/navbars/AuroraNavbar";
+import CyberCircuitNavbar from "../components/showcase/navbars/CyberCircuitNavbar";
+import GlitchNavbar from "../components/showcase/navbars/GlitchNavbar";
+import HologramNavbar from "../components/showcase/navbars/HologramNavbar";
+import NeonPulseNavbar from "../components/showcase/navbars/NeonPulseNavbar";
+
+// =====================
+// Sidebar / Drawer Components
+// =====================
 import AuroraDrawer from "../components/showcase/sidebars/AuroraDrawer";
-import CyberCircuitSidebar from "../components/showcase/sidebars/CyberCircuitSidebar";
-import GlitchDrawer from "../components/showcase/sidebars/GlitchDrawer";
-import OrbitingIconSidebar from "../components/showcase/sidebars/OrbitingIconSidebar";
 import CrystalGlassDrawer from "../components/showcase/sidebars/CrystalGlassDrawer";
+import CyberCircuitSidebar from "../components/showcase/sidebars/CyberCircuitSidebar";
 import DNAHelixSidebar from "../components/showcase/sidebars/DNAHelixSidebar";
+import GlitchDrawer from "../components/showcase/sidebars/GlitchDrawer";
+import HologramSidebar from "../components/showcase/sidebars/HologramSidebar";
+import MatrixSidebar from "../components/showcase/sidebars/MatrixSidebar";
+import NeonPulseDrawer from "../components/showcase/sidebars/NeonPulseDrawer";
+import OrbitingIconSidebar from "../components/showcase/sidebars/OrbitingIconSidebar";
 import StarlightDrawer from "../components/showcase/sidebars/StarlightDrawer";
-import NeuralGlowHero from '../components/showcase/hero/NeuralGlowHero';
-import CyberGridHero from '../components/showcase/hero/CyberGridHero';
-import AuroraGradientHero from '../components/showcase/hero/AuroraGradientHero';
-import QuantumSplitHero from '../components/showcase/hero/QuantumSplitHero';
-import HolographicVideoHero from '../components/showcase/hero/HolographicVideoHero';
-import CosmicParticleHero from '../components/showcase/hero/CosmicParticleHero';
-import DNAHelixHero from '../components/showcase/hero/DNAHelixHero';
-import AIChatHero from '../components/showcase/hero/AIChatHero';
-import CircuitWaveHero from '../components/showcase/hero/CircuitWaveHero';
-import StarlightMatrixHero from '../components/showcase/hero/StarlightMatrixHero';
-import NeonGlowFooter from '../components/showcase/footer/NeonGlowFooter';
-import GlassmorphismFooter from '../components/showcase/footer/GlassmorphismFooter';
-import AuroraGradientFooter from '../components/showcase/footer/AuroraGradientFooter';
-import CyberGridFooter from '../components/showcase/footer/CyberGridFooter';
-import HolographicSocialFooter from '../components/showcase/footer/HolographicSocialFooter';
-import QuantumMultiColumnFooter from '../components/showcase/footer/QuantumMultiColumnFooter';
-import AIMinimalFooter from '../components/showcase/footer/AIMinimalFooter';
-import CosmicParticleFooter from '../components/showcase/footer/CosmicParticleFooter';
-import DNAHelixFooter from '../components/showcase/footer/DNAHelixFooter';
-import StarlightMatrixFooter from '../components/showcase/footer/StarlightMatrixFooter';
-import NeonTooltipButton from '../components/showcase/tooltip/NeonTooltipButton';
-import GlassTooltipButton from '../components/showcase/tooltip/GlassTooltipButton';
-import AuroraTooltipButton from '../components/showcase/tooltip/AuroraTooltipButton';
-import GlitchTooltipButton from '../components/showcase/tooltip/GlitchTooltipButton';
-import MinimalTooltipButton from '../components/showcase/tooltip/MinimalTooltipButton';
-import OrbitTooltipButton from '../components/showcase/tooltip/OrbitTooltipButton';
-import MatrixTooltipButton from '../components/showcase/tooltip/MatrixTooltipButton';
-import CircuitTooltipButton from '../components/showcase/tooltip/CircuitTooltipButton';
-import DNATooltipButton from '../components/showcase/tooltip/DNATooltipButton';
-import StarlightTooltipButton from '../components/showcase/tooltip/StarlightTooltipButton';
+
+
+// =====================
+// Dropdowns / Menus Components
+// =====================
+import AuroraMenu from "../components/showcase/dropdown/AuroraMenu";
+import CyberGridDropdown from "../components/showcase/dropdown/CyberGridDropdown";
+import DNADropdown from "../components/showcase/dropdown/DNADropdown";
+import GlassDropdown from "../components/showcase/dropdown/GlassDropdown";
+import GlitchMenu from "../components/showcase/dropdown/GlitchMenu";
+import HelixDropdown from "../components/showcase/dropdown/HelixDropdown";
+import MegaMenuAI from "../components/showcase/dropdown/MegaMenuAI";
+import NeonGlowDropdown from "../components/showcase/dropdown/NeonGlowDropdown";
+import OrbitIconDropdown from "../components/showcase/dropdown/OrbitIconDropdown";
+import ProfileHologramDropdown from "../components/showcase/dropdown/ProfileHologramDropdown";
+import StarlightDropdown from "../components/showcase/dropdown/StarlightDropdown";
+
+// =====================
+// Tabs Components
+// =====================
+import AuroraTabs from "../components/showcase/tabs/AuroraTabs";
+import CircuitTabs from "../components/showcase/tabs/CircuitTabs";
+import DNATabs from "../components/showcase/tabs/DNATabs";
+import GlassTabs from "../components/showcase/tabs/GlassTabs";
+import GlitchTabs from "../components/showcase/tabs/GlitchTabs";
+import MinimalFadeTabs from "../components/showcase/tabs/MinimalFadeTabs";
+import {NeonUnderlineTabs} from "../components/showcase/tabs/NeonUnderlineTabs";
+import OrbitTabs from "../components/showcase/tabs/OrbitTabs";
+import PillsGlowTabs from "../components/showcase/tabs/PillsGlowTabs";
+import StarlightTabs from "../components/showcase/tabs/StarlightTabs";
+
+// =====================
+// Tooltip Components
+// =====================
+import AuroraTooltipButton from "../components/showcase/tooltip/AuroraTooltipButton";
+import CircuitTooltipButton from "../components/showcase/tooltip/CircuitTooltipButton";
+import DNATooltipButton from "../components/showcase/tooltip/DNATooltipButton";
+import GlassTooltipButton from "../components/showcase/tooltip/GlassTooltipButton";
+import GlitchTooltipButton from "../components/showcase/tooltip/GlitchTooltipButton";
+import MatrixTooltipButton from "../components/showcase/tooltip/MatrixTooltipButton";
+import MinimalTooltipButton from "../components/showcase/tooltip/MinimalTooltipButton";
+import NeonTooltipButton from "../components/showcase/tooltip/NeonTooltipButton";
+import OrbitTooltipButton from "../components/showcase/tooltip/OrbitTooltipButton";
+import StarlightTooltipButton from "../components/showcase/tooltip/StarlightTooltipButton";
+
+
+// =====================
+// FAQ Accordions
+// =====================
+import AccordionAI1 from "../components/showcase/FAQ/AccordionAI1";
+import AccordionAI2 from "../components/showcase/FAQ/AccordionAI2";
+import AccordionAI3 from "../components/showcase/FAQ/AccordionAI3";
+import AccordionAI4 from "../components/showcase/FAQ/AccordionAI4";
+import AccordionAI5 from "../components/showcase/FAQ/AccordionAI5";
+import AccordionAI6 from "../components/showcase/FAQ/AccordionAI6";
+import AccordionAI7 from "../components/showcase/FAQ/AccordionAI7";
+import AccordionAI8 from "../components/showcase/FAQ/AccordionAI8";
+import AccordionAI9 from "../components/showcase/FAQ/AccordionAI9";
+import AccordionAI10 from "../components/showcase/FAQ/AccordionAI10";
+
+
+
 
 
 export const showcaseConfig = [
@@ -209,86 +220,86 @@ export const showcaseConfig = [
         code: `
 <button className="px-4 py-2 rounded-lg border border-indigo-600 text-indigo-600 hover:bg-indigo-50 transition">
   Outline Button
-              {
-                id: "neon-tooltip-button",
-                name: "Neon Tooltip Button",
-                description: "Neon glowing tooltip with pulse animation.",
-                component: NeonTooltipButton,
-                tags: ["Tooltip", "Neon", "Glow"],
-          code: "<NeonTooltipButton />"
-              },
-              {
-                id: "glass-tooltip-button",
-                name: "Glass Tooltip Button",
-                description: "Frosted glass tooltip with blur.",
-                component: GlassTooltipButton,
-                tags: ["Tooltip", "Glassmorphism", "Blur"],
-          code: "<GlassTooltipButton />"
-              },
-              {
-                id: "aurora-tooltip-button",
-                name: "Aurora Tooltip Button",
-                description: "Aurora gradient animated tooltip.",
-                component: AuroraTooltipButton,
-                tags: ["Tooltip", "Aurora", "Gradient"],
-          code: "<AuroraTooltipButton />"
-              },
-              {
-                id: "glitch-tooltip-button",
-                name: "Glitch Tooltip Button",
-                description: "Glitch/flicker effect tooltip.",
-                component: GlitchTooltipButton,
-                tags: ["Tooltip", "Glitch", "Flicker"],
-          code: "<GlitchTooltipButton />"
-              },
-              {
-                id: "minimal-tooltip-button",
-                name: "Minimal Tooltip Button",
-                description: "Clean fade/scale tooltip.",
-                component: MinimalTooltipButton,
-                tags: ["Tooltip", "Minimal", "Fade"],
-          code: "<MinimalTooltipButton />"
-              },
-              {
-                id: "orbit-tooltip-button",
-                name: "Orbit Tooltip Button",
-                description: "Orbiting glowing orbs tooltip.",
-                component: OrbitTooltipButton,
-                tags: ["Tooltip", "Orbit", "Glow"],
-          code: "<OrbitTooltipButton />"
-              },
-              {
-                id: "matrix-tooltip-button",
-                name: "Matrix Tooltip Button",
-                description: "Matrix code rain background tooltip.",
-                component: MatrixTooltipButton,
-                tags: ["Tooltip", "Matrix", "Code"],
-          code: "<MatrixTooltipButton />"
-              },
-              {
-                id: "circuit-tooltip-button",
-                name: "Circuit Tooltip Button",
-                description: "Glowing circuit pattern tooltip.",
-                component: CircuitTooltipButton,
-                tags: ["Tooltip", "Circuit", "Glow"],
-          code: "<CircuitTooltipButton />"
-              },
-              {
-                id: "dna-tooltip-button",
-                name: "DNA Tooltip Button",
-                description: "Tooltip border animates like DNA helix.",
-                component: DNATooltipButton,
-                tags: ["Tooltip", "DNA", "Helix"],
-          code: "<DNATooltipButton />"
-              },
-              {
-                id: "starlight-tooltip-button",
-                name: "Starlight Tooltip Button",
-                description: "Tooltip with twinkling stars.",
-                component: StarlightTooltipButton,
-                tags: ["Tooltip", "Starlight", "Stars"],
-          code: "<StarlightTooltipButton />"
-              },
+</button>
+        `,
+      },
+      {
+        id: "icon-button",
+        name: "Icon Button",
+        description: "Button with icon for actions/navigation.",
+        component: IconButtonShowcase,
+        tags: ["Button", "Icon"],
+        code: `
+<button className="flex items-center gap-2 px-4 py-2 rounded-lg bg-indigo-600 text-white hover:bg-indigo-700 transition">
+  Next <FiArrowRight />
+</button>
+        `,
+      },
+      {
+        id: "loading-button",
+        name: "Loading Button",
+        description: "Button with loading spinner on click.",
+        component: LoadingButtonShowcase,
+        tags: ["Button", "Loading"],
+        code: `
+const [loading, setLoading] = useState(false);
+
+<button
+  onClick={() => {
+    setLoading(true);
+    setTimeout(() => setLoading(false), 2000);
+  }}
+  disabled={loading}
+  className="px-4 py-2 rounded-lg bg-indigo-600 text-white flex items-center justify-center gap-2 disabled:opacity-50"
+>
+  {loading ? (
+    <span className="animate-spin h-4 w-4 border-2 border-white border-t-transparent rounded-full" />
+  ) : (
+    "Click Me"
+  )}
+</button>
+        `,
+      },
+        // Animated Button Showcase Items
+        {
+          id: "animated-gradient-button",
+          name: "Animated Gradient Button",
+          description: "Gradient button with scale and color animation.",
+          component: AnimatedGradientButton,
+          tags: ["Button", "Gradient", "Animated"],
+          code: `<AnimatedGradientButton />`,
+        },
+        {
+          id: "bouncy-icon-button",
+          name: "Bouncy Icon Button",
+          description: "Icon button with bounce animation.",
+          component: BouncyIconButton,
+          tags: ["Button", "Icon", "Animated"],
+          code: `<BouncyIconButton />`,
+        },
+        {
+          id: "success-check-button",
+          name: "Success Check Button",
+          description: "Button with animated check icon.",
+          component: SuccessCheckButton,
+          tags: ["Button", "Success", "Animated"],
+          code: `<SuccessCheckButton />`,
+        },
+        {
+          id: "pulse-add-button",
+          name: "Pulse Add Button",
+          description: "Button with pulsing box-shadow animation.",
+          component: PulseAddButton,
+          tags: ["Button", "Add", "Animated"],
+          code: `<PulseAddButton />`,
+        },
+        {
+          id: "heartbeat-button",
+          name: "Heartbeat Button",
+          description: "Button with heartbeat scale animation.",
+          component: HeartbeatButton,
+          tags: ["Button", "Heart", "Animated"],
+          code: `<HeartbeatButton />`,
         },
         {
           id: "star-button",
@@ -296,7 +307,7 @@ export const showcaseConfig = [
           description: "Button with star icon and rotation animation.",
           component: StarButton,
           tags: ["Button", "Star", "Animated"],
-          code: "<StarButton />",
+          code: `<StarButton />`,
         },
         {
           id: "send-button",
@@ -304,7 +315,7 @@ export const showcaseConfig = [
           description: "Button with send icon and slide animation.",
           component: SendButton,
           tags: ["Button", "Send", "Animated"],
-          code: "<SendButton />",
+          code: `<SendButton />`,
         },
         {
           id: "search-button",
@@ -312,7 +323,7 @@ export const showcaseConfig = [
           description: "Button with search icon and scale animation.",
           component: SearchButton,
           tags: ["Button", "Search", "Animated"],
-          code: "<SearchButton />",
+          code: `<SearchButton />`,
         },
         {
           id: "download-button",
@@ -320,7 +331,7 @@ export const showcaseConfig = [
           description: "Button with download icon and downward animation.",
           component: DownloadButton,
           tags: ["Button", "Download", "Animated"],
-          code: "<DownloadButton />",
+          code: `<DownloadButton />`,
         },
         {
           id: "upload-button",
@@ -328,7 +339,7 @@ export const showcaseConfig = [
           description: "Button with upload icon and upward animation.",
           component: UploadButton,
           tags: ["Button", "Upload", "Animated"],
-          code: "<UploadButton />",
+          code: `<UploadButton />`,
         },
         {
           id: "danger-delete-button",
@@ -336,7 +347,7 @@ export const showcaseConfig = [
           description: "Button with delete icon and color animation.",
           component: DangerDeleteButton,
           tags: ["Button", "Delete", "Animated"],
-          code: "<DangerDeleteButton />",
+          code: `<DangerDeleteButton />`,
         },
         {
           id: "edit-button",
@@ -344,7 +355,7 @@ export const showcaseConfig = [
           description: "Button with edit icon and scale animation.",
           component: EditButton,
           tags: ["Button", "Edit", "Animated"],
-          code: "<EditButton />",
+          code: `<EditButton />`,
         },
         {
           id: "share-button",
@@ -352,7 +363,7 @@ export const showcaseConfig = [
           description: "Button with share icon and scale animation.",
           component: ShareButton,
           tags: ["Button", "Share", "Animated"],
-          code: "<ShareButton />",
+          code: `<ShareButton />`,
         },
         {
           id: "bell-notification-button",
@@ -360,7 +371,7 @@ export const showcaseConfig = [
           description: "Button with bell icon and rotation animation.",
           component: BellNotificationButton,
           tags: ["Button", "Bell", "Animated"],
-          code: "<BellNotificationButton />",
+          code: `<BellNotificationButton />`,
         },
         {
           id: "user-profile-button",
@@ -368,7 +379,7 @@ export const showcaseConfig = [
           description: "Button with user icon and scale animation.",
           component: UserProfileButton,
           tags: ["Button", "User", "Animated"],
-          code: "<UserProfileButton />",
+          code: `<UserProfileButton />`,
         },
         {
           id: "settings-button",
@@ -376,7 +387,7 @@ export const showcaseConfig = [
           description: "Button with settings icon and rotation animation.",
           component: SettingsButton,
           tags: ["Button", "Settings", "Animated"],
-          code: "<SettingsButton />",
+          code: `<SettingsButton />`,
         },
         {
           id: "lock-button",
@@ -384,7 +395,7 @@ export const showcaseConfig = [
           description: "Button with lock icon and scale animation.",
           component: LockButton,
           tags: ["Button", "Lock", "Animated"],
-          code: "<LockButton />",
+          code: `<LockButton />`,
         },
         {
           id: "camera-button",
@@ -392,7 +403,7 @@ export const showcaseConfig = [
           description: "Button with camera icon and scale animation.",
           component: CameraButton,
           tags: ["Button", "Camera", "Animated"],
-          code: "<CameraButton />",
+          code: `<CameraButton />`,
         },
         {
           id: "gift-button",
@@ -400,7 +411,7 @@ export const showcaseConfig = [
           description: "Button with gift icon and scale animation.",
           component: GiftButton,
           tags: ["Button", "Gift", "Animated"],
-          code: "<GiftButton />",
+          code: `<GiftButton />`,
         },
         {
           id: "cloud-button",
@@ -408,7 +419,7 @@ export const showcaseConfig = [
           description: "Button with cloud icon and scale animation.",
           component: CloudButton,
           tags: ["Button", "Cloud", "Animated"],
-          code: "<CloudButton />",
+          code: `<CloudButton />`,
         },
         {
           id: "globe-button",
@@ -416,7 +427,7 @@ export const showcaseConfig = [
           description: "Button with globe icon and scale animation.",
           component: GlobeButton,
           tags: ["Button", "Globe", "Animated"],
-          code: "<GlobeButton />",
+          code: `<GlobeButton />`,
         },
           // Futuristic AI-Inspired Buttons
           {
@@ -425,7 +436,7 @@ export const showcaseConfig = [
             description: "Glowing border with pulsing effect.",
             component: NeonPulseButton,
             tags: ["Button", "Neon", "Pulse", "Futuristic"],
-            code: "<NeonPulseButton />",
+            code: `<NeonPulseButton />`,
           },
           {
             id: "hologram-button",
@@ -433,7 +444,7 @@ export const showcaseConfig = [
             description: "Glass effect with reflection hover.",
             component: HologramButton,
             tags: ["Button", "Hologram", "Futuristic"],
-            code: "<HologramButton />",
+            code: `<HologramButton />`,
           },
           {
             id: "orbiting-glow-button",
@@ -441,7 +452,7 @@ export const showcaseConfig = [
             description: "Small orbs circling around.",
             component: OrbitingGlowButton,
             tags: ["Button", "Glow", "Orbit", "Futuristic"],
-            code: "<OrbitingGlowButton />",
+            code: `<OrbitingGlowButton />`,
           },
           {
             id: "liquid-morph-button",
@@ -449,7 +460,7 @@ export const showcaseConfig = [
             description: "Blob-like morph animation.",
             component: LiquidMorphButton,
             tags: ["Button", "Liquid", "Morph", "Futuristic"],
-            code: "<LiquidMorphButton />",
+            code: `<LiquidMorphButton />`,
           },
           {
             id: "cyber-ripple-button",
@@ -457,7 +468,7 @@ export const showcaseConfig = [
             description: "Expanding digital ripple.",
             component: CyberRippleButton,
             tags: ["Button", "Cyber", "Ripple", "Futuristic"],
-            code: "<CyberRippleButton />",
+            code: `<CyberRippleButton />`,
           },
           {
             id: "prism-shift-button",
@@ -465,7 +476,7 @@ export const showcaseConfig = [
             description: "Gradient shifts like a prism.",
             component: PrismShiftButton,
             tags: ["Button", "Prism", "Gradient", "Futuristic"],
-            code: "<PrismShiftButton />",
+            code: `<PrismShiftButton />`,
           },
           {
             id: "matrix-code-button",
@@ -473,7 +484,7 @@ export const showcaseConfig = [
             description: "Falling code rain on hover.",
             component: MatrixCodeButton,
             tags: ["Button", "Matrix", "Code", "Futuristic"],
-            code: "<MatrixCodeButton />",
+            code: `<MatrixCodeButton />`,
           },
           {
             id: "galactic-beam-button",
@@ -481,7 +492,7 @@ export const showcaseConfig = [
             description: "Animated light beam sweep.",
             component: GalacticBeamButton,
             tags: ["Button", "Galactic", "Beam", "Futuristic"],
-            code: "<GalacticBeamButton />",
+            code: `<GalacticBeamButton />`,
           },
           {
             id: "quantum-flip-button",
@@ -489,7 +500,7 @@ export const showcaseConfig = [
             description: "3D flip transition on hover.",
             component: QuantumFlipButton,
             tags: ["Button", "Quantum", "Flip", "Futuristic"],
-            code: "<QuantumFlipButton />",
+            code: `<QuantumFlipButton />`,
           },
           {
             id: "aurora-flow-button",
@@ -497,7 +508,7 @@ export const showcaseConfig = [
             description: "Aurora-borealis gradient waves.",
             component: AuroraFlowButton,
             tags: ["Button", "Aurora", "Flow", "Futuristic"],
-            code: "<AuroraFlowButton />",
+            code: `<AuroraFlowButton />`,
           },
           {
             id: "starlight-button",
@@ -505,7 +516,7 @@ export const showcaseConfig = [
             description: "Sparkles that animate randomly.",
             component: StarlightButton,
             tags: ["Button", "Starlight", "Futuristic"],
-            code: "<StarlightButton />",
+            code: `<StarlightButton />`,
           },
           {
             id: "magnet-hover-button",
@@ -513,7 +524,7 @@ export const showcaseConfig = [
             description: "Button pulls toward cursor.",
             component: MagnetHoverButton,
             tags: ["Button", "Magnet", "Hover", "Futuristic"],
-            code: "<MagnetHoverButton />",
+            code: `<MagnetHoverButton />`,
           },
           {
             id: "dna-helix-button",
@@ -521,7 +532,7 @@ export const showcaseConfig = [
             description: "Rotating helix lines on hover.",
             component: DNAHelixButton,
             tags: ["Button", "DNA", "Helix", "Futuristic"],
-            code: "<DNAHelixButton />",
+            code: `<DNAHelixButton />`,
           },
           {
             id: "ai-scan-button",
@@ -529,7 +540,7 @@ export const showcaseConfig = [
             description: "Scanning bar passes through.",
             component: AIScanButton,
             tags: ["Button", "AI", "Scan", "Futuristic"],
-            code: "<AIScanButton />",
+            code: `<AIScanButton />`,
           },
           {
             id: "solar-flare-button",
@@ -537,7 +548,7 @@ export const showcaseConfig = [
             description: "Fiery glowing flare effect.",
             component: SolarFlareButton,
             tags: ["Button", "Solar", "Flare", "Futuristic"],
-            code: "<SolarFlareButton />",
+            code: `<SolarFlareButton />`,
           },
           {
             id: "plasma-burst-button",
@@ -545,7 +556,7 @@ export const showcaseConfig = [
             description: "Electric burst when clicked.",
             component: PlasmaBurstButton,
             tags: ["Button", "Plasma", "Burst", "Futuristic"],
-            code: "<PlasmaBurstButton />",
+            code: `<PlasmaBurstButton />`,
           },
           {
             id: "neural-pulse-button",
@@ -553,7 +564,7 @@ export const showcaseConfig = [
             description: "Wave animation like neurons firing.",
             component: NeuralPulseButton,
             tags: ["Button", "Neural", "Pulse", "Futuristic"],
-            code: "<NeuralPulseButton />",
+            code: `<NeuralPulseButton />`,
           },
           {
             id: "infinity-loop-button",
@@ -561,7 +572,7 @@ export const showcaseConfig = [
             description: "Infinite gradient loop border.",
             component: InfinityLoopButton,
             tags: ["Button", "Infinity", "Loop", "Futuristic"],
-            code: "<InfinityLoopButton />",
+            code: `<InfinityLoopButton />`,
           },
           {
             id: "time-warp-button",
@@ -569,7 +580,7 @@ export const showcaseConfig = [
             description: "Distortion/ripple hover effect.",
             component: TimeWarpButton,
             tags: ["Button", "Time", "Warp", "Futuristic"],
-            code: "<TimeWarpButton />",
+            code: `<TimeWarpButton />`,
           },
           {
             id: "crystal-shine-button",
@@ -577,7 +588,7 @@ export const showcaseConfig = [
             description: "Shining diagonal streak animation.",
             component: CrystalShineButton,
             tags: ["Button", "Crystal", "Shine", "Futuristic"],
-            code: "<CrystalShineButton />",
+            code: `<CrystalShineButton />`,
           },
           {
             id: "zero-gravity-button",
@@ -585,7 +596,7 @@ export const showcaseConfig = [
             description: "Floating levitation effect.",
             component: ZeroGravityButton,
             tags: ["Button", "Zero Gravity", "Futuristic"],
-            code: "<ZeroGravityButton />",
+            code: `<ZeroGravityButton />`,
           },
           {
             id: "cyber-circuit-button",
@@ -593,7 +604,7 @@ export const showcaseConfig = [
             description: "Animated circuit lines.",
             component: CyberCircuitButton,
             tags: ["Button", "Cyber", "Circuit", "Futuristic"],
-            code: "<CyberCircuitButton />",
+            code: `<CyberCircuitButton />`,
           },
           {
             id: "energy-orb-button",
@@ -601,7 +612,7 @@ export const showcaseConfig = [
             description: "Glowing orb inside button.",
             component: EnergyOrbButton,
             tags: ["Button", "Energy", "Orb", "Futuristic"],
-            code: "<EnergyOrbButton />",
+            code: `<EnergyOrbButton />`,
           },
           {
             id: "pixel-glitch-button",
@@ -609,10 +620,12 @@ export const showcaseConfig = [
             description: "Glitch/distorted hover effect.",
             component: PixelGlitchButton,
             tags: ["Button", "Pixel", "Glitch", "Futuristic"],
-            code: "<PixelGlitchButton />",
+            code: `<PixelGlitchButton />`,
           },
     ],
   },
+
+  // Card Showcase
   {
     category: "Cards",
     items: [
@@ -622,10 +635,12 @@ export const showcaseConfig = [
         description: "Card with hover animations.",
         component: AnimatedCardShowcase,
         tags: ["Card", "Animation"],
+        code: `
 <motion.div whileHover={{ scale: 1.05 }} className="w-64 h-40 bg-white dark:bg-gray-800 rounded-xl shadow-lg flex items-center justify-center text-lg font-semibold cursor-pointer">
   ✨ Hover Me!
 </motion.div>
-        `},
+        `,
+      },
         // AI-Inspired Cards
         {
           id: "neural-glow-card",
@@ -1236,359 +1251,678 @@ const [enabled, setEnabled] = useState(false);
                     },
     ],
   },
+
+  // Footer Showcase
   {
-    category: "Navbar",
-    items: [
-      {
-        id: "hologram-navbar",
-        name: "Hologram Navbar",
-        description: "Glassmorphism navbar with gradient glow border and animated links.",
-        component: HologramNavbar,
-        tags: ["Navbar", "Glassmorphism", "Gradient", "Glow", "AI"],
-        code: `<HologramNavbar />`,
-      },
-      {
-        id: "neon-pulse-navbar",
-        name: "Neon Pulse Navbar",
-        description: "Navbar with pulsing neon glow under active link.",
-        component: NeonPulseNavbar,
-        tags: ["Navbar", "Neon", "Pulse", "Glow", "AI"],
-        code: `<NeonPulseNavbar />`,
-      },
-      {
-        id: "glitch-navbar",
-        name: "Glitch Navbar",
-        description: "Navbar with glitch/flicker effect on links.",
-        component: GlitchNavbar,
-        tags: ["Navbar", "Glitch", "Animated", "AI"],
-        code: `<GlitchNavbar />`,
-      },
-      {
-        id: "aurora-navbar",
-        name: "Aurora Navbar",
-        description: "Navbar with flowing gradient aurora background.",
-        component: AuroraNavbar,
-        tags: ["Navbar", "Aurora", "Gradient", "AI"],
-        code: `<AuroraNavbar />`,
-      },
-      {
-        id: "cyber-circuit-navbar",
-        name: "Cyber Circuit Navbar",
-        description: "Navbar with circuit-like glowing lines and animated links.",
-        component: CyberCircuitNavbar,
-        tags: ["Navbar", "Cyber", "Circuit", "Glow", "AI"],
-        code: `<CyberCircuitNavbar />`,
-      },
-    ],
-  },
-  {
-    category: "Sidebar",
-    items: [
-      {
-        id: "hologram-sidebar",
-        name: "Hologram Sidebar",
-        description: "Glassmorphism blur, glowing border, collapsible sidebar.",
-        component: HologramSidebar,
-        tags: ["Sidebar", "Glassmorphism", "Glow", "AI"],
-        code: `<HologramSidebar />`,
-      },
-      {
-        id: "neon-pulse-drawer",
-        name: "Neon Pulse Drawer",
-        description: "Neon glow, pulsing active item, collapsible drawer.",
-        component: NeonPulseDrawer,
-        tags: ["Drawer", "Neon", "Pulse", "Glow", "AI"],
-        code: `<NeonPulseDrawer />`,
-      },
-      {
-        id: "matrix-sidebar",
-        name: "Matrix Sidebar",
-        description: "Falling code animation background, collapsible sidebar.",
-        component: MatrixSidebar,
-        tags: ["Sidebar", "Matrix", "Code", "AI"],
-        code: `<MatrixSidebar />`,
-      },
-      {
-        id: "aurora-drawer",
-        name: "Aurora Drawer",
-        description: "Gradient aurora waves animation, collapsible drawer.",
-        component: AuroraDrawer,
-        tags: ["Drawer", "Aurora", "Gradient", "AI"],
-        code: `<AuroraDrawer />`,
-      },
-      {
-        id: "cyber-circuit-sidebar",
-        name: "Cyber Circuit Sidebar",
-        description: "Animated glowing circuit lines, collapsible sidebar.",
-        component: CyberCircuitSidebar,
-        tags: ["Sidebar", "Cyber", "Circuit", "Glow", "AI"],
-        code: `<CyberCircuitSidebar />`,
-      },
-      {
-        id: "glitch-drawer",
-        name: "Glitch Drawer",
-        description: "Links glitch/flicker on hover, collapsible drawer.",
-        component: GlitchDrawer,
-        tags: ["Drawer", "Glitch", "Animated", "AI"],
-        code: `<GlitchDrawer />`,
-      },
-      {
-        id: "orbiting-icon-sidebar",
-        name: "Orbiting Icon Sidebar",
-        description: "Glowing orbs orbit icons, collapsible sidebar.",
-        component: OrbitingIconSidebar,
-        tags: ["Sidebar", "Orbit", "Icon", "AI"],
-        code: `<OrbitingIconSidebar />`,
-      },
-      {
-        id: "crystal-glass-drawer",
-        name: "Crystal Glass Drawer",
-        description: "Frosted glass effect, shine animation, collapsible drawer.",
-        component: CrystalGlassDrawer,
-        tags: ["Drawer", "Crystal", "Glass", "AI"],
-        code: `<CrystalGlassDrawer />`,
-      },
-      {
-        id: "dna-helix-sidebar",
-        name: "DNA Helix Sidebar",
-        description: "Vertical animated helix background, collapsible sidebar.",
-        component: DNAHelixSidebar,
-        tags: ["Sidebar", "DNA", "Helix", "AI"],
-        code: `<DNAHelixSidebar />`,
-      },
-      {
-        id: "starlight-drawer",
-        name: "Starlight Drawer",
-        description: "Floating sparkles background, twinkling links, collapsible drawer.",
-        component: StarlightDrawer,
-        tags: ["Drawer", "Starlight", "Sparkle", "AI"],
-        code: `<StarlightDrawer />`,
-      },
-    ],
-  },
-  {
-    category: "Hero",
-    items: [
-      {
-        id: "neural-glow-hero",
-        name: "Neural Glow Hero",
-        description: "AI neural network glow, animated gradient, CTA.",
-        component: NeuralGlowHero,
-        tags: ["Hero", "Glow", "AI", "Gradient"],
-        code: `<NeuralGlowHero />`,
-      },
-      {
-        id: "cyber-grid-hero",
-        name: "Cyber Grid Hero",
-        description: "Cyberpunk grid lines, animated background, CTA.",
-        component: CyberGridHero,
-        tags: ["Hero", "Cyber", "Grid", "AI"],
-        code: `<CyberGridHero />`,
-      },
-      {
-        id: "aurora-gradient-hero",
-        name: "Aurora Gradient Hero",
-        description: "Aurora gradient waves, animated, CTA.",
-        component: AuroraGradientHero,
-        tags: ["Hero", "Aurora", "Gradient", "AI"],
-        code: `<AuroraGradientHero />`,
-      },
-      {
-        id: "quantum-split-hero",
-        name: "Quantum Split Hero",
-        description: "Split layout, quantum animation, CTA.",
-        component: QuantumSplitHero,
-        tags: ["Hero", "Quantum", "Split", "AI"],
-        code: `<QuantumSplitHero />`,
-      },
-      {
-        id: "holographic-video-hero",
-        name: "Holographic Video Hero",
-        description: "Holographic glow, video background, CTA.",
-        component: HolographicVideoHero,
-        tags: ["Hero", "Holographic", "Video", "AI"],
-        code: `<HolographicVideoHero />`,
-      },
-      {
-        id: "cosmic-particle-hero",
-        name: "Cosmic Particle Hero",
-        description: "Particle animation, cosmic theme, CTA.",
-        component: CosmicParticleHero,
-        tags: ["Hero", "Cosmic", "Particle", "AI"],
-        code: `<CosmicParticleHero />`,
-      },
-      {
-        id: "dna-helix-hero",
-        name: "DNA Helix Hero",
-        description: "DNA helix pattern, animated, CTA.",
-        component: DNAHelixHero,
-        tags: ["Hero", "DNA", "Helix", "AI"],
-        code: `<DNAHelixHero />`,
-      },
-      {
-        id: "ai-chat-hero",
-        name: "AI Chat Hero",
-        description: "Chat UI, AI accents, animated, CTA.",
-        component: AIChatHero,
-        tags: ["Hero", "Chat", "AI", "Animated"],
-        code: `<AIChatHero />`,
-      },
-      {
-        id: "circuit-wave-hero",
-        name: "Circuit Wave Hero",
-        description: "Circuit pattern, animated waves, CTA.",
-        component: CircuitWaveHero,
-        tags: ["Hero", "Circuit", "Wave", "AI"],
-        code: `<CircuitWaveHero />`,
-      },
-      {
-        id: "starlight-matrix-hero",
-        name: "Starlight Matrix Hero",
-        description: "Matrix rain, starlight glow, CTA.",
-        component: StarlightMatrixHero,
-        tags: ["Hero", "Matrix", "Starlight", "AI"],
-        code: `<StarlightMatrixHero />`,
-      },
-    ],
-  },
-  {
-    category: "Footer",
-    items: [
-      {
-        id: "neon-glow-footer",
-        name: "Neon Glow Footer",
-        component: NeonGlowFooter,
-      },
-      {
-        id: "glassmorphism-footer",
-        name: "Glassmorphism Footer",
-        component: GlassmorphismFooter,
-      },
-      {
-        id: "aurora-gradient-footer",
-        name: "Aurora Gradient Footer",
-        component: AuroraGradientFooter,
-      },
-      {
-        id: "cyber-grid-footer",
-        name: "Cyber Grid Footer",
-        component: CyberGridFooter,
-      },
-      {
-        id: "holographic-social-footer",
-        name: "Holographic Social Footer",
-        component: HolographicSocialFooter,
-      },
-      {
-        id: "quantum-multi-column-footer",
-        name: "Quantum Multi-Column Footer",
-        component: QuantumMultiColumnFooter,
-      },
-      {
-        id: "ai-minimal-footer",
-        name: "AI Minimal Footer",
-        component: AIMinimalFooter,
-      },
-      {
-        id: "cosmic-particle-footer",
-        name: "Cosmic Particle Footer",
-        component: CosmicParticleFooter,
-      },
-      {
-        id: "dna-helix-footer",
-        name: "DNA Helix Footer",
-        component: DNAHelixFooter,
-      },
-      {
-        id: "starlight-matrix-footer",
-        name: "Starlight Matrix Footer",
-        component: StarlightMatrixFooter,
-      },
-    ],
-  },
-  {
-    category: "Tooltip",
-    items: [
-      {
-        id: "neon-tooltip-button",
-        name: "Neon Tooltip Button",
-        description: "Neon glowing tooltip with pulse animation.",
-        component: NeonTooltipButton,
-        tags: ["Tooltip", "Neon", "Glow"],
-        code: "<NeonTooltipButton />"
-      },
-      {
-        id: "glass-tooltip-button",
-        name: "Glass Tooltip Button",
-        description: "Frosted glass tooltip with blur.",
-        component: GlassTooltipButton,
-        tags: ["Tooltip", "Glassmorphism", "Blur"],
-        code: "<GlassTooltipButton />"
-      },
-      {
-        id: "aurora-tooltip-button",
-        name: "Aurora Tooltip Button",
-        description: "Aurora gradient animated tooltip.",
-        component: AuroraTooltipButton,
-        tags: ["Tooltip", "Aurora", "Gradient"],
-        code: "<AuroraTooltipButton />"
-      },
-      {
-        id: "glitch-tooltip-button",
-        name: "Glitch Tooltip Button",
-        description: "Glitch/flicker effect tooltip.",
-        component: GlitchTooltipButton,
-        tags: ["Tooltip", "Glitch", "Flicker"],
-        code: "<GlitchTooltipButton />"
-      },
-      {
-        id: "minimal-tooltip-button",
-        name: "Minimal Tooltip Button",
-        description: "Clean fade/scale tooltip.",
-        component: MinimalTooltipButton,
-        tags: ["Tooltip", "Minimal", "Fade"],
-        code: "<MinimalTooltipButton />"
-      },
-      {
-        id: "orbit-tooltip-button",
-        name: "Orbit Tooltip Button",
-        description: "Orbiting glowing orbs tooltip.",
-        component: OrbitTooltipButton,
-        tags: ["Tooltip", "Orbit", "Glow"],
-        code: "<OrbitTooltipButton />"
-      },
-      {
-        id: "matrix-tooltip-button",
-        name: "Matrix Tooltip Button",
-        description: "Matrix code rain background tooltip.",
-        component: MatrixTooltipButton,
-        tags: ["Tooltip", "Matrix", "Code"],
-        code: "<MatrixTooltipButton />"
-      },
-      {
-        id: "circuit-tooltip-button",
-        name: "Circuit Tooltip Button",
-        description: "Glowing circuit pattern tooltip.",
-        component: CircuitTooltipButton,
-        tags: ["Tooltip", "Circuit", "Glow"],
-        code: "<CircuitTooltipButton />"
-      },
-      {
-        id: "dna-tooltip-button",
-        name: "DNA Tooltip Button",
-        description: "Tooltip border animates like DNA helix.",
-        component: DNATooltipButton,
-        tags: ["Tooltip", "DNA", "Helix"],
-        code: "<DNATooltipButton />"
-      },
-      {
-        id: "starlight-tooltip-button",
-        name: "Starlight Tooltip Button",
-        description: "Tooltip with twinkling stars.",
-        component: StarlightTooltipButton,
-        tags: ["Tooltip", "Starlight", "Stars"],
-        code: "<StarlightTooltipButton />"
-      },
-    ]
-  }
+  category: "Footers",
+  items: [
+    {
+      id: "ai-minimal-footer",
+      name: "AI Minimal Footer",
+      description: "A clean, minimal footer enhanced with subtle AI-inspired animations.",
+      component: AIMinimalFooter,
+      tags: ["Footer", "Minimal", "AI"],
+      code: `<AIMinimalFooter />`,
+    },
+    {
+      id: "aurora-gradient-footer",
+      name: "Aurora Gradient Footer",
+      description: "Footer with a smooth aurora-inspired gradient background.",
+      component: AuroraGradientFooter,
+      tags: ["Footer", "Aurora", "Gradient"],
+      code: `<AuroraGradientFooter />`,
+    },
+    {
+      id: "cosmic-particle-footer",
+      name: "Cosmic Particle Footer",
+      description: "Animated cosmic particle background for a futuristic footer.",
+      component: CosmicParticleFooter,
+      tags: ["Footer", "Cosmic", "Particles", "AI"],
+      code: `<CosmicParticleFooter />`,
+    },
+    {
+      id: "cyber-grid-footer",
+      name: "Cyber Grid Footer",
+      description: "Tech-inspired grid footer with glowing circuit lines.",
+      component: CyberGridFooter,
+      tags: ["Footer", "Cyber", "Grid"],
+      code: `<CyberGridFooter />`,
+    },
+    {
+      id: "dna-helix-footer",
+      name: "DNA Helix Footer",
+      description: "Animated DNA helix pattern integrated into the footer.",
+      component: DNAHelixFooter,
+      tags: ["Footer", "DNA", "Helix", "AI"],
+      code: `<DNAHelixFooter />`,
+    },
+    {
+      id: "glassmorphism-footer",
+      name: "Glassmorphism Footer",
+      description: "AI-inspired footer with frosted glass and blur effects.",
+      component: GlassmorphismFooter,
+      tags: ["Footer", "Glassmorphism", "AI"],
+      code: `<GlassmorphismFooter />`,
+    },
+    {
+      id: "holographic-social-footer",
+      name: "Holographic Social Footer",
+      description: "Footer with holographic glow and animated social icons.",
+      component: HolographicSocialFooter,
+      tags: ["Footer", "Holographic", "Social"],
+      code: `<HolographicSocialFooter />`,
+    },
+    {
+      id: "neon-glow-footer",
+      name: "Neon Glow Footer",
+      description: "Futuristic footer with glowing neon hover animations.",
+      component: NeonGlowFooter,
+      tags: ["Footer", "Neon", "Glow"],
+      code: `<NeonGlowFooter />`,
+    },
+    {
+      id: "quantum-multi-column-footer",
+      name: "Quantum Multi Column Footer",
+      description: "Multi-column responsive footer with quantum-inspired effects.",
+      component: QuantumMultiColumnFooter,
+      tags: ["Footer", "Quantum", "Multi-Column"],
+      code: `<QuantumMultiColumnFooter />`,
+    },
+    {
+      id: "starlight-matrix-footer",
+      name: "Starlight Matrix Footer",
+      description: "Animated starlight matrix footer with AI-inspired glow.",
+      component: StarlightMatrixFooter,
+      tags: ["Footer", "Starlight", "Matrix", "AI"],
+      code: `<StarlightMatrixFooter />`,
+    },
+  ],
+},
+
+// Hero Showcase
+{
+  category: "Hero Sections",
+  items: [
+    {
+      id: "ai-chat-hero",
+      name: "AI Chat Hero",
+      description: "Hero section with animated chat bubble simulation.",
+      component: AIChatHero,
+      tags: ["Hero", "Chat", "AI"],
+      code: `<AIChatHero />`,
+    },
+    {
+      id: "aurora-gradient-hero",
+      name: "Aurora Gradient Hero",
+      description: "Full-width hero with aurora-inspired gradient animation.",
+      component: AuroraGradientHero,
+      tags: ["Hero", "Aurora", "Gradient"],
+      code: `<AuroraGradientHero />`,
+    },
+    {
+      id: "circuit-wave-hero",
+      name: "Circuit Wave Hero",
+      description: "Animated wave and glowing circuit lines in hero background.",
+      component: CircuitWaveHero,
+      tags: ["Hero", "Circuit", "Wave", "AI"],
+      code: `<CircuitWaveHero />`,
+    },
+    {
+      id: "cosmic-particle-hero",
+      name: "Cosmic Particle Hero",
+      description: "Hero with animated particles moving like stars in space.",
+      component: CosmicParticleHero,
+      tags: ["Hero", "Cosmic", "Particles"],
+      code: `<CosmicParticleHero />`,
+    },
+    {
+      id: "cyber-grid-hero",
+      name: "Cyber Grid Hero",
+      description: "Futuristic cyberpunk-style hero with animated grid lines.",
+      component: CyberGridHero,
+      tags: ["Hero", "Cyber", "Grid"],
+      code: `<CyberGridHero />`,
+    },
+    {
+      id: "dna-helix-hero",
+      name: "DNA Helix Hero",
+      description: "Hero featuring a moving DNA helix animation in background.",
+      component: DNAHelixHero,
+      tags: ["Hero", "DNA", "Helix", "AI"],
+      code: `<DNAHelixHero />`,
+    },
+    {
+      id: "holographic-video-hero",
+      name: "Holographic Video Hero",
+      description: "Hero with holographic styled video background effect.",
+      component: HolographicVideoHero,
+      tags: ["Hero", "Video", "Holographic"],
+      code: `<HolographicVideoHero />`,
+    },
+    {
+      id: "neural-glow-hero",
+      name: "Neural Glow Hero",
+      description: "Hero with glowing neural-inspired light wave animations.",
+      component: NeuralGlowHero,
+      tags: ["Hero", "Neural", "Glow"],
+      code: `<NeuralGlowHero />`,
+    },
+    {
+      id: "quantum-split-hero",
+      name: "Quantum Split Hero",
+      description: "Split layout hero with quantum-inspired glowing effects.",
+      component: QuantumSplitHero,
+      tags: ["Hero", "Quantum", "Split Layout"],
+      code: `<QuantumSplitHero />`,
+    },
+    {
+      id: "starlight-matrix-hero",
+      name: "Starlight Matrix Hero",
+      description: "Hero with starlight animations and glowing matrix style.",
+      component: StarlightMatrixHero,
+      tags: ["Hero", "Starlight", "Matrix"],
+      code: `<StarlightMatrixHero />`,
+    },
+  ],
+},
+
+// Navbar showcase
+{
+  category: "Navbars",
+  items: [
+    {
+      id: "aurora-navbar",
+      name: "Aurora Navbar",
+      description: "Navbar with flowing aurora gradient background.",
+      component: AuroraNavbar,
+      tags: ["Navbar", "Aurora", "Gradient"],
+      code: `<AuroraNavbar />`,
+    },
+    {
+      id: "cyber-circuit-navbar",
+      name: "Cyber Circuit Navbar",
+      description: "Futuristic cyberpunk navbar with animated circuit glow.",
+      component: CyberCircuitNavbar,
+      tags: ["Navbar", "Cyber", "Circuit", "AI"],
+      code: `<CyberCircuitNavbar />`,
+    },
+    {
+      id: "glitch-navbar",
+      name: "Glitch Navbar",
+      description: "Navbar with animated glitch effects and retro cyber vibe.",
+      component: GlitchNavbar,
+      tags: ["Navbar", "Glitch", "Animated"],
+      code: `<GlitchNavbar />`,
+    },
+    {
+      id: "hologram-navbar",
+      name: "Hologram Navbar",
+      description: "Navbar styled with holographic glow and 3D effects.",
+      component: HologramNavbar,
+      tags: ["Navbar", "Hologram", "Glow"],
+      code: `<HologramNavbar />`,
+    },
+    {
+      id: "neon-pulse-navbar",
+      name: "Neon Pulse Navbar",
+      description: "Pulsing neon glow navbar with animated transitions.",
+      component: NeonPulseNavbar,
+      tags: ["Navbar", "Neon", "Pulse"],
+      code: `<NeonPulseNavbar />`,
+    },
+  ],
+},
+
+// Sidebar showcase
+{
+  category: "Sidebars",
+  items: [
+    {
+      id: "aurora-drawer",
+      name: "Aurora Drawer",
+      description: "Smooth sliding drawer with aurora gradient animation.",
+      component: AuroraDrawer,
+      tags: ["Sidebar", "Drawer", "Aurora", "Gradient"],
+      code: `<AuroraDrawer />`,
+    },
+    {
+      id: "crystal-glass-drawer",
+      name: "Crystal Glass Drawer",
+      description: "Glassmorphism styled drawer with frosted blur effect.",
+      component: CrystalGlassDrawer,
+      tags: ["Sidebar", "Glassmorphism", "Drawer"],
+      code: `<CrystalGlassDrawer />`,
+    },
+    {
+      id: "cyber-circuit-sidebar",
+      name: "Cyber Circuit Sidebar",
+      description: "Futuristic sidebar with glowing circuit animations.",
+      component: CyberCircuitSidebar,
+      tags: ["Sidebar", "Cyber", "Circuit", "AI"],
+      code: `<CyberCircuitSidebar />`,
+    },
+    {
+      id: "dna-helix-sidebar",
+      name: "DNA Helix Sidebar",
+      description: "Sidebar with animated DNA helix-inspired design.",
+      component: DNAHelixSidebar,
+      tags: ["Sidebar", "DNA", "Helix", "Animated"],
+      code: `<DNAHelixSidebar />`,
+    },
+    {
+      id: "glitch-drawer",
+      name: "Glitch Drawer",
+      description: "Retro-style drawer with glitch transition effects.",
+      component: GlitchDrawer,
+      tags: ["Sidebar", "Glitch", "Drawer"],
+      code: `<GlitchDrawer />`,
+    },
+    {
+      id: "hologram-sidebar",
+      name: "Hologram Sidebar",
+      description: "Sidebar with holographic glow and futuristic design.",
+      component: HologramSidebar,
+      tags: ["Sidebar", "Hologram", "Glow"],
+      code: `<HologramSidebar />`,
+    },
+    {
+      id: "matrix-sidebar",
+      name: "Matrix Sidebar",
+      description: "Matrix-inspired sidebar with falling code animation.",
+      component: MatrixSidebar,
+      tags: ["Sidebar", "Matrix", "Animated"],
+      code: `<MatrixSidebar />`,
+    },
+    {
+      id: "neon-pulse-drawer",
+      name: "Neon Pulse Drawer",
+      description: "Drawer with pulsing neon glow and modern styling.",
+      component: NeonPulseDrawer,
+      tags: ["Sidebar", "Neon", "Pulse", "Drawer"],
+      code: `<NeonPulseDrawer />`,
+    },
+    {
+      id: "orbiting-icon-sidebar",
+      name: "Orbiting Icon Sidebar",
+      description: "Sidebar with orbiting animated icons for navigation.",
+      component: OrbitingIconSidebar,
+      tags: ["Sidebar", "Orbit", "Icons", "Animated"],
+      code: `<OrbitingIconSidebar />`,
+    },
+    {
+      id: "starlight-drawer",
+      name: "Starlight Drawer",
+      description: "Drawer with starlight shimmer and cosmic animations.",
+      component: StarlightDrawer,
+      tags: ["Sidebar", "Starlight", "Cosmic"],
+      code: `<StarlightDrawer />`,
+    },
+  ],
+},
+
+// Tabs showcase
+{
+  category: "Tabs",
+  items: [
+    {
+      id: "aurora-tabs",
+      name: "Aurora Tabs",
+      description: "Gradient animated tabs with smooth transitions.",
+      component: AuroraTabs,
+      tags: ["Tabs", "Aurora", "Gradient"],
+      code: `<AuroraTabs />`,
+    },
+    {
+      id: "circuit-tabs",
+      name: "Circuit Tabs",
+      description: "Tech-inspired circuit line animations in tabs.",
+      component: CircuitTabs,
+      tags: ["Tabs", "Circuit", "Tech"],
+      code: `<CircuitTabs />`,
+    },
+    {
+      id: "dna-tabs",
+      name: "DNA Tabs",
+      description: "Tabs styled with DNA helix-inspired animation.",
+      component: DNATabs,
+      tags: ["Tabs", "DNA", "Animated"],
+      code: `<DNATabs />`,
+    },
+    {
+      id: "glass-tabs",
+      name: "Glass Tabs",
+      description: "Glassmorphism tabs with blur and frosted effect.",
+      component: GlassTabs,
+      tags: ["Tabs", "Glassmorphism"],
+      code: `<GlassTabs />`,
+    },
+    {
+      id: "glitch-tabs",
+      name: "Glitch Tabs",
+      description: "Retro glitch effect when switching tabs.",
+      component: GlitchTabs,
+      tags: ["Tabs", "Glitch", "Animated"],
+      code: `<GlitchTabs />`,
+    },
+    {
+      id: "minimal-fade-tabs",
+      name: "Minimal Fade Tabs",
+      description: "Simple fading transition tabs with elegance.",
+      component: MinimalFadeTabs,
+      tags: ["Tabs", "Minimal", "Fade"],
+      code: `<MinimalFadeTabs />`,
+    },
+    {
+      id: "neon-underline-tabs",
+      name: "Neon Underline Tabs",
+      description: "Tabs with glowing neon underline hover effects.",
+      component: NeonUnderlineTabs,
+      tags: ["Tabs", "Neon", "Underline"],
+      code: `<NeonUnderlineTabs />`,
+    },
+    {
+      id: "orbit-tabs",
+      name: "Orbit Tabs",
+      description: "Tabs with orbiting animation for active indicators.",
+      component: OrbitTabs,
+      tags: ["Tabs", "Orbit", "Animated"],
+      code: `<OrbitTabs />`,
+    },
+    {
+      id: "pills-glow-tabs",
+      name: "Pills Glow Tabs",
+      description: "Rounded pill-shaped tabs with glowing effects.",
+      component: PillsGlowTabs,
+      tags: ["Tabs", "Pills", "Glow"],
+      code: `<PillsGlowTabs />`,
+    },
+    {
+      id: "starlight-tabs",
+      name: "Starlight Tabs",
+      description: "Tabs with starlight shimmer and cosmic glow.",
+      component: StarlightTabs,
+      tags: ["Tabs", "Starlight", "Cosmic"],
+      code: `<StarlightTabs />`,
+    },
+  ],
+},
+
+// DropDown showcase
+
+{
+  category: "Dropdowns / Menus",
+  items: [
+    {
+      id: "aurora-menu",
+      name: "Aurora Menu",
+      description: "Aurora gradient animated dropdown menu.",
+      component: AuroraMenu,
+      tags: ["Dropdown", "Menu", "Aurora"],
+      code: `<AuroraMenu />`,
+    },
+    {
+      id: "cyber-grid-dropdown",
+      name: "Cyber Grid Dropdown",
+      description: "Futuristic cyber grid dropdown with animations.",
+      component: CyberGridDropdown,
+      tags: ["Dropdown", "Cyber", "Grid"],
+      code: `<CyberGridDropdown />`,
+    },
+    {
+      id: "dna-dropdown",
+      name: "DNA Dropdown",
+      description: "DNA helix animation styled dropdown.",
+      component: DNADropdown,
+      tags: ["Dropdown", "DNA", "Animated"],
+      code: `<DNADropdown />`,
+    },
+    {
+      id: "glass-dropdown",
+      name: "Glass Dropdown",
+      description: "Glassmorphism dropdown with frosted glass look.",
+      component: GlassDropdown,
+      tags: ["Dropdown", "Glassmorphism"],
+      code: `<GlassDropdown />`,
+    },
+    {
+      id: "glitch-menu",
+      name: "Glitch Menu",
+      description: "Glitchy retro-style animated dropdown menu.",
+      component: GlitchMenu,
+      tags: ["Dropdown", "Glitch", "Menu"],
+      code: `<GlitchMenu />`,
+    },
+    {
+      id: "helix-dropdown",
+      name: "Helix Dropdown",
+      description: "Spinning helix inspired dropdown animation.",
+      component: HelixDropdown,
+      tags: ["Dropdown", "Helix", "Animated"],
+      code: `<HelixDropdown />`,
+    },
+    {
+      id: "mega-menu-ai",
+      name: "AI Mega Menu",
+      description: "Advanced multi-column dropdown AI menu.",
+      component: MegaMenuAI,
+      tags: ["Dropdown", "Mega Menu", "AI"],
+      code: `<MegaMenuAI />`,
+    },
+    {
+      id: "neon-glow-dropdown",
+      name: "Neon Glow Dropdown",
+      description: "Dropdown with glowing neon animations.",
+      component: NeonGlowDropdown,
+      tags: ["Dropdown", "Neon", "Glow"],
+      code: `<NeonGlowDropdown />`,
+    },
+    {
+      id: "orbit-icon-dropdown",
+      name: "Orbit Icon Dropdown",
+      description: "Dropdown with orbiting icons animation.",
+      component: OrbitIconDropdown,
+      tags: ["Dropdown", "Orbit", "Icons"],
+      code: `<OrbitIconDropdown />`,
+    },
+    {
+      id: "profile-hologram-dropdown",
+      name: "Profile Hologram Dropdown",
+      description: "Profile dropdown with holographic effects.",
+      component: ProfileHologramDropdown,
+      tags: ["Dropdown", "Profile", "Hologram"],
+      code: `<ProfileHologramDropdown />`,
+    },
+    {
+      id: "starlight-dropdown",
+      name: "Starlight Dropdown",
+      description: "Cosmic dropdown menu with starlight shimmer.",
+      component: StarlightDropdown,
+      tags: ["Dropdown", "Starlight", "Cosmic"],
+      code: `<StarlightDropdown />`,
+    },
+  ],
+},
+
+// Tooltip showcase
+
+{
+  category: "Tooltips",
+  items: [
+    {
+      id: "aurora-tooltip",
+      name: "Aurora Tooltip",
+      description: "Aurora gradient tooltip with smooth fade animation.",
+      component: AuroraTooltipButton,
+      tags: ["Tooltip", "Aurora", "Animated"],
+      code: `<AuroraTooltipButton />`,
+    },
+    {
+      id: "circuit-tooltip",
+      name: "Circuit Tooltip",
+      description: "Circuit-inspired animated tooltip for futuristic UI.",
+      component: CircuitTooltipButton,
+      tags: ["Tooltip", "Circuit", "Tech"],
+      code: `<CircuitTooltipButton />`,
+    },
+    {
+      id: "dna-tooltip",
+      name: "DNA Tooltip",
+      description: "Tooltip with DNA helix animation effect.",
+      component: DNATooltipButton,
+      tags: ["Tooltip", "DNA", "Animated"],
+      code: `<DNATooltipButton />`,
+    },
+    {
+      id: "glass-tooltip",
+      name: "Glass Tooltip",
+      description: "Glassmorphism tooltip with frosted blur background.",
+      component: GlassTooltipButton,
+      tags: ["Tooltip", "Glassmorphism", "UI"],
+      code: `<GlassTooltipButton />`,
+    },
+    {
+      id: "glitch-tooltip",
+      name: "Glitch Tooltip",
+      description: "Retro glitchy tooltip with pixel distortion animation.",
+      component: GlitchTooltipButton,
+      tags: ["Tooltip", "Glitch", "Retro"],
+      code: `<GlitchTooltipButton />`,
+    },
+    {
+      id: "matrix-tooltip",
+      name: "Matrix Tooltip",
+      description: "Matrix-inspired tooltip with falling code animation.",
+      component: MatrixTooltipButton,
+      tags: ["Tooltip", "Matrix", "Code"],
+      code: `<MatrixTooltipButton />`,
+    },
+    {
+      id: "minimal-tooltip",
+      name: "Minimal Tooltip",
+      description: "Clean and minimal tooltip for subtle UIs.",
+      component: MinimalTooltipButton,
+      tags: ["Tooltip", "Minimal", "Clean"],
+      code: `<MinimalTooltipButton />`,
+    },
+    {
+      id: "neon-tooltip",
+      name: "Neon Tooltip",
+      description: "Glowing neon tooltip with futuristic hover animation.",
+      component: NeonTooltipButton,
+      tags: ["Tooltip", "Neon", "Glow"],
+      code: `<NeonTooltipButton />`,
+    },
+    {
+      id: "orbit-tooltip",
+      name: "Orbit Tooltip",
+      description: "Orbiting tooltip animation around the button.",
+      component: OrbitTooltipButton,
+      tags: ["Tooltip", "Orbit", "Animated"],
+      code: `<OrbitTooltipButton />`,
+    },
+    {
+      id: "starlight-tooltip",
+      name: "Starlight Tooltip",
+      description: "Cosmic tooltip with starlight shimmer animation.",
+      component: StarlightTooltipButton,
+      tags: ["Tooltip", "Starlight", "Cosmic"],
+      code: `<StarlightTooltipButton />`,
+    },
+  ],
+},
+
+// FAQ showcase
+{
+  category: "FAQ",
+  items: [
+    {
+      id: "accordion-ai-1",
+      name: "Accordion AI 1",
+      description: "AI-inspired accordion with smooth expand/collapse animation.",
+      component: AccordionAI1,
+      tags: ["FAQ", "Accordion", "AI"],
+      code: `<AccordionAI1 />`,
+    },
+    {
+      id: "accordion-ai-2",
+      name: "Accordion AI 2",
+      description: "Futuristic accordion with glowing hover states.",
+      component: AccordionAI2,
+      tags: ["FAQ", "Accordion", "Glow"],
+      code: `<AccordionAI2 />`,
+    },
+    {
+      id: "accordion-ai-3",
+      name: "Accordion AI 3",
+      description: "Accordion with animated chevrons and smooth transitions.",
+      component: AccordionAI3,
+      tags: ["FAQ", "Accordion", "Animated"],
+      code: `<AccordionAI3 />`,
+    },
+    {
+      id: "accordion-ai-4",
+      name: "Accordion AI 4",
+      description: "Accordion styled with glassmorphism and blur effects.",
+      component: AccordionAI4,
+      tags: ["FAQ", "Accordion", "Glassmorphism"],
+      code: `<AccordionAI4 />`,
+    },
+    {
+      id: "accordion-ai-5",
+      name: "Accordion AI 5",
+      description: "Accordion with neon-inspired highlight animations.",
+      component: AccordionAI5,
+      tags: ["FAQ", "Accordion", "Neon"],
+      code: `<AccordionAI5 />`,
+    },
+    {
+      id: "accordion-ai-6",
+      name: "Accordion AI 6",
+      description: "Accordion with expanding gradient background.",
+      component: AccordionAI6,
+      tags: ["FAQ", "Accordion", "Gradient"],
+      code: `<AccordionAI6 />`,
+    },
+    {
+      id: "accordion-ai-7",
+      name: "Accordion AI 7",
+      description: "Accordion with futuristic icons and smooth transitions.",
+      component: AccordionAI7,
+      tags: ["FAQ", "Accordion", "Futuristic"],
+      code: `<AccordionAI7 />`,
+    },
+    {
+      id: "accordion-ai-8",
+      name: "Accordion AI 8",
+      description: "Accordion with typing-effect headers when expanded.",
+      component: AccordionAI8,
+      tags: ["FAQ", "Accordion", "Typing"],
+      code: `<AccordionAI8 />`,
+    },
+    {
+      id: "accordion-ai-9",
+      name: "Accordion AI 9",
+      description: "Accordion with animated particle effects in the background.",
+      component: AccordionAI9,
+      tags: ["FAQ", "Accordion", "Particles"],
+      code: `<AccordionAI9 />`,
+    },
+    {
+      id: "accordion-ai-10",
+      name: "Accordion AI 10",
+      description: "Accordion with starlight shimmer and AI-inspired motion.",
+      component: AccordionAI10,
+      tags: ["FAQ", "Accordion", "Starlight"],
+      code: `<AccordionAI10 />`,
+    },
+  ],
+}
+
+// next showcase
+
+
+
+
+
+
 ];

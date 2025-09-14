@@ -11,7 +11,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [hidden, setHidden] = useState(false);
   const [lastScroll, setLastScroll] = useState(0);
-  const [progress, setProgress] = useState(0);
+  // const [progress, setProgress] = useState(0);
 
   // Command Palette
    const { setPaletteOpen } = useUI();
@@ -37,10 +37,8 @@ export default function Navbar() {
       }
       setLastScroll(currentScroll);
 
-      // progress bar
+      
       const docHeight = document.body.scrollHeight - window.innerHeight;
-      const scrollPercent = (currentScroll / docHeight) * 100;
-      setProgress(scrollPercent);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -174,8 +172,7 @@ export default function Navbar() {
 
         {/* 🌈 Scroll Progress Bar */}
         <motion.div
-          className="absolute bottom-0 left-0 h-[3px] bg-gradient-to-r from-purple-500 via-pink-500 to-blue-500"
-          style={{ width: `${progress}%` }}
+          
         />
       </div>
 
