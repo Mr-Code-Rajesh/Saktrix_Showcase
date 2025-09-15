@@ -35,11 +35,12 @@ Pagination (Simple Pagination, Infinite Scroll)
 
 Breadcrumbs (Navigation Indicator)
 
-Tables / Data Grid (Sortable Table, Striped Table, Interactive Table)
+Tables / Data Grid (Sortable Table, Striped Table, Interactive Table)r
 
-Charts (Bar, Line, Pie, Area using Recharts/Chart.js)r
+Charts (Bar, Line, Pie, Area using Recharts/Chart.js)
 
-Carousels / Sliders (Image Slider, Testimonial Slider)r
+Carousels / Sliders (Image Slider, Testimonial Slider)rr
+
 
 Timeline (Vertical Timeline, Horizontal Timeline)
 

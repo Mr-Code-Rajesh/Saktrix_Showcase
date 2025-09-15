@@ -288,6 +288,62 @@ import QuantumExpandableTable from "../components/showcase/tables/QuantumExpanda
 import SoftUICardTable from "../components/showcase/tables/SoftUICardTable";
 
 
+// =====================
+// Charts
+// =====================
+import OrbitBubbleChart from "../components/showcase/charts/OrbitBubbleChart";
+import AIDashboardComboChart from "../components/showcase/charts/AIDashboardComboChart";
+import CyberGlowTreemap from "../components/showcase/charts/CyberGlowTreemap";
+import FuturisticTimelineChart from "../components/showcase/charts/FuturisticTimelineChart";
+import CircuitStackedBarChart from "../components/showcase/charts/CircuitStackedBarChart";
+import HackerTerminalLineChart from "../components/showcase/charts/HackerTerminalLineChart";
+import HolographicPolarAreaChart from "../components/showcase/charts/HolographicPolarAreaChart";
+import NeuralMixedChart from "../components/showcase/charts/NeuralMixedChart";
+import HolographicPieChart from "../components/showcase/charts/HolographicPieChart";
+import NeuralRadarChart from "../components/showcase/charts/NeuralRadarChart";
+import QuantumScatterPlot from "../components/showcase/charts/QuantumScatterPlot";
+import SoftUIDoughnutChart from "../components/showcase/charts/SoftUIDoughnutChart";
+import CyberpunkAreaChart from "../components/showcase/charts/CyberpunkAreaChart";
+import GlassmorphismLineChart from "../components/showcase/charts/GlassmorphismLineChart";
+import NeonPulseBarChart from "../components/showcase/charts/NeonPulseBarChart";
+
+
+// =====================
+// Carousels
+// =====================
+import AIDashboardContentCarousel from "../components/showcase/carousels/AIDashboardContentCarousel";
+import CyberpunkTestimonialSlider from "../components/showcase/carousels/CyberpunkTestimonialSlider";
+import GlassmorphismImageSlider from "../components/showcase/carousels/GlassmorphismImageSlider";
+import HackerTerminalTextSlider from "../components/showcase/carousels/HackerTerminalTextSlider";
+import HolographicGradientSlider from "../components/showcase/carousels/HolographicGradientSlider";
+import NeonFlowCarousel from "../components/showcase/carousels/NeonFlowCarousel";
+import NeuralPulseAutoScroller from "../components/showcase/carousels/NeuralPulseAutoScroller";
+import OrbitingDotsCarousel from "../components/showcase/carousels/OrbitingDotsCarousel";
+import QuantumCardCarousel from "../components/showcase/carousels/QuantumCardCarousel";
+import SoftUITestimonialSlider from "../components/showcase/carousels/SoftUITestimonialSlider";
+
+
+// =====================
+// Timelines
+// =====================
+import AIDashboardTimeline from "../components/showcase/timelines/AIDashboardTimeline";
+import CyberpunkCircuitTimeline from "../components/showcase/timelines/CyberpunkCircuitTimeline";
+import GlassmorphismHorizontalTimeline from "../components/showcase/timelines/GlassmorphismHorizontalTimeline";
+import HackerTerminalTimeline from "../components/showcase/timelines/HackerTerminalTimeline";
+import HolographicGradientTimeline from "../components/showcase/timelines/HolographicGradientTimeline";
+import NeonGlowVerticalTimeline from "../components/showcase/timelines/NeonGlowVerticalTimeline";
+import NeuralPulseInteractiveTimeline from "../components/showcase/timelines/NeuralPulseInteractiveTimeline";
+import OrbitTimeline from "../components/showcase/timelines/OrbitTimeline";
+import QuantumParticleTimeline from "../components/showcase/timelines/QuantumParticleTimeline";
+import SoftUIMilestoneTimeline from "../components/showcase/timelines/SoftUIMilestoneTimeline";
+
+
+
+
+
+
+
+
 
 export const showcaseConfig = [
   {
@@ -2623,7 +2679,311 @@ const [enabled, setEnabled] = useState(false);
 },
 
 
-// Tables showcase category
+// Recharts showcase category
+{
+  category: "Charts",
+  items: [
+    {
+      id: "orbit-bubble-chart",
+      name: "Orbit Bubble Chart",
+      description: "Bubble chart with orbiting animation.",
+      component: OrbitBubbleChart,
+      tags: ["Chart", "Bubble", "Orbit"],
+      code: `<OrbitBubbleChart />`,
+    },
+    {
+      id: "ai-dashboard-combo-chart",
+      name: "AI Dashboard Combo Chart",
+      description: "AI-enhanced combo chart with multiple data series.",
+      component: AIDashboardComboChart,
+      tags: ["Chart", "AI", "Dashboard"],
+      code: `<AIDashboardComboChart />`,
+    },
+    {
+      id: "cyber-glow-treemap",
+      name: "Cyber Glow Treemap",
+      description: "Treemap chart with neon glowing effect.",
+      component: CyberGlowTreemap,
+      tags: ["Chart", "Treemap", "Cyber"],
+      code: `<CyberGlowTreemap />`,
+    },
+    {
+      id: "futuristic-timeline-chart",
+      name: "Futuristic Timeline Chart",
+      description: "Timeline chart with futuristic animation.",
+      component: FuturisticTimelineChart,
+      tags: ["Chart", "Timeline", "Futuristic"],
+      code: `<FuturisticTimelineChart />`,
+    },
+    {
+      id: "circuit-stacked-bar-chart",
+      name: "Circuit Stacked Bar Chart",
+      description: "Stacked bar chart with circuit design.",
+      component: CircuitStackedBarChart,
+      tags: ["Chart", "Bar", "Circuit"],
+      code: `<CircuitStackedBarChart />`,
+    },
+    {
+      id: "hacker-terminal-line-chart",
+      name: "Hacker Terminal Line Chart",
+      description: "Retro hacker terminal inspired line chart.",
+      component: HackerTerminalLineChart,
+      tags: ["Chart", "Line", "Hacker"],
+      code: `<HackerTerminalLineChart />`,
+    },
+    {
+      id: "holographic-polar-area-chart",
+      name: "Holographic Polar Area Chart",
+      description: "Polar area chart with holographic effect.",
+      component: HolographicPolarAreaChart,
+      tags: ["Chart", "Polar", "Holographic"],
+      code: `<HolographicPolarAreaChart />`,
+    },
+    {
+      id: "neural-mixed-chart",
+      name: "Neural Mixed Chart",
+      description: "Mixed chart with AI neural-inspired animations.",
+      component: NeuralMixedChart,
+      tags: ["Chart", "Mixed", "Neural"],
+      code: `<NeuralMixedChart />`,
+    },
+    {
+      id: "holographic-pie-chart",
+      name: "Holographic Pie Chart",
+      description: "Pie chart with holographic 3D glow effect.",
+      component: HolographicPieChart,
+      tags: ["Chart", "Pie", "Holographic"],
+      code: `<HolographicPieChart />`,
+    },
+    {
+      id: "neural-radar-chart",
+      name: "Neural Radar Chart",
+      description: "AI-inspired radar chart with pulsing lines.",
+      component: NeuralRadarChart,
+      tags: ["Chart", "Radar", "Neural"],
+      code: `<NeuralRadarChart />`,
+    },
+    {
+      id: "quantum-scatter-plot",
+      name: "Quantum Scatter Plot",
+      description: "Scatter plot with quantum particle effects.",
+      component: QuantumScatterPlot,
+      tags: ["Chart", "Scatter", "Quantum"],
+      code: `<QuantumScatterPlot />`,
+    },
+    {
+      id: "softui-doughnut-chart",
+      name: "Soft UI Doughnut Chart",
+      description: "Soft UI styled doughnut chart.",
+      component: SoftUIDoughnutChart,
+      tags: ["Chart", "Doughnut", "SoftUI"],
+      code: `<SoftUIDoughnutChart />`,
+    },
+    {
+      id: "cyberpunk-area-chart",
+      name: "Cyberpunk Area Chart",
+      description: "Area chart with cyberpunk-inspired design.",
+      component: CyberpunkAreaChart,
+      tags: ["Chart", "Area", "Cyberpunk"],
+      code: `<CyberpunkAreaChart />`,
+    },
+    {
+      id: "glassmorphism-line-chart",
+      name: "Glassmorphism Line Chart",
+      description: "Line chart with glassmorphism design.",
+      component: GlassmorphismLineChart,
+      tags: ["Chart", "Line", "Glassmorphism"],
+      code: `<GlassmorphismLineChart />`,
+    },
+    {
+      id: "neon-pulse-bar-chart",
+      name: "Neon Pulse Bar Chart",
+      description: "Bar chart with neon pulse animation.",
+      component: NeonPulseBarChart,
+      tags: ["Chart", "Bar", "Neon"],
+      code: `<NeonPulseBarChart />`,
+    },
+  ],
+},
+
+
+// carousels showcase 
+{
+  category: "Carousels",
+  items: [
+    {
+      id: "ai-dashboard-content-carousel",
+      name: "AI Dashboard Content Carousel",
+      description: "AI-powered content carousel for dashboards.",
+      component: AIDashboardContentCarousel,
+      tags: ["Carousel", "AI", "Dashboard"],
+      code: `<AIDashboardContentCarousel />`,
+    },
+    {
+      id: "cyberpunk-testimonial-slider",
+      name: "Cyberpunk Testimonial Slider",
+      description: "Cyberpunk styled testimonial slider with neon glow.",
+      component: CyberpunkTestimonialSlider,
+      tags: ["Carousel", "Cyberpunk", "Testimonial"],
+      code: `<CyberpunkTestimonialSlider />`,
+    },
+    {
+      id: "glassmorphism-image-slider",
+      name: "Glassmorphism Image Slider",
+      description: "Image slider with glassmorphism design.",
+      component: GlassmorphismImageSlider,
+      tags: ["Carousel", "Glassmorphism", "Image"],
+      code: `<GlassmorphismImageSlider />`,
+    },
+    {
+      id: "hacker-terminal-text-slider",
+      name: "Hacker Terminal Text Slider",
+      description: "Text slider with hacker terminal style.",
+      component: HackerTerminalTextSlider,
+      tags: ["Carousel", "Text", "Hacker"],
+      code: `<HackerTerminalTextSlider />`,
+    },
+    {
+      id: "holographic-gradient-slider",
+      name: "Holographic Gradient Slider",
+      description: "Gradient slider with holographic animations.",
+      component: HolographicGradientSlider,
+      tags: ["Carousel", "Gradient", "Holographic"],
+      code: `<HolographicGradientSlider />`,
+    },
+    {
+      id: "neon-flow-carousel",
+      name: "Neon Flow Carousel",
+      description: "Flowing neon styled carousel.",
+      component: NeonFlowCarousel,
+      tags: ["Carousel", "Neon", "Flow"],
+      code: `<NeonFlowCarousel />`,
+    },
+    {
+      id: "neural-pulse-auto-scroller",
+      name: "Neural Pulse Auto Scroller",
+      description: "Auto-scrolling carousel with neural pulse effect.",
+      component: NeuralPulseAutoScroller,
+      tags: ["Carousel", "Neural", "AutoScroll"],
+      code: `<NeuralPulseAutoScroller />`,
+    },
+    {
+      id: "orbiting-dots-carousel",
+      name: "Orbiting Dots Carousel",
+      description: "Carousel with orbiting dots as navigation.",
+      component: OrbitingDotsCarousel,
+      tags: ["Carousel", "Orbit", "Dots"],
+      code: `<OrbitingDotsCarousel />`,
+    },
+    {
+      id: "quantum-card-carousel",
+      name: "Quantum Card Carousel",
+      description: "Card carousel with quantum-inspired design.",
+      component: QuantumCardCarousel,
+      tags: ["Carousel", "Quantum", "Cards"],
+      code: `<QuantumCardCarousel />`,
+    },
+    {
+      id: "softui-testimonial-slider",
+      name: "SoftUI Testimonial Slider",
+      description: "SoftUI style testimonial slider.",
+      component: SoftUITestimonialSlider,
+      tags: ["Carousel", "SoftUI", "Testimonial"],
+      code: `<SoftUITestimonialSlider />`,
+    },
+  ],
+},
+
+// timeline showcase category
+{
+  category: "Timelines",
+  items: [
+    {
+      id: "ai-dashboard-timeline",
+      name: "AI Dashboard Timeline",
+      description: "AI-powered timeline for dashboard events.",
+      component: AIDashboardTimeline,
+      tags: ["Timeline", "AI", "Dashboard"],
+      code: `<AIDashboardTimeline />`,
+    },
+    {
+      id: "cyberpunk-circuit-timeline",
+      name: "Cyberpunk Circuit Timeline",
+      description: "Timeline with cyberpunk neon circuit design.",
+      component: CyberpunkCircuitTimeline,
+      tags: ["Timeline", "Cyberpunk", "Circuit"],
+      code: `<CyberpunkCircuitTimeline />`,
+    },
+    {
+      id: "glassmorphism-horizontal-timeline",
+      name: "Glassmorphism Horizontal Timeline",
+      description: "A clean horizontal timeline with glass effect.",
+      component: GlassmorphismHorizontalTimeline,
+      tags: ["Timeline", "Glassmorphism", "Horizontal"],
+      code: `<GlassmorphismHorizontalTimeline />`,
+    },
+    {
+      id: "hacker-terminal-timeline",
+      name: "Hacker Terminal Timeline",
+      description: "Terminal-style timeline with matrix animation.",
+      component: HackerTerminalTimeline,
+      tags: ["Timeline", "Hacker", "Terminal"],
+      code: `<HackerTerminalTimeline />`,
+    },
+    {
+      id: "holographic-gradient-timeline",
+      name: "Holographic Gradient Timeline",
+      description: "Timeline with holographic gradient animations.",
+      component: HolographicGradientTimeline,
+      tags: ["Timeline", "Holographic", "Gradient"],
+      code: `<HolographicGradientTimeline />`,
+    },
+    {
+      id: "neon-glow-vertical-timeline",
+      name: "Neon Glow Vertical Timeline",
+      description: "Vertical timeline with glowing neon highlights.",
+      component: NeonGlowVerticalTimeline,
+      tags: ["Timeline", "Neon", "Vertical"],
+      code: `<NeonGlowVerticalTimeline />`,
+    },
+    {
+      id: "neural-pulse-interactive-timeline",
+      name: "Neural Pulse Interactive Timeline",
+      description: "Interactive timeline with neural pulse effects.",
+      component: NeuralPulseInteractiveTimeline,
+      tags: ["Timeline", "Neural", "Interactive"],
+      code: `<NeuralPulseInteractiveTimeline />`,
+    },
+    {
+      id: "orbit-timeline",
+      name: "Orbit Timeline",
+      description: "Orbit-styled timeline with smooth transitions.",
+      component: OrbitTimeline,
+      tags: ["Timeline", "Orbit", "Animated"],
+      code: `<OrbitTimeline />`,
+    },
+    {
+      id: "quantum-particle-timeline",
+      name: "Quantum Particle Timeline",
+      description: "Particle-based timeline with quantum effects.",
+      component: QuantumParticleTimeline,
+      tags: ["Timeline", "Quantum", "Particle"],
+      code: `<QuantumParticleTimeline />`,
+    },
+    {
+      id: "softui-milestone-timeline",
+      name: "SoftUI Milestone Timeline",
+      description: "Soft UI styled milestone timeline.",
+      component: SoftUIMilestoneTimeline,
+      tags: ["Timeline", "SoftUI", "Milestone"],
+      code: `<SoftUIMilestoneTimeline />`,
+    },
+  ],
+},
+
+// next showcase category
+
+
 
 
 
