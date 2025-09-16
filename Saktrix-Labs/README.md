@@ -41,12 +41,9 @@ Charts (Bar, Line, Pie, Area using Recharts/Chart.js)
 
 Carousels / Sliders (Image Slider, Testimonial Slider)rr
 
-
 Timeline (Vertical Timeline, Horizontal Timeline)
 
 Chips / Tags (Tag Input, Dismissible Chips)
-
-Toggle / Switches (Dark Mode Switch, Animated Toggle)
 
 Floating Action Button (FAB) (like Material Design + hover animation)
 

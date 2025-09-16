@@ -338,14 +338,63 @@ import QuantumParticleTimeline from "../components/showcase/timelines/QuantumPar
 import SoftUIMilestoneTimeline from "../components/showcase/timelines/SoftUIMilestoneTimeline";
 
 
+// =====================
+// == Chips ==
+// =====================
+import AIDashboardTagInput from "../components/showcase/chips/AIDashboardTagInput";
+import CyberpunkChips from "../components/showcase/chips/CyberpunkChips";
+import GlassmorphismChips from "../components/showcase/chips/GlassmorphismChips";
+import HackerTerminalChips from "../components/showcase/chips/HackerTerminalChips";
+import HolographicChips from "../components/showcase/chips/HolographicChips";
+import NeonGlowChips from "../components/showcase/chips/NeonGlowChips";
+import NeuralPulseChips from "../components/showcase/chips/NeuralPulseChips";
+import OrbitingIconChips from "../components/showcase/chips/OrbitingIconChips";
+import QuantumParticleChips from "../components/showcase/chips/QuantumParticleChips";
+import SoftUIChips from "../components/showcase/chips/SoftUIChips";
 
+// =====================
+// == FAB Imports ==
+// =====================
+import AICoreFAB from "../components/showcase/fabs/AICoreFAB";
+import AIDashboardFAB from "../components/showcase/fabs/AIDashboardFAB";
+import CircuitFAB from "../components/showcase/fabs/CircuitFAB";
+import CyberpunkFAB from "../components/showcase/fabs/CyberpunkFAB";
+import ElevatedFAB from "../components/showcase/fabs/ElevatedFAB";
+import ExpandingFAB from "../components/showcase/fabs/ExpandingFAB";
+import GlassmorphismFAB from "../components/showcase/fabs/GlassmorphismFAB";
+import GlitchFAB from "../components/showcase/fabs/GlitchFAB";
+import HolographicFAB from "../components/showcase/fabs/HolographicFAB";
+import LaserSweepFAB from "../components/showcase/fabs/LaserSweepFAB";
+import MatrixFAB from "../components/showcase/fabs/MatrixFAB";
+import MinimalGlowFAB from "../components/showcase/fabs/MinimalGlowFAB";
+import NeonGlowFAB from "../components/showcase/fabs/NeonGlowFAB";
+import NeonRingFAB from "../components/showcase/fabs/NeonRingFAB";
+import OrbitingFAB from "../components/showcase/fabs/OrbitingFAB";
+import PulsingFAB from "../components/showcase/fabs/PulsingFAB";
+import QuantumFAB from "../components/showcase/fabs/QuantumFAB";
+import ShadowMorphFAB from "../components/showcase/fabs/ShadowMorphFAB";
+import SoftUIFAB from "../components/showcase/fabs/SoftUIFAB";
+import TerminalFAB from "../components/showcase/fabs/TerminalFAB";
 
-
+// =====================
+// ===Searchbars Imports ===
+// =====================
+import AIDashboardSearchBar from "../components/showcase/searchbars/AIDashboardSearchBar";
+import CommandPaletteSearch from "../components/showcase/searchbars/CommandPaletteSearch";
+import CyberpunkSearchBar from "../components/showcase/searchbars/CyberpunkSearchBar";
+import ExpandableSearchBar from "../components/showcase/searchbars/ExpandableSearchBar";
+import GlassmorphismSearchBar from "../components/showcase/searchbars/GlassmorphismSearchBar";
+import HolographicSearchBar from "../components/showcase/searchbars/HolographicSearchBar";
+import NeonGlowSearchBar from "../components/showcase/searchbars/NeonGlowSearchBar";
+import OrbitingIconSearchBar from "../components/showcase/searchbars/OrbitingIconSearchBar";
+import SoftUISearchBar from "../components/showcase/searchbars/SoftUISearchBar";
+import TerminalSearchBar from "../components/showcase/searchbars/TerminalSearchBar";
 
 
 
 
 export const showcaseConfig = [
+  // buttons category
   {
     category: "Buttons",
     items: [
@@ -2981,10 +3030,351 @@ const [enabled, setEnabled] = useState(false);
   ],
 },
 
-// next showcase category
+// chips showcase category
+{
+  category: "Chips",
+  items: [
+    {
+      id: "ai-dashboard-tag-input",
+      name: "AI Dashboard Tag Input",
+      description: "Smart AI-powered tag input chips with autocomplete.",
+      component: AIDashboardTagInput,
+      tags: ["Chips", "AI", "Tag Input"],
+      code: `<AIDashboardTagInput />`,
+    },
+    {
+      id: "cyberpunk-chips",
+      name: "Cyberpunk Chips",
+      description: "Neon-styled chips with cyberpunk theme.",
+      component: CyberpunkChips,
+      tags: ["Chips", "Cyberpunk", "Neon"],
+      code: `<CyberpunkChips />`,
+    },
+    {
+      id: "glassmorphism-chips",
+      name: "Glassmorphism Chips",
+      description: "Chips with frosted glass effect.",
+      component: GlassmorphismChips,
+      tags: ["Chips", "Glassmorphism", "UI"],
+      code: `<GlassmorphismChips />`,
+    },
+    {
+      id: "hacker-terminal-chips",
+      name: "Hacker Terminal Chips",
+      description: "Terminal-style chips with matrix animations.",
+      component: HackerTerminalChips,
+      tags: ["Chips", "Hacker", "Terminal"],
+      code: `<HackerTerminalChips />`,
+    },
+    {
+      id: "holographic-chips",
+      name: "Holographic Chips",
+      description: "Chips with holographic gradient animations.",
+      component: HolographicChips,
+      tags: ["Chips", "Holographic", "Gradient"],
+      code: `<HolographicChips />`,
+    },
+    {
+      id: "neon-glow-chips",
+      name: "Neon Glow Chips",
+      description: "Glowing neon chips with hover animations.",
+      component: NeonGlowChips,
+      tags: ["Chips", "Neon", "Glow"],
+      code: `<NeonGlowChips />`,
+    },
+    {
+      id: "neural-pulse-chips",
+      name: "Neural Pulse Chips",
+      description: "AI-inspired pulsing neural chip design.",
+      component: NeuralPulseChips,
+      tags: ["Chips", "AI", "Pulse"],
+      code: `<NeuralPulseChips />`,
+    },
+    {
+      id: "orbiting-icon-chips",
+      name: "Orbiting Icon Chips",
+      description: "Chips with orbiting animated icons.",
+      component: OrbitingIconChips,
+      tags: ["Chips", "Orbit", "Icon"],
+      code: `<OrbitingIconChips />`,
+    },
+    {
+      id: "quantum-particle-chips",
+      name: "Quantum Particle Chips",
+      description: "Particle-effect chips with quantum animation.",
+      component: QuantumParticleChips,
+      tags: ["Chips", "Quantum", "Particles"],
+      code: `<QuantumParticleChips />`,
+    },
+    {
+      id: "softui-chips",
+      name: "SoftUI Chips",
+      description: "Soft UI styled neumorphic chips.",
+      component: SoftUIChips,
+      tags: ["Chips", "SoftUI", "Neumorphism"],
+      code: `<SoftUIChips />`,
+    },
+  ],
+},
 
 
+// Fabs showcase category
+{
+  category: "FABs",
+  items: [
+    {
+      id: "ai-core-fab",
+      name: "AI Core FAB",
+      description: "Floating AI-inspired action button with futuristic styling.",
+      component: AICoreFAB,
+      tags: ["FAB", "AI", "Action"],
+      code: `<AICoreFAB />`,
+    },
+    {
+      id: "ai-dashboard-fab",
+      name: "AI Dashboard FAB",
+      description: "Dashboard FAB with glowing neural pulse animation.",
+      component: AIDashboardFAB,
+      tags: ["FAB", "AI", "Dashboard"],
+      code: `<AIDashboardFAB />`,
+    },
+    {
+      id: "circuit-fab",
+      name: "Circuit FAB",
+      description: "Tech-style FAB with animated circuit glow.",
+      component: CircuitFAB,
+      tags: ["FAB", "Circuit", "Glow"],
+      code: `<CircuitFAB />`,
+    },
+    {
+      id: "cyberpunk-fab",
+      name: "Cyberpunk FAB",
+      description: "Neon cyberpunk floating button with sharp edges.",
+      component: CyberpunkFAB,
+      tags: ["FAB", "Cyberpunk", "Neon"],
+      code: `<CyberpunkFAB />`,
+    },
+    {
+      id: "elevated-fab",
+      name: "Elevated FAB",
+      description: "Raised FAB with soft shadows and smooth hover effect.",
+      component: ElevatedFAB,
+      tags: ["FAB", "Shadow", "UI"],
+      code: `<ElevatedFAB />`,
+    },
+    {
+      id: "expanding-fab",
+      name: "Expanding FAB",
+      description: "Expandable floating action button with animation.",
+      component: ExpandingFAB,
+      tags: ["FAB", "Expand", "Animation"],
+      code: `<ExpandingFAB />`,
+    },
+    {
+      id: "glassmorphism-fab",
+      name: "Glassmorphism FAB",
+      description: "Glassmorphic floating button with blur and glow.",
+      component: GlassmorphismFAB,
+      tags: ["FAB", "Glass", "Glow"],
+      code: `<GlassmorphismFAB />`,
+    },
+    {
+      id: "glitch-fab",
+      name: "Glitch FAB",
+      description: "Glitch-effect button with neon distortions.",
+      component: GlitchFAB,
+      tags: ["FAB", "Glitch", "Neon"],
+      code: `<GlitchFAB />`,
+    },
+    {
+      id: "holographic-fab",
+      name: "Holographic FAB",
+      description: "Holographic glowing FAB with futuristic motion.",
+      component: HolographicFAB,
+      tags: ["FAB", "Hologram", "AI"],
+      code: `<HolographicFAB />`,
+    },
+    {
+      id: "laser-sweep-fab",
+      name: "Laser Sweep FAB",
+      description: "Animated FAB with sweeping laser beam effect.",
+      component: LaserSweepFAB,
+      tags: ["FAB", "Laser", "Animation"],
+      code: `<LaserSweepFAB />`,
+    },
+    {
+      id: "matrix-fab",
+      name: "Matrix FAB",
+      description: "Matrix-inspired FAB with digital rain glow.",
+      component: MatrixFAB,
+      tags: ["FAB", "Matrix", "Digital"],
+      code: `<MatrixFAB />`,
+    },
+    {
+      id: "minimal-glow-fab",
+      name: "Minimal Glow FAB",
+      description: "Minimal floating action button with subtle glow.",
+      component: MinimalGlowFAB,
+      tags: ["FAB", "Minimal", "Glow"],
+      code: `<MinimalGlowFAB />`,
+    },
+    {
+      id: "neon-glow-fab",
+      name: "Neon Glow FAB",
+      description: "Bright neon glowing FAB for modern UIs.",
+      component: NeonGlowFAB,
+      tags: ["FAB", "Neon", "Glow"],
+      code: `<NeonGlowFAB />`,
+    },
+    {
+      id: "neon-ring-fab",
+      name: "Neon Ring FAB",
+      description: "FAB with animated neon ring border.",
+      component: NeonRingFAB,
+      tags: ["FAB", "Neon", "Ring"],
+      code: `<NeonRingFAB />`,
+    },
+    {
+      id: "orbiting-fab",
+      name: "Orbiting FAB",
+      description: "FAB with orbiting glowing particles.",
+      component: OrbitingFAB,
+      tags: ["FAB", "Orbit", "Particles"],
+      code: `<OrbitingFAB />`,
+    },
+    {
+      id: "pulsing-fab",
+      name: "Pulsing FAB",
+      description: "Animated pulsing FAB with soft scaling effect.",
+      component: PulsingFAB,
+      tags: ["FAB", "Pulse", "Animation"],
+      code: `<PulsingFAB />`,
+    },
+    {
+      id: "quantum-fab",
+      name: "Quantum FAB",
+      description: "Quantum-inspired floating button with futuristic glow.",
+      component: QuantumFAB,
+      tags: ["FAB", "Quantum", "Glow"],
+      code: `<QuantumFAB />`,
+    },
+    {
+      id: "shadow-morph-fab",
+      name: "Shadow Morph FAB",
+      description: "FAB with animated morphing shadow effect.",
+      component: ShadowMorphFAB,
+      tags: ["FAB", "Shadow", "Morph"],
+      code: `<ShadowMorphFAB />`,
+    },
+    {
+      id: "soft-ui-fab",
+      name: "Soft UI FAB",
+      description: "Neumorphic floating button with soft shadows.",
+      component: SoftUIFAB,
+      tags: ["FAB", "SoftUI", "Neumorphism"],
+      code: `<SoftUIFAB />`,
+    },
+    {
+      id: "terminal-fab",
+      name: "Terminal FAB",
+      description: "Retro terminal-inspired floating action button.",
+      component: TerminalFAB,
+      tags: ["FAB", "Terminal", "Retro"],
+      code: `<TerminalFAB />`,
+    },
+  ],
+},
 
+// Searchbar showcase category
+
+{
+  category: "Searchbars",
+  items: [
+    {
+      id: "ai-dashboard-searchbar",
+      name: "AI Dashboard Searchbar",
+      description: "Smart AI-powered search bar with suggestions.",
+      component: AIDashboardSearchBar,
+      tags: ["Search", "AI", "Smart"],
+      code: `<AIDashboardSearchBar />`,
+    },
+    {
+      id: "command-palette-search",
+      name: "Command Palette Search",
+      description: "Command palette style search bar with shortcuts.",
+      component: CommandPaletteSearch,
+      tags: ["Search", "Command", "Palette"],
+      code: `<CommandPaletteSearch />`,
+    },
+    {
+      id: "cyberpunk-searchbar",
+      name: "Cyberpunk Searchbar",
+      description: "Neon cyberpunk inspired search bar.",
+      component: CyberpunkSearchBar,
+      tags: ["Search", "Cyberpunk", "Neon"],
+      code: `<CyberpunkSearchBar />`,
+    },
+    {
+      id: "expandable-searchbar",
+      name: "Expandable Searchbar",
+      description: "Minimal search bar that expands on focus.",
+      component: ExpandableSearchBar,
+      tags: ["Search", "Expandable", "Minimal"],
+      code: `<ExpandableSearchBar />`,
+    },
+    {
+      id: "glassmorphism-searchbar",
+      name: "Glassmorphism Searchbar",
+      description: "Frosted glass styled modern search bar.",
+      component: GlassmorphismSearchBar,
+      tags: ["Search", "Glassmorphism", "Modern"],
+      code: `<GlassmorphismSearchBar />`,
+    },
+    {
+      id: "holographic-searchbar",
+      name: "Holographic Searchbar",
+      description: "Holographic glowing search bar.",
+      component: HolographicSearchBar,
+      tags: ["Search", "Holographic", "Glow"],
+      code: `<HolographicSearchBar />`,
+    },
+    {
+      id: "neon-glow-searchbar",
+      name: "Neon Glow Searchbar",
+      description: "Bright glowing neon search input.",
+      component: NeonGlowSearchBar,
+      tags: ["Search", "Neon", "Glow"],
+      code: `<NeonGlowSearchBar />`,
+    },
+    {
+      id: "orbiting-icon-searchbar",
+      name: "Orbiting Icon Searchbar",
+      description: "Search bar with orbiting animated icons.",
+      component: OrbitingIconSearchBar,
+      tags: ["Search", "Orbiting", "Icon"],
+      code: `<OrbitingIconSearchBar />`,
+    },
+    {
+      id: "soft-ui-searchbar",
+      name: "Soft UI Searchbar",
+      description: "Neumorphic styled soft shadow search bar.",
+      component: SoftUISearchBar,
+      tags: ["Search", "SoftUI", "Neumorphism"],
+      code: `<SoftUISearchBar />`,
+    },
+    {
+      id: "terminal-searchbar",
+      name: "Terminal Searchbar",
+      description: "Retro terminal inspired command search input.",
+      component: TerminalSearchBar,
+      tags: ["Search", "Terminal", "Retro"],
+      code: `<TerminalSearchBar />`,
+    },
+  ],
+},
+
+
+// Next showcase Item's category
 
 
 
