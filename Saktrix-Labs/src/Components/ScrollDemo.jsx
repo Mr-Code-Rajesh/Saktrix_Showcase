@@ -1,4 +1,4 @@
-import ScrollArea from "../components/ScrollArea";
+import ScrollArea from "./ScrollArea";
 
 export default function ScrollDemo() {
   return (
